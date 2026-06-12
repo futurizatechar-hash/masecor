@@ -1,0 +1,18 @@
+{
+  "name": "Asadera DOR-34",
+  "line": "accesorios",
+  "category": "accesorio",
+  "shortDescription": "Bandeja asadera de acero inoxidable modelo DOR-34.",
+  "description": "Bandeja asadera multifuncional fabricada en acero inoxidable. Perfecta como accesorio complementario para las piletas Masecor, ideal para escurrir alimentos o como soporte extra.",
+  "material": "Acero Inoxidable",
+  "features": [
+    "Diseño multifuncional",
+    "Adaptable a múltiples bachas",
+    "Fácil limpieza"
+  ],
+  "image": "/images/products/gema.webp",
+  "gallery": [],
+  "sortOrder": 54,
+  "featured": false,
+  "available": true
+}

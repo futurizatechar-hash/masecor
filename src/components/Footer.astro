@@ -1,0 +1,516 @@
+---
+/**
+ * Footer — Masecor Web
+ *
+ * Pie de página premium minimalista.
+ * Fondo negro, mucho espacio, logo prominente.
+ */
+
+import {
+  SITE_CONFIG,
+  COMPANY_INFO,
+  SOCIAL_LINKS,
+  getWhatsAppUrl,
+} from '../utils/constants';
+
+const currentYear = new Date().getFullYear();
+
+const footerLinks = [
+  {
+    title: 'Productos',
+    links: [
+      { label: 'Línea Premium', href: '/productos?linea=premium' },
+      { label: 'Línea Prisma', href: '/productos?linea=prisma' },
+      { label: 'Línea Standard', href: '/productos?linea=standard' },
+      { label: 'Lavadero', href: '/productos?linea=lavadero' },
+      { label: 'Trabajos Especiales', href: '/trabajos-especiales' },
+    ],
+  },
+  {
+    title: 'Institucional',
+    links: [
+      { label: 'Sobre Nosotros', href: '/nosotros' },
+      { label: 'Distribuidores', href: '/distribuidores' },
+      { label: 'Garantía de Fábrica', href: '/garantia' },
+    ],
+  },
+];
+---
+
+<footer class="footer" role="contentinfo">
+  <!-- Separator -->
+  <div class="footer__separator">
+    <div class="container">
+      <div class="footer__line"></div>
+    </div>
+  </div>
+
+  <!-- Main -->
+  <div class="footer__main">
+    <div class="container footer__grid">
+      <!-- Brand Column -->
+      <div class="footer__brand">
+        <a href="/" class="footer__logo" aria-label="Ir al inicio">
+          <img
+            src="/images/logo-m-isolated.webp"
+            alt=""
+            class="footer__logo-icon"
+            width="40"
+            height="40"
+            loading="lazy"
+          />
+          <span class="footer__logo-text">MASECOR</span>
+        </a>
+        <p class="footer__description">
+          Fábrica argentina de bachas y mesadas de acero inoxidable AISI 304
+          para todo el país.
+        </p>
+
+        <div class="footer__social-group">
+          <a
+            href={SOCIAL_LINKS.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer__social-btn footer__social-btn--instagram"
+            aria-label="Instagram"
+          >
+            Instagram ↗
+          </a>
+          <a
+            href={SOCIAL_LINKS.facebook}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer__social-btn footer__social-btn--facebook"
+            aria-label="Facebook"
+          >
+            Facebook ↗
+          </a>
+          <a
+            href={getWhatsAppUrl()}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer__social-btn footer__social-btn--whatsapp"
+          >
+            WhatsApp ↗
+          </a>
+        </div>
+      </div>
+
+      <!-- Link Columns -->
+      {
+        footerLinks.map((section) => (
+          <div class="footer__column" data-accordion>
+            <button
+              class="footer__column-title"
+              aria-expanded="false"
+              data-accordion-btn
+            >
+              {section.title}
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                class="footer__column-icon"
+              >
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </button>
+            <div class="footer__column-content" data-accordion-content>
+              <ul class="footer__column-list" role="list">
+                {section.links.map((link) => (
+                  <li>
+                    <a href={link.href} class="footer__link">
+                      {link.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        ))
+      }
+
+      <!-- Contact Column -->
+      <div class="footer__column" data-accordion>
+        <button
+          class="footer__column-title"
+          aria-expanded="false"
+          data-accordion-btn
+        >
+          Contacto
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            class="footer__column-icon"><path d="M6 9l6 6 6-6"></path></svg
+          >
+        </button>
+        <div class="footer__column-content" data-accordion-content>
+          <ul class="footer__column-list" role="list">
+            <li class="footer__contact-item">
+              <span>{COMPANY_INFO.province}, {COMPANY_INFO.country}</span>
+            </li>
+            <li class="footer__contact-item">
+              <a
+                href={`tel:${COMPANY_INFO.phone.replace(/[^0-9+]/g, '')}`}
+                class="footer__link">{COMPANY_INFO.phone}</a
+              >
+            </li>
+            <li class="footer__contact-item">
+              <a href={`mailto:${COMPANY_INFO.email}`} class="footer__link"
+                >{COMPANY_INFO.email}</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom -->
+  <div class="footer__bottom">
+    <div class="container footer__bottom-inner">
+      <div class="footer__bottom-left">
+        <p class="footer__copyright">
+          &copy; {currentYear}
+          {SITE_CONFIG.name}
+        </p>
+        <span class="footer__bottom-separator">•</span>
+        <a href="/politicas-privacidad" class="footer__legal-link"
+          >Políticas de Privacidad</a
+        >
+        <span class="footer__bottom-separator">•</span>
+        <a href="/terminos-condiciones" class="footer__legal-link"
+          >Términos y Condiciones</a
+        >
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function setupFooterAccordions() {
+    const accordions = document.querySelectorAll('[data-accordion]');
+
+    accordions.forEach((accordion) => {
+      const btn = accordion.querySelector('[data-accordion-btn]');
+      if (!btn) return;
+
+      // Clean up old listeners if hot-reloading
+      const clone = btn.cloneNode(true);
+      btn.parentNode?.replaceChild(clone, btn);
+
+      clone.addEventListener('click', () => {
+        // Only trigger on mobile
+        if (window.innerWidth >= 768) return;
+
+        const isOpen = accordion.classList.contains('is-open');
+
+        // Close all others
+        accordions.forEach((acc) => {
+          acc.classList.remove('is-open');
+          acc
+            .querySelector('[data-accordion-btn]')
+            ?.setAttribute('aria-expanded', 'false');
+        });
+
+        // Toggle current
+        if (!isOpen) {
+          accordion.classList.add('is-open');
+          clone.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  }
+
+  // Run on load and after Astro page transitions
+  setupFooterAccordions();
+  document.addEventListener('astro:page-load', setupFooterAccordions);
+</script>
+
+<style>
+  .footer {
+    background-color: var(--black);
+    color: var(--gray-500);
+  }
+
+  /* ── Separator ── */
+  .footer__line {
+    height: 1px;
+    background: var(--gray-850);
+  }
+
+  /* ── Main ── */
+  .footer__main {
+    padding: var(--space-16) 0 var(--space-12);
+  }
+
+  .footer__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-8); /* Gap reducido para móvil */
+  }
+
+  .footer__logo {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    margin-bottom: var(--space-6);
+    text-decoration: none;
+  }
+
+  .footer__logo-icon {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+    opacity: 0.9;
+    transition: opacity 0.3s var(--ease-out-expo);
+  }
+
+  .footer__logo-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 900;
+    color: #ffffff !important;
+    letter-spacing: -0.5px;
+    transform: translateY(1px);
+  }
+
+  .footer__logo:hover .footer__logo-icon,
+  .footer__logo:hover .footer__logo-text {
+    opacity: 1;
+  }
+
+  .footer__description {
+    font-size: var(--text-sm);
+    line-height: var(--leading-relaxed);
+    color: var(--gray-400);
+    max-width: 280px;
+    margin-bottom: var(--space-6);
+  }
+
+  /* ── Columns ── */
+  .footer__column {
+    border-bottom: 1px solid var(--gray-900);
+  }
+
+  .footer__column-title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    border: none;
+    padding: var(--space-4) 0;
+    cursor: pointer;
+    font-family: var(--font-body);
+    font-size: var(--text-xs);
+    font-weight: var(--weight-medium);
+    color: var(--gray-300);
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-widest);
+  }
+
+  .footer__column-icon {
+    transition: transform 0.3s var(--ease-out-expo);
+    color: var(--gray-500);
+  }
+
+  .footer__column.is-open .footer__column-icon {
+    transform: rotate(180deg);
+  }
+
+  .footer__column-content {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s var(--ease-out-expo);
+  }
+
+  .footer__column-content > * {
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  .footer__column.is-open .footer__column-content {
+    grid-template-rows: 1fr;
+  }
+
+  .footer__column-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  .footer__column.is-open .footer__column-list {
+    padding-bottom: var(--space-4);
+  }
+
+  .footer__link {
+    font-size: var(--text-sm);
+    color: var(--gray-400);
+    text-decoration: none;
+    transition: color 0.3s var(--ease-out-expo);
+  }
+
+  .footer__link:hover {
+    color: var(--white);
+    opacity: 1;
+  }
+
+  .footer__contact-item {
+    font-size: var(--text-sm);
+    color: var(--gray-400);
+  }
+
+  .footer__social-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-3);
+    margin-top: var(--space-8);
+  }
+
+  .footer__social-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-2) var(--space-4);
+    border: 1px solid var(--gray-800) !important;
+    border-radius: 9999px;
+    font-size: var(--text-xs);
+    font-weight: var(--weight-medium);
+    text-decoration: none;
+    transition: all 0.3s var(--ease-out-expo);
+  }
+
+  .footer__social-btn:hover {
+    border-color: var(--gray-600) !important;
+    background-color: var(--gray-900) !important;
+    transform: translateY(-2px);
+  }
+
+  .footer__social-btn--instagram {
+    color: var(--white) !important;
+  }
+
+  .footer__social-btn--instagram:hover {
+    color: #e1306c !important;
+    border-color: rgba(225, 48, 108, 0.5) !important;
+  }
+
+  .footer__social-btn--facebook {
+    color: var(--white) !important;
+  }
+
+  .footer__social-btn--facebook:hover {
+    color: #1877f2 !important;
+    border-color: rgba(24, 119, 242, 0.5) !important;
+  }
+
+  .footer__social-btn--whatsapp {
+    color: var(--color-whatsapp) !important;
+    border-color: rgba(37, 211, 102, 0.3) !important;
+  }
+
+  .footer__social-btn--whatsapp:hover {
+    background-color: rgba(37, 211, 102, 0.05) !important;
+    border-color: var(--color-whatsapp) !important;
+  }
+
+  /* ── Bottom ── */
+  .footer__bottom {
+    padding: var(--space-6) 0;
+    border-top: 1px solid var(--gray-900);
+  }
+
+  .footer__bottom-inner {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    align-items: center;
+  }
+
+  .footer__bottom-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+    text-align: center;
+  }
+
+  .footer__copyright {
+    font-size: var(--text-xs);
+    color: var(--gray-500);
+    margin-bottom: 0;
+  }
+
+  .footer__bottom-separator {
+    color: var(--gray-700);
+    font-size: var(--text-xs);
+    display: none; /* Oculto en mobile, visible en desktop */
+  }
+
+  .footer__legal-link {
+    font-size: var(--text-xs);
+    color: var(--gray-500);
+    text-decoration: none;
+    transition: color 0.3s var(--ease-out-expo);
+  }
+
+  .footer__legal-link:hover {
+    color: var(--white);
+  }
+
+  /* ── Responsive ── */
+  @media (min-width: 768px) {
+    .footer__grid {
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: var(--space-12);
+    }
+
+    .footer__column {
+      border-bottom: none;
+    }
+
+    .footer__column-title {
+      padding: 0;
+      margin-bottom: var(--space-6);
+      cursor: default;
+      pointer-events: none;
+    }
+
+    .footer__column-icon {
+      display: none;
+    }
+
+    .footer__column-content {
+      grid-template-rows: 1fr;
+    }
+
+    .footer__column-list {
+      padding-bottom: 0;
+    }
+
+    .footer__bottom-inner {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .footer__bottom-left {
+      flex-direction: row;
+      align-items: center;
+      gap: var(--space-3);
+      text-align: left;
+    }
+
+    .footer__bottom-separator {
+      display: inline;
+    }
+  }
+</style>

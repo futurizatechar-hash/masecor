@@ -1,0 +1,23 @@
+{
+  "name": "Prisma Graffito",
+  "line": "prisma",
+  "category": "bacha-simple",
+  "shortDescription": "Bacha Prisma en acabado negro mate. La pieza más exclusiva del catálogo.",
+  "description": "La Prisma Graffito es la versión más exclusiva de la línea Prisma, con un acabado en color negro mate que la distingue de cualquier otra bacha del mercado. Combina la robustez del acero AISI 304 con una estética vanguardista única.",
+  "dimensions": { "width": 560, "depth": 460, "height": 200, "unit": "mm" },
+  "material": "Acero Inoxidable AISI 304",
+  "thickness": "0.8mm",
+  "features": [
+    "Acero Inoxidable AISI 304",
+    "Acabado Negro Mate",
+    "Mayor Espesor",
+    "Edición Exclusiva",
+    "Aristas Definidas"
+  ],
+  "installationType": "sobre-mueble",
+  "image": "/images/products/prisma-graffito.webp",
+  "gallery": [],
+  "sortOrder": 15,
+  "featured": true,
+  "available": true
+}

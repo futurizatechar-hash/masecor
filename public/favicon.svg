@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="steel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c0c0c0"/>
+      <stop offset="30%" style="stop-color:#e8e8e8"/>
+      <stop offset="50%" style="stop-color:#a8a8a8"/>
+      <stop offset="70%" style="stop-color:#d0d0d0"/>
+      <stop offset="100%" style="stop-color:#909090"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#505050"/>
+      <stop offset="100%" style="stop-color:#707070"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="#0A0A0A"/>
+  <!-- M shape -->
+  <path d="M 100 390 L 155 150 L 195 150 L 155 390 Z" fill="url(#steel)" stroke="url(#edge)" stroke-width="2"/>
+  <path d="M 160 390 L 210 150 L 260 310 L 250 390 Z" fill="url(#steel)" stroke="url(#edge)" stroke-width="2"/>
+  <path d="M 262 390 L 252 310 L 302 150 L 352 390 Z" fill="url(#steel)" stroke="url(#edge)" stroke-width="2"/>
+  <path d="M 357 390 L 317 150 L 357 150 L 412 390 Z" fill="url(#steel)" stroke="url(#edge)" stroke-width="2"/>
+  <!-- Text -->
+  <text x="256" y="455" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-weight="bold" font-size="56" fill="#FFFFFF" letter-spacing="6">MASECOR</text>
+</svg>

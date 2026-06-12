@@ -1,0 +1,30 @@
+{
+  "name": "Aqua L-65",
+  "line": "premium",
+  "category": "bacha-simple",
+  "shortDescription": "Bacha de la familia Aqua tamaño medio. Equilibrio entre capacidad y espacio.",
+  "description": "La Aqua L-65 ofrece el equilibrio perfecto entre capacidad y espacio. Con 650mm de ancho, es la más versátil de la familia Aqua, adaptándose a la mayoría de muebles estándar.",
+  "dimensions": {
+    "width": 650,
+    "depth": 400,
+    "height": 170,
+    "unit": "mm"
+  },
+  "material": "Acero Inoxidable AISI 304",
+  "thickness": "0.6mm",
+  "features": [
+    "Acero Inoxidable AISI 304",
+    "Tamaño Versátil",
+    "Sistema Anti-rebalse",
+    "Insonorización",
+    "Categoría: Premium",
+    "Terminación: Mate",
+    "Calidad: AISI304"
+  ],
+  "installationType": "sobre-mueble",
+  "image": "/images/products/aqua-l65.webp",
+  "gallery": [],
+  "sortOrder": 6,
+  "featured": false,
+  "available": true
+}

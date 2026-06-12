@@ -1,0 +1,27 @@
+{
+  "name": "Gema",
+  "line": "premium",
+  "category": "bacha-simple",
+  "shortDescription": "Bacha con diseño orgánico de bordes suaves y líneas fluidas.",
+  "description": "La Gema de Masecor destaca por su diseño orgánico con bordes suavizados que facilitan la limpieza. Su terminación satinada y forma envolvente aportan un toque de elegancia a cualquier cocina.",
+  "dimensions": {
+    "width": 560,
+    "depth": 460,
+    "height": 200,
+    "unit": "mm"
+  },
+  "material": "Acero Inoxidable AISI 304",
+  "thickness": "0.6mm",
+  "features": [
+    "Acero Inoxidable AISI 304",
+    "Diseño Orgánico",
+    "Bordes Suavizados",
+    "Terminación Satinada"
+  ],
+  "installationType": "sobre-mueble",
+  "image": "/images/products/gema.webp",
+  "gallery": [],
+  "sortOrder": 8,
+  "featured": false,
+  "available": true
+}

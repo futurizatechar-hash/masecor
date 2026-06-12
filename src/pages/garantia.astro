@@ -1,0 +1,872 @@
+---
+/**
+ * Garantía — Masecor Web
+ *
+ * Página informativa sobre la garantía del acero y recomendaciones de mantenimiento.
+ * Sin formularios de registro.
+ */
+
+import Layout from '../layouts/Layout.astro';
+import { getWhatsAppUrl, WHATSAPP_CONFIG } from '../utils/constants';
+
+const whatsappUrl = getWhatsAppUrl(WHATSAPP_CONFIG.warrantyMessage);
+---
+
+<Layout
+  title="Garantía y Mantenimiento"
+  description="Conocé nuestra política de garantía y aprendé a cuidar tus productos de acero inoxidable AISI 304 para asegurar su máxima durabilidad."
+>
+  <main>
+    <section class="page-header section section--dark">
+      <div class="container text-center">
+        <span class="eyebrow" data-reveal="fade">Soporte al cliente</span>
+        <h1 class="page-header__title" data-reveal data-delay="1">
+          Garantía Masecor
+        </h1>
+        <p
+          class="page-header__subtitle"
+          data-reveal
+          data-delay="2"
+          style="margin-inline: auto;"
+        >
+          Nuestros productos están diseñados con los más altos estándares para
+          ofrecer una vida útil excepcionalmente larga. Descubrí por qué
+          confiamos tanto en la calidad de nuestra fabricación.
+        </p>
+      </div>
+    </section>
+
+    <!-- Garantía Info -->
+    <section class="section section--elevated">
+      <div class="container">
+        <div class="warranty-grid">
+          <div data-reveal="fade-left">
+            <span class="eyebrow-premium">Tranquilidad Absoluta</span>
+            <h2 class="warranty-title">Garantía de Fábrica</h2>
+
+            <p class="warranty-lead">
+              Todos nuestros productos de acero inoxidable AISI 304 cuentan con
+              una <strong>garantía estructural de fábrica</strong> contra defectos
+              de material y soldadura.
+            </p>
+
+            <p class="warranty-text">
+              Al utilizar materiales de primera calidad, aseguramos una
+              resistencia superior a la corrosión en condiciones de uso normales
+              y con el mantenimiento adecuado.
+            </p>
+
+            <div class="warranty-features">
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    ><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"
+                    ></path></svg
+                  >
+                </div>
+                <div>
+                  <h4>Estructura Inalterable</h4>
+                  <p>Garantía estructural certificada de fábrica.</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    ><path
+                      d="M12 22a7 7 0 0 0 5-5.28A9 9 0 0 0 12 3a9 9 0 0 0-5 13.72 7 7 0 0 0 5 5.28z"
+                    ></path></svg
+                  >
+                </div>
+                <div>
+                  <h4>Anticorrosión</h4>
+                  <p>Acero AISI 304 con resistencia certificada.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="warranty-disclaimer">
+              <div class="disclaimer-icon">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  ><circle cx="12" cy="12" r="10"></circle><line
+                    x1="12"
+                    y1="8"
+                    x2="12"
+                    y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"
+                  ></line></svg
+                >
+              </div>
+              <p class="disclaimer-text">
+                La garantía no cubre daños por golpes, uso de productos químicos
+                abrasivos no aptos, o instalación deficiente.
+              </p>
+            </div>
+
+            <div style="margin-top: var(--space-8);">
+              <a
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn--premium"
+              >
+                <span>Consultar Soporte Técnico</span>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  ><line x1="5" y1="12" x2="19" y2="12"></line><polyline
+                    points="12 5 19 12 12 19"></polyline></svg
+                >
+              </a>
+            </div>
+          </div>
+
+          <div data-reveal="fade-right" class="warranty-badge">
+            <div class="metal-seal">
+              <div class="metal-seal__outer">
+                <div class="metal-seal__inner">
+                  <span class="seal-brand">MASECOR</span>
+                  <span class="seal-material">AISI 304</span>
+                  <div class="seal-line"></div>
+                  <span class="seal-quality">CALIDAD CERTIFICADA</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cuidados -->
+    <section id="cuidados" class="section section--light">
+      <div class="container">
+        <div
+          class="text-center"
+          data-reveal
+          style="margin-bottom: var(--space-12);"
+        >
+          <span class="eyebrow">Guía Rápida</span>
+          <h2>Cuidado y Mantenimiento</h2>
+          <p
+            style="max-width: 600px; margin-inline: auto; color: var(--gray-500);"
+          >
+            El acero inoxidable es extremadamente duradero, pero requiere
+            cuidados básicos para mantener su brillo y pureza originales.
+          </p>
+        </div>
+
+        <div class="care-grid">
+          <!-- QUÉ HACER -->
+          <div class="care-card care-card--do" data-reveal data-delay="1">
+            <div class="care-header">
+              <div class="care-icon-wrap">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  ><polyline points="20 6 9 17 4 12"></polyline></svg
+                >
+              </div>
+              <h3>Recomendado</h3>
+            </div>
+            <ul class="care-list">
+              <li>
+                <svg
+                  class="li-icon"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  ><polyline points="20 6 9 17 4 12"></polyline></svg
+                >
+                <span>Limpiar diariamente con agua tibia y jabón neutro.</span>
+              </li>
+              <li>
+                <svg
+                  class="li-icon"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  ><polyline points="20 6 9 17 4 12"></polyline></svg
+                >
+                <span
+                  >Secar inmediatamente con paño de microfibra para evitar
+                  manchas de agua.</span
+                >
+              </li>
+              <li>
+                <svg
+                  class="li-icon"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  ><polyline points="20 6 9 17 4 12"></polyline></svg
+                >
+                <span
+                  >Para recuperar brillo, usar limpiadores específicos de acero
+                  inoxidable.</span
+                >
+              </li>
+              <li>
+                <svg
+                  class="li-icon"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  ><polyline points="20 6 9 17 4 12"></polyline></svg
+                >
+                <span
+                  >Limpiar siempre en la dirección del pulido natural (vetas del
+                  acero).</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- QUÉ NO HACER -->
+          <div class="care-card care-card--dont" data-reveal data-delay="2">
+            <div class="care-header">
+              <div class="care-icon-wrap">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  ><line x1="18" y1="6" x2="6" y2="18"></line><line
+                    x1="6"
+                    y1="6"
+                    x2="18"
+                    y2="18"></line></svg
+                >
+              </div>
+              <h3>Evitar Siempre</h3>
+            </div>
+            <ul class="care-list">
+              <li>
+                <svg
+                  class="li-icon"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  ><line x1="18" y1="6" x2="6" y2="18"></line><line
+                    x1="6"
+                    y1="6"
+                    x2="18"
+                    y2="18"></line></svg
+                >
+                <span
+                  >Nunca usar lavandina (cloro), ácido muriático ni productos
+                  abrasivos.</span
+                >
+              </li>
+              <li>
+                <svg
+                  class="li-icon"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  ><line x1="18" y1="6" x2="6" y2="18"></line><line
+                    x1="6"
+                    y1="6"
+                    x2="18"
+                    y2="18"></line></svg
+                >
+                <span
+                  >No utilizar esponjas de acero (virulana) para evitar marcas
+                  de óxido.</span
+                >
+              </li>
+              <li>
+                <svg
+                  class="li-icon"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  ><line x1="18" y1="6" x2="6" y2="18"></line><line
+                    x1="6"
+                    y1="6"
+                    x2="18"
+                    y2="18"></line></svg
+                >
+                <span
+                  >Evitar dejar objetos de hierro húmedos (latas) apoyados en la
+                  superficie.</span
+                >
+              </li>
+              <li>
+                <svg
+                  class="li-icon"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  ><line x1="18" y1="6" x2="6" y2="18"></line><line
+                    x1="6"
+                    y1="6"
+                    x2="18"
+                    y2="18"></line></svg
+                >
+                <span
+                  >No realizar cortes directamente sobre la mesada de acero.</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  .page-header {
+    position: relative;
+    padding-top: 10rem;
+    padding-bottom: var(--section-py-sm);
+    background-color: var(--black-rich);
+    background-image: url('/images/bg/ppp-scaled.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .page-header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 0;
+  }
+
+  .page-header .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  .page-header__title {
+    font-family: var(--font-display);
+    font-size: var(--text-5xl);
+    font-weight: var(--weight-black);
+    color: var(--white);
+    letter-spacing: var(--tracking-tighter);
+    margin-bottom: var(--space-6);
+  }
+
+  .page-header__subtitle {
+    font-size: var(--text-lg);
+    color: var(--gray-400);
+    max-width: 600px;
+    margin-bottom: 0;
+  }
+
+  /* Warranty Grid Layout */
+  .warranty-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-12);
+    align-items: center;
+  }
+
+  @media (min-width: 1024px) {
+    .warranty-grid {
+      grid-template-columns: 1.25fr 0.75fr;
+      gap: var(--space-20);
+    }
+  }
+
+  /* Premium Typography & Headings */
+  .eyebrow-premium {
+    display: inline-block;
+    font-family: var(--font-body);
+    font-size: var(--text-xs);
+    font-weight: var(--weight-bold);
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-widest);
+    color: var(--gray-500);
+    margin-bottom: var(--space-3);
+    position: relative;
+    padding-left: var(--space-8);
+  }
+
+  .eyebrow-premium::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 1.5px;
+    background: var(--steel-gradient);
+  }
+
+  .warranty-title {
+    font-size: var(--text-4xl);
+    font-weight: var(--weight-extrabold);
+    color: var(--black-rich);
+    margin-bottom: var(--space-6);
+    line-height: var(--leading-tight);
+    letter-spacing: var(--tracking-tighter);
+  }
+
+  .warranty-lead {
+    font-size: var(--text-md);
+    line-height: var(--leading-relaxed);
+    color: var(--black-rich);
+    font-weight: var(--weight-medium);
+    margin-bottom: var(--space-4);
+  }
+
+  .warranty-text {
+    font-size: var(--text-base);
+    line-height: var(--leading-relaxed);
+    color: var(--gray-600);
+    margin-bottom: var(--space-8);
+  }
+
+  /* Features Subgrid */
+  .warranty-features {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+    margin-bottom: var(--space-8);
+    border-top: 1px solid var(--border-light);
+    padding-top: var(--space-6);
+  }
+
+  @media (min-width: 640px) {
+    .warranty-features {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .feature-item {
+    display: flex;
+    gap: var(--space-4);
+    align-items: flex-start;
+  }
+
+  .feature-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-xs);
+    background: var(--white-soft);
+    border: 1px solid var(--gray-200);
+    color: var(--black-rich);
+    flex-shrink: 0;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .feature-item h4 {
+    font-size: var(--text-sm);
+    font-weight: var(--weight-bold);
+    color: var(--black-rich);
+    margin-bottom: var(--space-1);
+  }
+
+  .feature-item p {
+    font-size: var(--text-xs);
+    color: var(--gray-500);
+    margin: 0;
+    line-height: var(--leading-normal);
+  }
+
+  /* Premium Callout / Disclaimer */
+  .warranty-disclaimer {
+    display: flex;
+    gap: var(--space-3);
+    align-items: flex-start;
+    padding: var(--space-4) var(--space-5);
+    background-color: var(--white-soft);
+    border-left: 2px solid var(--gray-400);
+    border-radius: var(--radius-none);
+    margin-top: var(--space-6);
+  }
+
+  .disclaimer-icon {
+    color: var(--gray-500);
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .disclaimer-text {
+    font-size: var(--text-xs);
+    line-height: var(--leading-relaxed);
+    color: var(--gray-600);
+    margin: 0;
+  }
+
+  /* Button Link Custom Styling */
+  .btn--premium {
+    background-color: var(--black-rich);
+    color: var(--white);
+    border: 1px solid var(--black-rich);
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-4) var(--space-8);
+    transition: all var(--transition-base);
+    font-weight: var(--weight-semibold);
+    letter-spacing: var(--tracking-wider);
+    font-size: var(--text-xs);
+    text-transform: uppercase;
+  }
+
+  .btn--premium:hover {
+    background-color: transparent;
+    color: var(--black-rich);
+    border-color: var(--black-rich);
+    opacity: 1;
+  }
+
+  .btn--premium svg {
+    transition: transform var(--transition-fast);
+  }
+
+  .btn--premium:hover svg {
+    transform: translateX(4px);
+  }
+
+  /* Metal Seal Badge */
+  .warranty-badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--space-6);
+  }
+
+  .metal-seal {
+    width: 290px;
+    height: 290px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle, #ffffff 0%, #dcdcdc 50%, #aaaaaa 100%);
+    border-radius: 50%;
+    padding: var(--space-2);
+    box-shadow:
+      0 10px 30px rgba(0, 0, 0, 0.1),
+      inset 0 2px 5px rgba(255, 255, 255, 0.8),
+      inset 0 -2px 5px rgba(0, 0, 0, 0.2);
+    transition:
+      transform var(--transition-slow),
+      box-shadow var(--transition-slow);
+  }
+
+  .metal-seal:hover {
+    transform: translateY(-4px) rotate(3deg);
+    box-shadow:
+      0 15px 40px rgba(0, 0, 0, 0.18),
+      inset 0 2px 5px rgba(255, 255, 255, 0.9),
+      inset 0 -2px 5px rgba(0, 0, 0, 0.25);
+  }
+
+  .metal-seal__outer {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background: repeating-radial-gradient(
+      circle,
+      #dcdcdc,
+      #e2e2e2 2px,
+      #cccccc 4px,
+      #dcdcdc 6px
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+    position: relative;
+  }
+
+  /* Conic reflection shading */
+  .metal-seal__outer::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: conic-gradient(
+      from 0deg,
+      rgba(255, 255, 255, 0) 0deg,
+      rgba(255, 255, 255, 0.3) 45deg,
+      rgba(0, 0, 0, 0.08) 90deg,
+      rgba(255, 255, 255, 0) 135deg,
+      rgba(255, 255, 255, 0.3) 180deg,
+      rgba(0, 0, 0, 0.08) 225deg,
+      rgba(255, 255, 255, 0) 270deg,
+      rgba(255, 255, 255, 0.3) 315deg,
+      rgba(255, 255, 255, 0) 360deg
+    );
+    mix-blend-mode: overlay;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .metal-seal__inner {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: var(--black-rich);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--space-6);
+    text-align: center;
+    box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.8);
+    position: relative;
+    z-index: 2;
+  }
+
+  .metal-seal__inner::after {
+    content: '';
+    position: absolute;
+    inset: 8px;
+    border-radius: 50%;
+    border: 1px dashed rgba(255, 255, 255, 0.15);
+    pointer-events: none;
+  }
+
+  .seal-brand {
+    font-family: var(--font-body);
+    font-size: var(--text-xs);
+    font-weight: var(--weight-bold);
+    color: var(--gray-400);
+    letter-spacing: var(--tracking-widest);
+    text-transform: uppercase;
+    margin-bottom: var(--space-2);
+  }
+
+  .seal-material {
+    font-family: var(--font-display);
+    font-size: var(--text-4xl);
+    font-weight: var(--weight-black);
+    color: var(--white);
+    line-height: 1;
+    letter-spacing: var(--tracking-tighter);
+    background: linear-gradient(180deg, var(--white) 30%, var(--gray-400) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .seal-line {
+    width: 40px;
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      var(--gray-500),
+      transparent
+    );
+    margin-block: var(--space-4);
+  }
+
+  .seal-quality {
+    font-family: var(--font-body);
+    font-size: 9px;
+    font-weight: var(--weight-semibold);
+    color: var(--gray-400);
+    letter-spacing: var(--tracking-widest);
+    text-transform: uppercase;
+  }
+
+  /* Care Grid & Cards */
+  .care-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  @media (min-width: 768px) {
+    .care-grid {
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-10);
+    }
+  }
+
+  .care-card {
+    background: var(--white);
+    padding: var(--space-8) var(--space-10);
+    border-radius: var(--radius-none);
+    border: 1px solid var(--border-light);
+    transition: all var(--transition-base);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .care-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: transparent;
+    transition: background var(--transition-base);
+  }
+
+  .care-card--do::before {
+    background: var(--black-rich);
+  }
+
+  .care-card--dont::before {
+    background: var(--gray-400);
+  }
+
+  .care-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--gray-300);
+  }
+
+  .care-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    margin-bottom: var(--space-8);
+    padding-bottom: var(--space-4);
+    border-bottom: 1px solid var(--border-light);
+  }
+
+  .care-icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+  }
+
+  .care-card--do .care-icon-wrap {
+    background: rgba(0, 0, 0, 0.05);
+    color: var(--black-rich);
+  }
+
+  .care-card--dont .care-icon-wrap {
+    background: rgba(0, 0, 0, 0.03);
+    color: var(--gray-500);
+  }
+
+  .care-header h3 {
+    font-size: var(--text-lg);
+    font-weight: var(--weight-bold);
+    color: var(--black-rich);
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wider);
+  }
+
+  .care-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+  }
+
+  .care-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-3);
+    line-height: var(--leading-relaxed);
+    font-size: var(--text-sm);
+  }
+
+  .care-list li span {
+    color: var(--text-dark-secondary);
+  }
+
+  .li-icon {
+    flex-shrink: 0;
+    margin-top: 5px;
+  }
+
+  .care-card--do .li-icon {
+    color: var(--black-rich);
+  }
+
+  .care-card--dont .li-icon {
+    color: var(--gray-400);
+  }
+</style>

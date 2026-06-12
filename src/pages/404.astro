@@ -1,0 +1,54 @@
+---
+/**
+ * 404 — Masecor Web
+ */
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Página no encontrada"
+  description="La página que buscás no existe."
+>
+  <main class="not-found">
+    <div class="container not-found__content">
+      <span class="not-found__code">404</span>
+      <h1 class="not-found__title">Página no encontrada</h1>
+      <p class="not-found__text">
+        La página que buscás no existe o fue movida.
+      </p>
+      <a href="/" class="btn btn--outline"> Volver al inicio </a>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  .not-found {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--surface-light);
+    text-align: center;
+  }
+
+  .not-found__code {
+    display: block;
+    font-family: var(--font-display);
+    font-size: var(--text-hero);
+    font-weight: var(--weight-black);
+    color: var(--gray-200);
+    line-height: var(--leading-none);
+    margin-bottom: var(--space-4);
+  }
+
+  .not-found__title {
+    font-size: var(--text-2xl);
+    color: var(--text-dark);
+    margin-bottom: var(--space-4);
+  }
+
+  .not-found__text {
+    color: var(--text-dark-secondary);
+    margin-bottom: var(--space-8);
+  }
+</style>

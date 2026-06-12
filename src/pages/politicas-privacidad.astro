@@ -1,0 +1,133 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { SITE_CONFIG, COMPANY_INFO } from '../utils/constants';
+---
+
+<Layout
+  title={`Políticas de Privacidad | ${SITE_CONFIG.name}`}
+  description={`Políticas de privacidad y tratamiento de datos de ${SITE_CONFIG.name}.`}
+>
+  <main class="legal-page">
+    <div class="container legal-page__inner">
+      <h1 class="legal-page__title">Políticas de Privacidad</h1>
+      <p class="legal-page__date">Última actualización: Junio de 2026</p>
+
+      <div class="legal-page__content">
+        <section>
+          <h2>1. Información que recopilamos</h2>
+          <p>
+            En {SITE_CONFIG.name}, recopilamos información personal que usted
+            nos proporciona directamente al completar formularios de contacto,
+            suscribirse a boletines informativos o interactuar con nuestros
+            servicios. Esta información puede incluir su nombre, dirección de
+            correo electrónico, número de teléfono y datos de ubicación
+            relacionados con envíos.
+          </p>
+        </section>
+
+        <section>
+          <h2>2. Uso de la información</h2>
+          <p>
+            Utilizamos la información recopilada para procesar sus consultas,
+            enviarle información relevante sobre nuestros productos (bachas y
+            mesadas de acero inoxidable), mejorar la experiencia del usuario en
+            nuestro sitio web y para cumplir con nuestras obligaciones legales y
+            fiscales.
+          </p>
+        </section>
+
+        <section>
+          <h2>3. Protección de datos</h2>
+          <p>
+            Implementamos medidas de seguridad técnicas y organizativas para
+            proteger su información personal contra el acceso no autorizado, la
+            alteración, la divulgación o la destrucción. No vendemos,
+            comercializamos ni transferimos de ninguna manera su información
+            personal a terceros sin su consentimiento previo.
+          </p>
+        </section>
+
+        <section>
+          <h2>4. Cookies y tecnologías de seguimiento</h2>
+          <p>
+            Nuestro sitio web puede utilizar "cookies" para mejorar la
+            experiencia del usuario. Su navegador web coloca estas cookies en su
+            disco duro con fines de mantenimiento de registros y, a veces, para
+            rastrear información sobre usted. Puede elegir configurar su
+            navegador para que rechace las cookies o para que le avise cuando se
+            envíen.
+          </p>
+        </section>
+
+        <section>
+          <h2>5. Derechos del usuario</h2>
+          <p>
+            Usted tiene derecho a solicitar acceso, rectificación, cancelación u
+            oposición respecto a los datos personales que obran en nuestro
+            poder. Para ejercer estos derechos, comuníquese con nosotros a
+            través de nuestro correo electrónico: <a
+              href={`mailto:${COMPANY_INFO.email}`}>{COMPANY_INFO.email}</a
+            >.
+          </p>
+        </section>
+      </div>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  .legal-page {
+    padding-top: 10rem;
+    padding-bottom: var(--section-py);
+    background-color: var(--black-rich);
+    color: var(--white);
+    min-height: 100vh;
+  }
+
+  .legal-page__inner {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .legal-page__title {
+    font-size: var(--text-4xl);
+    margin-bottom: var(--space-2);
+    font-family: var(--font-heading);
+    color: var(--white);
+  }
+
+  .legal-page__date {
+    font-size: var(--text-sm);
+    color: var(--gray-400);
+    margin-bottom: var(--space-10);
+  }
+
+  .legal-page__content section {
+    margin-bottom: var(--space-8);
+  }
+
+  .legal-page__content h2 {
+    font-size: var(--text-2xl);
+    margin-bottom: var(--space-4);
+    color: var(--white);
+    font-family: var(--font-heading);
+  }
+
+  .legal-page__content p {
+    font-size: var(--text-base);
+    color: var(--gray-300);
+    line-height: var(--leading-relaxed);
+    margin-bottom: var(--space-4);
+  }
+
+  .legal-page__content a {
+    color: var(--white);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    transition: opacity 0.3s ease;
+  }
+
+  .legal-page__content a:hover {
+    opacity: 0.8;
+  }
+</style>

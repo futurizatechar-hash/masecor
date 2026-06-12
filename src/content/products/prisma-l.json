@@ -1,0 +1,35 @@
+{
+  "name": "Prisma L",
+  "line": "prisma",
+  "category": "bacha-simple",
+  "shortDescription": "Bacha de la línea Prisma con aristas definidas y mayor espesor de acero.",
+  "description": "La Prisma L representa la evolución del diseño industrial con aristas pronunciadas y un espesor de acero superior. Su estética angular y robusta la convierte en la elección premium para cocinas de alto nivel.",
+  "dimensions": {
+    "width": 560,
+    "depth": 460,
+    "height": 200,
+    "unit": "mm"
+  },
+  "material": "Acero Inoxidable AISI 304",
+  "thickness": "0.8mm",
+  "features": [
+    "Acero Inoxidable AISI 304",
+    "Mayor Espesor",
+    "Aristas Definidas",
+    "Diseño Angular",
+    "Insonorización Reforzada",
+    "Categoría: Super Premium",
+    "Terminación: Mate",
+    "Calidad: AISI304 (1,25 mm)",
+    "Adicional: Sopapa con Cestillo de Ø 110 mm (Incluido)",
+    "Adicional: Con brazo antirebalse (Incluido)",
+    "Adicional: Dispenser detergente (No Incluido)",
+    "Adicional: Escurridor de cubiertos (No Incluido)"
+  ],
+  "installationType": "sobre-mesada-bajo-mesada",
+  "image": "/images/products/prisma-l.webp",
+  "gallery": [],
+  "sortOrder": 11,
+  "featured": true,
+  "available": true
+}

@@ -1,0 +1,11 @@
+# Cloudflare Pages - Redirects
+# Se aplican automáticamente al deployar en Cloudflare Pages.
+
+# Redirigir www a non-www (cuando se configure el dominio)
+# https://www.masecor.com.ar/* https://masecor.com.ar/:splat 301
+
+# Redirigir rutas legacy si existieran
+/catalogo /productos 301
+/catalog /productos 301
+/contact /contacto 301
+/about /nosotros 301

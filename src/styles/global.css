@@ -1,0 +1,447 @@
+/* ========================================
+ * MASECOR — Global Styles
+ * Premium dark-first base styles
+ * ======================================== */
+
+@import './tokens.css';
+
+/* ── Reset & Base ── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* CRITICAL: prevent horizontal scroll */
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  font-weight: var(--weight-regular);
+  line-height: var(--leading-normal);
+  color: var(--text-dark);
+  background-color: var(--surface-light);
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* ── Typography Base ── */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+  font-weight: var(--weight-bold);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--text-dark);
+}
+
+h1 {
+  font-size: var(--text-5xl);
+  font-weight: var(--weight-black);
+  letter-spacing: var(--tracking-tighter);
+}
+h2 {
+  font-size: var(--text-4xl);
+  font-weight: var(--weight-extrabold);
+  letter-spacing: var(--tracking-tighter);
+}
+h3 {
+  font-size: var(--text-3xl);
+  font-weight: var(--weight-bold);
+}
+h4 {
+  font-size: var(--text-2xl);
+}
+h5 {
+  font-size: var(--text-xl);
+}
+h6 {
+  font-size: var(--text-lg);
+}
+
+p {
+  margin-bottom: var(--space-4);
+  line-height: var(--leading-relaxed);
+  color: var(--text-dark-secondary);
+}
+
+a {
+  color: var(--text-dark);
+  text-decoration: none;
+  transition: opacity var(--transition-fast);
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+strong,
+b {
+  font-weight: var(--weight-semibold);
+}
+
+/* ── Images ── */
+img,
+picture,
+video,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ── Lists ── */
+ul,
+ol {
+  list-style: none;
+}
+
+/* ── Buttons & Inputs ── */
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* ── Container ── */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--space-6);
+}
+
+.container--narrow {
+  max-width: var(--container-narrow);
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-inline: var(--space-10);
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    padding-inline: var(--space-16);
+  }
+}
+
+/* ── Section Spacing ── */
+.section {
+  padding-block: var(--section-py);
+}
+
+.section--sm {
+  padding-block: var(--section-py-sm);
+}
+
+/* ── Dark / Light Section Variants ── */
+.section--dark {
+  background-color: var(--surface-black);
+  color: var(--text-primary);
+}
+
+.section--dark p {
+  color: var(--text-secondary);
+}
+
+.section--dark h1,
+.section--dark h2,
+.section--dark h3,
+.section--dark h4,
+.section--dark h5,
+.section--dark h6,
+.section--dark a {
+  color: var(--text-primary);
+}
+
+.section--elevated {
+  background-color: var(--surface-white);
+  color: var(--text-dark);
+}
+
+.section--light {
+  background-color: var(--surface-light);
+  color: var(--text-dark);
+}
+
+/* ── Utility: Text ── */
+.text-center {
+  text-align: center;
+}
+.text-uppercase {
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-widest);
+}
+
+/* ── Utility: Display ── */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* ── Label / Eyebrow ── */
+.eyebrow {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: var(--text-xs);
+  font-weight: var(--weight-medium);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-widest);
+  color: var(--text-muted);
+  margin-bottom: var(--space-4);
+}
+
+/* ── Decorative Line ── */
+.line-accent {
+  width: 40px;
+  height: 1px;
+  background: var(--gray-600);
+  margin-bottom: var(--space-6);
+}
+
+.line-accent--center {
+  margin-inline: auto;
+}
+
+/* ── Button System ── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wider);
+  padding: var(--space-4) var(--space-8);
+  border-radius: var(--radius-none);
+  transition: all var(--transition-base);
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.btn--primary {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.btn--primary:hover {
+  background-color: var(--gray-800);
+  opacity: 1;
+}
+
+.btn--outline {
+  background-color: transparent;
+  color: var(--black);
+  border: 1px solid var(--gray-300);
+}
+
+.btn--outline:hover {
+  border-color: var(--black);
+  opacity: 1;
+}
+
+.btn--ghost {
+  background: transparent;
+  color: var(--text-dark-secondary);
+  padding: var(--space-2) var(--space-4);
+}
+
+.btn--ghost:hover {
+  color: var(--text-dark);
+  opacity: 1;
+}
+
+.btn--whatsapp {
+  background-color: var(--color-whatsapp);
+  color: var(--white);
+}
+
+.btn--whatsapp:hover {
+  background-color: var(--color-whatsapp-hover);
+  opacity: 1;
+}
+
+.btn--sm {
+  font-size: var(--text-xs);
+  padding: var(--space-3) var(--space-6);
+}
+
+.btn--lg {
+  font-size: var(--text-sm);
+  padding: var(--space-5) var(--space-10);
+}
+
+/* For dark sections — invert buttons */
+.section--dark .btn--primary,
+.hero .btn--primary,
+.header__mobile .btn--primary {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.section--dark .btn--primary:hover,
+.hero .btn--primary:hover,
+.header__mobile .btn--primary:hover {
+  background-color: var(--gray-200);
+}
+
+.section--dark .btn--outline,
+.hero .btn--outline,
+.header__mobile .btn--outline {
+  color: var(--white);
+  border-color: var(--gray-400);
+}
+
+.section--dark .btn--outline:hover,
+.hero .btn--outline:hover,
+.header__mobile .btn--outline:hover {
+  border-color: var(--white);
+}
+
+/* ── Selection ── */
+::selection {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: var(--black);
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--gray-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gray-400);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gray-600);
+}
+
+/* ========================================
+ * SCROLL REVEAL ANIMATION SYSTEM
+ * GPU-only: transform + opacity
+ * ======================================== */
+
+/* Default: fade-up */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(40px);
+  transition:
+    opacity var(--duration-reveal) var(--ease-out-expo),
+    transform var(--duration-reveal) var(--ease-out-expo);
+}
+
+[data-reveal].revealed {
+  opacity: 1;
+  transform: translateY(0) translateX(0) scale(1);
+}
+
+/* Fade Left */
+[data-reveal='fade-left'] {
+  transform: translateX(-40px);
+}
+
+/* Fade Right */
+[data-reveal='fade-right'] {
+  transform: translateX(40px);
+}
+
+/* Scale In */
+[data-reveal='scale'] {
+  transform: scale(0.92);
+}
+
+/* Fade only (no movement) */
+[data-reveal='fade'] {
+  transform: none;
+}
+
+[data-reveal='fade'].revealed {
+  transform: none;
+}
+
+/* Line Grow */
+[data-reveal='line'] {
+  transform: scaleX(0);
+  transform-origin: left center;
+}
+
+[data-reveal='line'].revealed {
+  transform: scaleX(1);
+}
+
+/* Stagger delay via data-delay */
+[data-reveal][data-delay='1'] {
+  transition-delay: 100ms;
+}
+[data-reveal][data-delay='2'] {
+  transition-delay: 200ms;
+}
+[data-reveal][data-delay='3'] {
+  transition-delay: 300ms;
+}
+[data-reveal][data-delay='4'] {
+  transition-delay: 400ms;
+}
+[data-reveal][data-delay='5'] {
+  transition-delay: 500ms;
+}
+[data-reveal][data-delay='6'] {
+  transition-delay: 600ms;
+}
+
+/* ── Reduced Motion ── */
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* ── Focus Visible (Accessibility) ── */
+:focus-visible {
+  outline: 1px solid var(--gray-400);
+  outline-offset: 3px;
+}

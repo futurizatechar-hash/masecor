@@ -1,0 +1,140 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { SITE_CONFIG, COMPANY_INFO } from '../utils/constants';
+---
+
+<Layout
+  title={`Términos y Condiciones | ${SITE_CONFIG.name}`}
+  description={`Términos y condiciones de uso de ${SITE_CONFIG.name}.`}
+>
+  <main class="legal-page">
+    <div class="container legal-page__inner">
+      <h1 class="legal-page__title">Términos y Condiciones</h1>
+      <p class="legal-page__date">Última actualización: Junio de 2026</p>
+
+      <div class="legal-page__content">
+        <section>
+          <h2>1. Aceptación de los términos</h2>
+          <p>
+            Al acceder y utilizar el sitio web de {SITE_CONFIG.name}, usted
+            acepta estar sujeto a estos Términos y Condiciones de uso, a todas
+            las leyes y regulaciones aplicables, y acepta que es responsable del
+            cumplimiento de las leyes locales aplicables. Si no está de acuerdo
+            con alguno de estos términos, tiene prohibido utilizar o acceder a
+            este sitio.
+          </p>
+        </section>
+
+        <section>
+          <h2>2. Propiedad Intelectual</h2>
+          <p>
+            Todos los contenidos de este sitio web, incluyendo textos, gráficos,
+            logotipos, íconos de botones, imágenes y clips de audio, son
+            propiedad de {SITE_CONFIG.name} o de sus proveedores de contenido y están
+            protegidos por las leyes internacionales de derechos de autor y propiedad
+            intelectual.
+          </p>
+        </section>
+
+        <section>
+          <h2>3. Especificaciones de Productos</h2>
+          <p>
+            Nos esforzamos por mostrar con la mayor precisión posible las
+            características y colores de nuestros productos. Sin embargo, no
+            garantizamos que las descripciones, medidas exactas o imágenes de
+            los productos sean 100% precisas, completas o libres de errores,
+            debido a las variaciones inherentes a los procesos de fabricación
+            del acero inoxidable y a la calibración de pantallas.
+          </p>
+        </section>
+
+        <section>
+          <h2>4. Limitación de Responsabilidad</h2>
+          <p>
+            En ningún caso {SITE_CONFIG.name} será responsable de ningún daño directo,
+            indirecto, incidental, especial o consecuente que resulte del uso o la
+            incapacidad de usar nuestros productos o nuestro sitio web, incluyendo
+            la instalación incorrecta de bachas o mesadas que no haya sido realizada
+            por personal autorizado.
+          </p>
+        </section>
+
+        <section>
+          <h2>5. Modificaciones</h2>
+          <p>
+            {SITE_CONFIG.name} puede revisar estos términos de uso para su sitio web
+            en cualquier momento sin previo aviso. Al utilizar este sitio web, usted
+            acepta estar sujeto a la versión actual de estos Términos y Condiciones.
+          </p>
+        </section>
+
+        <section>
+          <h2>6. Ley Aplicable</h2>
+          <p>
+            Cualquier reclamo relacionado con el sitio web de {SITE_CONFIG.name} se
+            regirá por las leyes de la República Argentina, específicamente en la
+            jurisdicción de {COMPANY_INFO.province}, sin consideración a su
+            conflicto de disposiciones legales.
+          </p>
+        </section>
+      </div>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  .legal-page {
+    padding-top: 10rem;
+    padding-bottom: var(--section-py);
+    background-color: var(--black-rich);
+    color: var(--white);
+    min-height: 100vh;
+  }
+
+  .legal-page__inner {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .legal-page__title {
+    font-size: var(--text-4xl);
+    margin-bottom: var(--space-2);
+    font-family: var(--font-heading);
+    color: var(--white);
+  }
+
+  .legal-page__date {
+    font-size: var(--text-sm);
+    color: var(--gray-400);
+    margin-bottom: var(--space-10);
+  }
+
+  .legal-page__content section {
+    margin-bottom: var(--space-8);
+  }
+
+  .legal-page__content h2 {
+    font-size: var(--text-2xl);
+    margin-bottom: var(--space-4);
+    color: var(--white);
+    font-family: var(--font-heading);
+  }
+
+  .legal-page__content p {
+    font-size: var(--text-base);
+    color: var(--gray-300);
+    line-height: var(--leading-relaxed);
+    margin-bottom: var(--space-4);
+  }
+
+  .legal-page__content a {
+    color: var(--white);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    transition: opacity 0.3s ease;
+  }
+
+  .legal-page__content a:hover {
+    opacity: 0.8;
+  }
+</style>

@@ -1,0 +1,289 @@
+---
+/**
+ * Distribuidores — Masecor Web
+ *
+ * Página B2B para captación de mayoristas y puntos de venta.
+ */
+
+import Layout from '../layouts/Layout.astro';
+import { getWhatsAppUrl, WHATSAPP_CONFIG } from '../utils/constants';
+
+const whatsappUrl = getWhatsAppUrl(WHATSAPP_CONFIG.distributorMessage);
+---
+
+<Layout
+  title="Red de Distribuidores Masecor"
+  description="Sumate a la red de distribuidores de Masecor. Productos de acero inoxidable AISI 304 de alta rentabilidad con envío a todo el país."
+>
+  <main>
+    <section class="page-header section section--dark">
+      <div class="container">
+        <span class="eyebrow" data-reveal="fade">Oportunidad B2B</span>
+        <h1 class="page-header__title" data-reveal data-delay="1">
+          Sumate a nuestra red
+        </h1>
+        <p class="page-header__subtitle" data-reveal data-delay="2">
+          Buscamos aliados comerciales en todo el país. Comercializá productos
+          premium de acero inoxidable con excelente margen de rentabilidad.
+        </p>
+        <div data-reveal data-delay="3" style="margin-top: var(--space-8);">
+          <a
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn--primary btn--lg"
+          >
+            Solicitar Lista de Precios
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Beneficios -->
+    <section class="section section--light">
+      <div class="container">
+        <div class="split-grid align-center">
+          <div data-reveal="fade-left">
+            <span class="eyebrow">Ventajas</span>
+            <h2>Por qué elegir Masecor</h2>
+            <p>
+              Nuestra política comercial está diseñada para proteger y potenciar
+              el crecimiento de nuestros puntos de venta exclusivos.
+            </p>
+            <ul class="benefits-list" role="list">
+              <li>
+                <strong>Calidad Asegurada:</strong> Productos fabricados 100% en AISI
+                304, sin devoluciones por defectos.
+              </li>
+              <li>
+                <strong>Rentabilidad Superior:</strong> Márgenes comerciales competitivos
+                para la línea hogar e industrial.
+              </li>
+              <li>
+                <strong>Logística Resuelta:</strong> Entregas semanales a transportes
+                con llegada a las 24 provincias.
+              </li>
+              <li>
+                <strong>Atención Personalizada:</strong> Línea directa B2B para reposiciones
+                rápidas y pedidos especiales.
+              </li>
+            </ul>
+          </div>
+          <div data-reveal="fade-right" class="benefits-stats">
+            <div class="stat-box">
+              <span class="stat-num">24</span>
+              <span class="stat-text">Provincias de cobertura</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-num">+35</span>
+              <span class="stat-text">Años de fabricación ininterrumpida</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-num">0%</span>
+              <span class="stat-text">Índice de fallas por corrosión</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pasos -->
+    <section class="section section--elevated">
+      <div class="container text-center">
+        <span class="eyebrow" data-reveal>Proceso simple</span>
+        <h2 data-reveal>¿Cómo ser distribuidor?</h2>
+
+        <div class="steps-grid" style="margin-top: var(--space-12);">
+          <div class="step-card" data-reveal data-delay="1">
+            <div class="step-number">1</div>
+            <h3>Contacto Inicial</h3>
+            <p>
+              Escribinos por WhatsApp indicando el nombre de tu comercio y
+              ubicación.
+            </p>
+          </div>
+          <div class="step-card" data-reveal data-delay="2">
+            <div class="step-number">2</div>
+            <h3>Alta de Cuenta</h3>
+            <p>
+              Te enviamos los requisitos de facturación y el catálogo con
+              precios mayoristas.
+            </p>
+          </div>
+          <div class="step-card" data-reveal data-delay="3">
+            <div class="step-number">3</div>
+            <h3>Primer Pedido</h3>
+            <p>
+              Armamos un surtido inicial sugerido de alta rotación para tu zona.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section section--dark text-center">
+      <div class="container" data-reveal>
+        <h2>Hablemos de negocios</h2>
+        <p
+          style="max-width: 600px; margin-inline: auto; margin-bottom: var(--space-8); color: var(--gray-400);"
+        >
+          Contactate con el área mayorista y recibí asesoramiento en el día.
+        </p>
+        <a
+          href={whatsappUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn--primary btn--lg"
+        >
+          Contactar por WhatsApp
+        </a>
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  .page-header {
+    position: relative;
+    padding-top: 10rem;
+    padding-bottom: var(--section-py-sm);
+    background-image: url('/images/bg/IMG_20210817_171315-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .page-header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 10, 10, 0.85);
+    z-index: 0;
+  }
+
+  .page-header .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  .page-header__title {
+    font-family: var(--font-display);
+    font-size: var(--text-5xl);
+    font-weight: var(--weight-black);
+    color: var(--white);
+    letter-spacing: var(--tracking-tighter);
+    margin-bottom: var(--space-6);
+  }
+
+  .page-header__subtitle {
+    font-size: var(--text-lg);
+    color: var(--gray-400);
+    max-width: 600px;
+    margin-bottom: 0;
+  }
+
+  /* Benefits List */
+  .benefits-list {
+    margin-top: var(--space-8);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+  }
+
+  .benefits-list li {
+    font-size: var(--text-md);
+    color: var(--text-dark-secondary);
+    padding-left: var(--space-4);
+    border-left: 2px solid var(--gray-300);
+  }
+
+  .benefits-list strong {
+    display: block;
+    color: var(--text-dark);
+    margin-bottom: var(--space-1);
+    font-family: var(--font-display);
+  }
+
+  /* Stats Box */
+  .benefits-stats {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  .stat-box {
+    background: var(--white);
+    padding: var(--space-6) var(--space-8);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border-light);
+    display: flex;
+    align-items: center;
+    gap: var(--space-6);
+  }
+
+  .stat-num {
+    font-family: var(--font-display);
+    font-size: var(--text-4xl);
+    font-weight: var(--weight-black);
+    color: var(--gray-900);
+    line-height: 1;
+    min-width: 80px;
+  }
+
+  .stat-text {
+    font-size: var(--text-md);
+    color: var(--gray-600);
+    font-weight: var(--weight-medium);
+  }
+
+  /* Steps Grid */
+  .steps-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .step-card {
+    background: var(--surface-light);
+    padding: var(--space-8);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-light);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .step-number {
+    font-family: var(--font-display);
+    font-size: 6rem;
+    font-weight: var(--weight-black);
+    color: var(--gray-100);
+    line-height: 0.8;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    z-index: 0;
+  }
+
+  .step-card h3 {
+    position: relative;
+    z-index: 1;
+    font-size: var(--text-xl);
+    color: var(--text-dark);
+    margin-bottom: var(--space-4);
+  }
+
+  .step-card p {
+    position: relative;
+    z-index: 1;
+    color: var(--text-dark-secondary);
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 768px) {
+    .steps-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+</style>

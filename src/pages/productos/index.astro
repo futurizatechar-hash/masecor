@@ -1,0 +1,95 @@
+---
+/**
+ * Productos — Masecor Web
+ *
+ * Catálogo completo con filtros por línea.
+ * Header negro minimalista, grilla editorial.
+ */
+
+import Layout from '../../layouts/Layout.astro';
+import ProductGrid from '../../components/ProductGrid.astro';
+import { getCollection } from 'astro:content';
+
+const allProducts = await getCollection('products');
+
+const products = allProducts.map((p) => ({
+  id: p.id,
+  name: p.data.name,
+  slug: p.id,
+  line: p.data.line,
+  category: p.data.category,
+  shortDescription: p.data.shortDescription,
+  image: p.data.image,
+  material: p.data.material,
+  featured: p.data.featured,
+  thickness: p.data.thickness,
+  installationType: p.data.installationType,
+}));
+---
+
+<Layout
+  title="Productos"
+  description="Catálogo completo de bachas, piletas y mesadas de acero inoxidable AISI 304. Líneas Premium, Prisma, Standard y Lavadero."
+>
+  <main>
+    <!-- Page Header -->
+    <section class="page-header section section--dark">
+      <div class="container">
+        <span class="eyebrow" data-reveal="fade">Catálogo</span>
+        <h1 class="page-header__title" data-reveal data-delay="1">Productos</h1>
+        <p class="page-header__subtitle" data-reveal data-delay="2">
+          Bachas, piletas y mesadas fabricadas con acero inoxidable AISI 304 de
+          la más alta calidad.
+        </p>
+      </div>
+    </section>
+
+    <!-- Product Grid -->
+    <section class="section section--elevated">
+      <div class="container">
+        <ProductGrid products={products} showFilters={true} />
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  .page-header {
+    position: relative;
+    padding-top: 10rem;
+    padding-bottom: var(--section-py-sm);
+    background-image: url('/images/bg/ppp-scaled.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .page-header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 0;
+  }
+
+  .page-header .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  .page-header__title {
+    font-family: var(--font-display);
+    font-size: var(--text-5xl);
+    font-weight: var(--weight-black);
+    color: var(--white);
+    letter-spacing: var(--tracking-tighter);
+    margin-bottom: var(--space-6);
+  }
+
+  .page-header__subtitle {
+    font-size: var(--text-lg);
+    color: var(--gray-400);
+    max-width: 550px;
+    margin-bottom: 0;
+  }
+</style>

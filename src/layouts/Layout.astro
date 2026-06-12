@@ -1,0 +1,120 @@
+---
+/**
+ * Layout Principal - Masecor Web
+ *
+ * Estructura global de todas las páginas.
+ * Incluye: Header, Footer, WhatsApp FAB,
+ * meta-tags SEO, Open Graph, fuentes optimizadas,
+ * estilos globales y Schema Markup base.
+ */
+
+interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+  canonicalUrl?: string;
+  /** Producto actual (para personalizar el mensaje de WhatsApp) */
+  productName?: string;
+}
+
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import WhatsAppButton from '../components/WhatsAppButton.astro';
+import { SEO_DEFAULTS, SITE_CONFIG } from '../utils/constants';
+
+const {
+  title,
+  description = SEO_DEFAULTS.defaultDescription,
+  image = SEO_DEFAULTS.defaultImage,
+  canonicalUrl,
+  productName,
+} = Astro.props;
+
+const fullTitle = title.includes('Masecor')
+  ? title
+  : SEO_DEFAULTS.titleTemplate.replace('%s', title);
+
+const resolvedImage = new URL(image, Astro.site).toString();
+const resolvedCanonical = canonicalUrl ?? Astro.url.href;
+---
+
+<!doctype html>
+<html lang={SITE_CONFIG.language}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- SEO Primary -->
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={resolvedCanonical} />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content={SITE_CONFIG.name} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={resolvedImage} />
+    <meta property="og:url" content={resolvedCanonical} />
+    <meta property="og:locale" content={SITE_CONFIG.locale} />
+    <meta property="og:site_name" content={SITE_CONFIG.name} />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={resolvedImage} />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
+
+    <!-- Fuentes: Inter (body) + Outfit (display headings) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Schema.org - Organization -->
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Organization',
+        name: SITE_CONFIG.name,
+        url: SITE_CONFIG.url,
+        description: SITE_CONFIG.description,
+        logo: `${SITE_CONFIG.url}/images/logo-masecor.webp`,
+        foundingDate: '1987',
+        areaServed: {
+          '@type': 'Country',
+          name: 'Argentina',
+        },
+        knowsAbout: [
+          'Bachas de acero inoxidable',
+          'Mesadas de acero inoxidable',
+          'Piletas de acero inoxidable',
+          'Acero inoxidable AISI 304',
+        ],
+      })}
+    />
+    <slot name="head" />
+  </head>
+  <body>
+    <Header />
+    <slot />
+    <Footer />
+    <WhatsAppButton productName={productName} />
+
+    <!-- Micro-animaciones de scroll (IntersectionObserver) -->
+    <script src="../scripts/scroll-reveal.ts"></script>
+  </body>
+</html>
+
+<style is:global>
+  @import '../styles/global.css';
+</style>

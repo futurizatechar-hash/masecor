@@ -1,0 +1,282 @@
+---
+/**
+ * Nosotros — Masecor Web
+ *
+ * Historia, valores y propuesta de valor.
+ * Stats animados, secciones alternadas dark/light.
+ */
+
+import Layout from '../layouts/Layout.astro';
+import { COMPANY_INFO } from '../utils/constants';
+
+const currentYear = new Date().getFullYear();
+const yearsInBusiness = currentYear - COMPANY_INFO.foundedYear;
+---
+
+<Layout
+  title="Nosotros"
+  description="Más de 37 años fabricando bachas y mesadas de acero inoxidable AISI 304 en Argentina. Conocé nuestra historia y valores."
+>
+  <main>
+    <!-- Header -->
+    <section class="page-header section section--dark">
+      <div class="container">
+        <span class="eyebrow" data-reveal="fade">Nuestra historia</span>
+        <h1 class="page-header__title" data-reveal data-delay="1">Nosotros</h1>
+        <p class="page-header__subtitle" data-reveal data-delay="2">
+          Desde {COMPANY_INFO.foundedYear}, fabricando calidad en acero
+          inoxidable para todo el país.
+        </p>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="section section--elevated">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat" data-reveal data-delay="1">
+            <span
+              class="stat__number"
+              data-reveal="fade"
+              data-counter={String(yearsInBusiness)}
+              data-counter-suffix="+">0+</span
+            >
+            <span class="stat__label">Años de trayectoria</span>
+          </div>
+          <div class="stat" data-reveal data-delay="2">
+            <span class="stat__number" data-reveal="fade" data-counter="24"
+              >0</span
+            >
+            <span class="stat__label">Provincias</span>
+          </div>
+          <div class="stat" data-reveal data-delay="3">
+            <span class="stat__number">AISI 304</span>
+            <span class="stat__label">Acero certificado</span>
+          </div>
+          <div class="stat" data-reveal data-delay="4">
+            <span
+              class="stat__number"
+              data-reveal="fade"
+              data-counter="19"
+              data-counter-suffix="+">0+</span
+            >
+            <span class="stat__label">Modelos</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- History -->
+    <section class="section section--light">
+      <div class="container">
+        <div class="split-grid">
+          <div data-reveal="fade-left">
+            <span class="eyebrow">Historia</span>
+            <h2>Una tradición de excelencia</h2>
+            <p>
+              Masecor nació en {COMPANY_INFO.foundedYear} en la provincia de {
+                COMPANY_INFO.province
+              } con un objetivo claro: fabricar productos de acero inoxidable que
+              combinen durabilidad, funcionalidad y diseño.
+            </p>
+            <p>
+              A lo largo de más de {yearsInBusiness} años, hemos crecido hasta convertirnos
+              en un referente nacional, abasteciendo a las 24 provincias del país
+              con productos que cumplen los más altos estándares de calidad.
+            </p>
+          </div>
+          <div data-reveal="fade-right" data-delay="2">
+            <span class="eyebrow">Material</span>
+            <h2>Acero AISI 304</h2>
+            <p>
+              Utilizamos exclusivamente acero inoxidable {
+                COMPANY_INFO.material
+              }, el estándar mundial para aplicaciones que requieren máxima
+              resistencia a la corrosión e higiene.
+            </p>
+            <p>
+              Este material garantiza una vida útil excepcional, mantenimiento
+              mínimo y una terminación estética que no se degrada con el tiempo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values -->
+    <section class="section section--elevated">
+      <div class="container">
+        <div class="values-header" data-reveal>
+          <span class="eyebrow">Lo que nos define</span>
+          <h2>Nuestros valores</h2>
+        </div>
+        <div class="values-grid">
+          <div class="value-card" data-reveal data-delay="1">
+            <h3 class="value-card__title">Calidad</h3>
+            <p class="value-card__text">
+              Cada producto pasa por rigurosos controles de calidad antes de
+              salir de nuestra fábrica.
+            </p>
+          </div>
+          <div class="value-card" data-reveal data-delay="2">
+            <h3 class="value-card__title">Innovación</h3>
+            <p class="value-card__text">
+              Incorporamos constantemente nuevos diseños y procesos productivos
+              para mantenernos a la vanguardia.
+            </p>
+          </div>
+          <div class="value-card" data-reveal data-delay="3">
+            <h3 class="value-card__title">Compromiso</h3>
+            <p class="value-card__text">
+              Trabajamos junto a nuestros clientes para ofrecer soluciones que
+              superen sus expectativas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section section--elevated">
+      <div class="container text-center" data-reveal>
+        <h2>¿Querés conocer nuestros productos?</h2>
+        <p style="max-width: 500px; margin-inline: auto;">
+          Explorá nuestro catálogo completo de bachas, piletas y mesadas.
+        </p>
+        <div
+          style="display: flex; justify-content: center; gap: var(--space-4); margin-top: var(--space-8);"
+        >
+          <a href="/productos" class="btn btn--primary">Ver productos</a>
+          <a href="/contacto" class="btn btn--outline">Contacto</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  .page-header {
+    position: relative;
+    padding-top: 10rem;
+    padding-bottom: var(--section-py-sm);
+    background-image: url('/images/bg/MAN_5814-scaled.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .page-header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 0;
+  }
+
+  .page-header .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  .page-header__title {
+    font-family: var(--font-display);
+    font-size: var(--text-5xl);
+    font-weight: var(--weight-black);
+    color: var(--white);
+    letter-spacing: var(--tracking-tighter);
+    margin-bottom: var(--space-6);
+  }
+
+  .page-header__subtitle {
+    font-size: var(--text-lg);
+    color: var(--gray-400);
+    max-width: 550px;
+    margin-bottom: 0;
+  }
+
+  /* Stats */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-10);
+    text-align: center;
+  }
+
+  .stat__number {
+    display: block;
+    font-family: var(--font-display);
+    font-size: var(--text-4xl);
+    font-weight: var(--weight-black);
+    color: var(--text-dark);
+    line-height: var(--leading-none);
+    margin-bottom: var(--space-2);
+  }
+
+  .stat__label {
+    font-size: var(--text-sm);
+    color: var(--text-dark-secondary);
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wider);
+  }
+
+  @media (min-width: 768px) {
+    .stats-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  /* Split Grid */
+  .split-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-16);
+  }
+
+  .split-grid h2 {
+    margin-bottom: var(--space-6);
+  }
+
+  @media (min-width: 1024px) {
+    .split-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  /* Values */
+  .values-header {
+    margin-bottom: var(--space-12);
+  }
+
+  .values-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .value-card {
+    padding: var(--space-8);
+    border: 1px solid var(--gray-200);
+    background: var(--white);
+  }
+
+  .value-card__title {
+    font-family: var(--font-display);
+    font-size: var(--text-xl);
+    font-weight: var(--weight-semibold);
+    color: var(--text-dark);
+    margin-bottom: var(--space-3);
+  }
+
+  .value-card__text {
+    font-size: var(--text-sm);
+    color: var(--text-dark-secondary);
+    margin-bottom: 0;
+    line-height: var(--leading-relaxed);
+  }
+
+  @media (min-width: 768px) {
+    .values-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+</style>

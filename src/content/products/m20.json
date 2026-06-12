@@ -1,0 +1,29 @@
+{
+  "name": "M20",
+  "line": "standard",
+  "category": "bacha-simple",
+  "shortDescription": "Bacha simple de la línea Standard con mayor profundidad.",
+  "description": "La M20 es una versión mejorada de la línea Standard con mayor profundidad de cubeta, ofreciendo más espacio para el lavado sin incrementar el tamaño externo.",
+  "dimensions": {
+    "width": 520,
+    "depth": 420,
+    "height": 190,
+    "unit": "mm"
+  },
+  "material": "Acero Inoxidable AISI 304",
+  "thickness": "0.5mm",
+  "features": [
+    "Acero Inoxidable AISI 304",
+    "Mayor Profundidad",
+    "Línea Económica",
+    "Resistencia",
+    "Categoría: Standard                                                                                                                                                                                                                                                                                                                                                                                                                                                                Standard max                                                                                                                                                                                                                                                                                                                                                                                                                                                      Standard max",
+    "Terminación: Mate                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Mate                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Mate"
+  ],
+  "installationType": "sobre-mueble",
+  "image": "/images/products/m20.webp",
+  "gallery": [],
+  "sortOrder": 31,
+  "featured": false,
+  "available": true
+}

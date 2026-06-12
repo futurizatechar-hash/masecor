@@ -1,0 +1,303 @@
+---
+/**
+ * Trabajos Especiales — Masecor Web
+ *
+ * Enfoque B2B para industria, gastronomía y clínicas.
+ */
+
+import Layout from '../layouts/Layout.astro';
+import { getWhatsAppUrl, WHATSAPP_CONFIG } from '../utils/constants';
+
+const whatsappUrl = getWhatsAppUrl(WHATSAPP_CONFIG.specialWorkMessage);
+---
+
+<Layout
+  title="Trabajos Especiales en Acero Inoxidable"
+  description="Fabricación a medida en acero inoxidable AISI 304 para industria, gastronomía, hospitales y constructoras. Presupuestos sin cargo."
+>
+  <main>
+    <!-- Hero -->
+    <section class="hero section--dark">
+      <div class="hero__bg">
+        <div class="hero__gradient"></div>
+      </div>
+      <div class="container hero__content text-center" data-reveal>
+        <span class="eyebrow">Industria & Proyectos</span>
+        <h1 class="hero__title">
+          Trabajos Especiales<br />
+          <span class="text-gradient">A Medida</span>
+        </h1>
+        <p class="hero__subtitle" style="margin-inline: auto;">
+          Soluciones integrales en acero inoxidable AISI 304 para requerimientos
+          industriales, gastronómicos y hospitalarios de alta exigencia.
+        </p>
+        <div class="hero__actions">
+          <a
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn--primary btn--lg"
+          >
+            Solicitar Presupuesto
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sectors -->
+    <section class="section section--light">
+      <div class="container">
+        <div
+          class="text-center"
+          data-reveal
+          style="margin-bottom: var(--space-12);"
+        >
+          <span class="eyebrow">Nuestra Experiencia</span>
+          <h2>Sectores que confían en Masecor</h2>
+        </div>
+        <div class="sector-grid">
+          <div class="sector-card" data-reveal data-delay="1">
+            <h3>Gastronomía Industrial</h3>
+            <p>
+              Mesadas de trabajo pesado, bachas de gran capacidad y campanas
+              extractoras diseñadas para uso intensivo y máxima higiene.
+            </p>
+          </div>
+          <div class="sector-card" data-reveal data-delay="2">
+            <h3>Sanidad y Laboratorios</h3>
+            <p>
+              Mobiliario estéril y piletas para quirófanos cumpliendo con las
+              normativas sanitarias más estrictas del país.
+            </p>
+          </div>
+          <div class="sector-card" data-reveal data-delay="3">
+            <h3>Arquitectura y Construcción</h3>
+            <p>
+              Revestimientos, barandas y detalles constructivos premium
+              desarrollados en conjunto con estudios de arquitectura.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="section section--elevated">
+      <div class="container">
+        <div class="split-grid align-center">
+          <div data-reveal="fade-left">
+            <span class="eyebrow">Metodología</span>
+            <h2>Del plano a la realidad</h2>
+            <p>
+              Nuestro equipo técnico cuenta con más de tres décadas de
+              experiencia interpretando necesidades complejas y transformándolas
+              en soluciones duraderas.
+            </p>
+            <ul class="process-list" role="list">
+              <li>
+                <strong>01. Relevamiento y Diseño:</strong> Analizamos los planos
+                o requerimientos técnicos de tu proyecto.
+              </li>
+              <li>
+                <strong>02. Cotización y Plazos:</strong> Entregamos un presupuesto
+                detallado con tiempos de fabricación garantizados.
+              </li>
+              <li>
+                <strong>03. Fabricación de Precisión:</strong> Producimos con maquinaria
+                de última generación bajo estrictos controles.
+              </li>
+            </ul>
+          </div>
+          <div data-reveal="fade-right" class="process-image">
+            <img
+              src="/images/industrial-methodology.webp"
+              alt="Fabricación industrial de acero inoxidable Masecor"
+              class="process-img-item"
+              loading="lazy"
+              width="480"
+              height="600"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section section--dark text-center">
+      <div class="container" data-reveal>
+        <h2>¿Tenés un proyecto en mente?</h2>
+        <p
+          style="max-width: 600px; margin-inline: auto; margin-bottom: var(--space-8); color: var(--gray-400);"
+        >
+          Contactate con nuestro departamento técnico para evaluar viabilidad y
+          costos.
+        </p>
+        <a
+          href={whatsappUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn--primary btn--lg"
+        >
+          Enviar Planos por WhatsApp
+        </a>
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  /* Hero */
+  .hero {
+    position: relative;
+    padding-top: var(--space-32);
+    padding-bottom: var(--space-20);
+    overflow: hidden;
+  }
+
+  .hero__bg {
+    position: absolute;
+    inset: 0;
+    background-color: var(--black-rich);
+    background-image: url('/images/bg/ppp-scaled.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .hero__gradient {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(10, 10, 10, 0.4) 0%,
+      var(--black-rich) 100%
+    );
+  }
+
+  .hero__content {
+    position: relative;
+    z-index: 2;
+  }
+
+  .hero__title {
+    font-family: var(--font-display);
+    font-size: var(--text-hero);
+    font-weight: var(--weight-black);
+    line-height: var(--leading-tight);
+    letter-spacing: var(--tracking-tighter);
+    margin-bottom: var(--space-6);
+  }
+
+  .hero__subtitle {
+    font-size: var(--text-xl);
+    color: var(--gray-400);
+    max-width: 800px;
+    margin-bottom: var(--space-10);
+  }
+
+  .hero__actions {
+    display: flex;
+    gap: var(--space-4);
+    justify-content: center;
+  }
+
+  /* Layout */
+  .split-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-12);
+  }
+
+  .align-center {
+    align-items: center;
+  }
+
+  @media (min-width: 1024px) {
+    .split-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: var(--space-16);
+    }
+  }
+
+  /* Sector Grid */
+  .sector-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .sector-card {
+    padding: var(--space-8);
+    background-color: var(--white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border-light);
+    transition:
+      transform 0.4s var(--ease-out-expo),
+      box-shadow 0.4s var(--ease-out-expo);
+  }
+
+  .sector-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-md);
+  }
+
+  .sector-card h3 {
+    margin-bottom: var(--space-4);
+    font-size: var(--text-xl);
+    color: var(--text-dark);
+  }
+
+  .sector-card p {
+    color: var(--text-dark-secondary);
+    margin-bottom: 0;
+  }
+
+  /* Process List */
+  .process-list {
+    margin-top: var(--space-8);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+  }
+
+  .process-list li {
+    font-size: var(--text-md);
+    color: var(--text-dark-secondary);
+    padding-left: var(--space-4);
+    border-left: 2px solid var(--gray-300);
+  }
+
+  .process-list strong {
+    display: block;
+    color: var(--text-dark);
+    margin-bottom: var(--space-1);
+    font-family: var(--font-display);
+  }
+
+  @media (min-width: 768px) {
+    .sector-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .process-img-item {
+    width: 100%;
+    aspect-ratio: 4/5;
+    object-fit: cover;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--border-light);
+    transition: transform 0.6s var(--ease-out-expo);
+  }
+
+  .process-image {
+    overflow: hidden;
+    border-radius: var(--radius-lg);
+  }
+
+  .process-image:hover .process-img-item {
+    transform: scale(1.03);
+  }
+</style>

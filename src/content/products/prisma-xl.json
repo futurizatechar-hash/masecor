@@ -1,0 +1,35 @@
+{
+  "name": "Prisma XL",
+  "line": "prisma",
+  "category": "bacha-simple",
+  "shortDescription": "La más grande de la línea Prisma. Máxima capacidad con diseño angular.",
+  "description": "La Prisma XL es la bacha de mayor tamaño de la línea Prisma, ofreciendo la máxima capacidad para hogares y cocinas profesionales que necesitan espacio generoso para el lavado.",
+  "dimensions": {
+    "width": 690,
+    "depth": 460,
+    "height": 200,
+    "unit": "mm"
+  },
+  "material": "Acero Inoxidable AISI 304",
+  "thickness": "0.8mm",
+  "features": [
+    "Acero Inoxidable AISI 304",
+    "Mayor Espesor",
+    "Tamaño XL",
+    "Aristas Definidas",
+    "Insonorización Reforzada",
+    "Categoría: Super Premium",
+    "Terminación: Mate",
+    "Calidad: AISI304  (1,25 mm)",
+    "Adicional: Sopapa con Cestillo de Ø 110 mm (Incluido)",
+    "Adicional: Con brazo antirebalse (Incluido)",
+    "Adicional: Dispenser detergente (No Incluido)",
+    "Adicional: Escurridor de cubiertos (No Incluido)"
+  ],
+  "installationType": "sobre-mesada-bajo-mesada",
+  "image": "/images/products/prisma-xl.webp",
+  "gallery": [],
+  "sortOrder": 12,
+  "featured": false,
+  "available": true
+}

@@ -1,0 +1,1005 @@
+---
+/**
+ * ProductGrid — Masecor Web
+ *
+ * Grilla de productos con barra de filtros colapsable estilo Mercado Libre.
+ */
+
+interface Product {
+  id: string;
+  name: string;
+  slug?: string;
+  line: string;
+  category: string;
+  shortDescription: string;
+  image: string;
+  material?: string;
+  featured?: boolean;
+  thickness?: string;
+  installationType?: string;
+}
+
+interface Props {
+  products: Product[];
+  showFilters?: boolean;
+}
+
+import ProductCard from './ProductCard.astro';
+
+const { products, showFilters = false } = Astro.props;
+
+// Extract unique filterable dimensions dynamically
+const lines = [...new Set(products.map((p) => p.line))].filter(Boolean);
+const categories = [...new Set(products.map((p) => p.category))].filter(
+  Boolean,
+);
+const thicknesses = [...new Set(products.map((p) => p.thickness))]
+  .filter(Boolean)
+  .sort();
+const installations = [
+  ...new Set(products.map((p) => p.installationType)),
+].filter(Boolean);
+
+const lineLabels: Record<string, string> = {
+  premium: 'Premium',
+  prisma: 'Prisma',
+  standard: 'Standard',
+  lavadero: 'Lavadero',
+  accesorios: 'Accesorios',
+};
+
+const categoryLabels: Record<string, string> = {
+  'bacha-simple': 'Bacha Simple',
+  'bacha-doble': 'Bacha Doble',
+  'mesada-ciega': 'Mesada Ciega',
+  'mesada-integrada': 'Mesada Integrada',
+  'pileta-lavadero': 'Pileta Lavadero',
+  accesorio: 'Accesorio',
+};
+
+const installationLabels: Record<string, string> = {
+  'sobre-mueble': 'Sobre Mueble',
+  'bajo-mesada': 'Bajo Mesada',
+  empotrar: 'Empotrar',
+  colgar: 'Colgar',
+  'sobre-mesada-bajo-mesada': 'Sobre/Bajo Mesada',
+};
+---
+
+<section class="catalog" aria-label="Catálogo de productos">
+  <div class="catalog__layout">
+    {
+      showFilters && (
+        <div class="catalog__filters-wrapper">
+          <div class="mobile-filters-header">
+            <button
+              class="mobile-filters-toggle"
+              id="mobile-filters-btn"
+              aria-expanded="false"
+            >
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3" />
+              </svg>
+              Filtrar Catálogo
+            </button>
+          </div>
+          <aside class="catalog__sidebar" id="catalog-sidebar">
+            <div class="sidebar__drawer-header">
+              <h2 class="sidebar__drawer-title">Filtros</h2>
+              <button
+                class="sidebar__drawer-close"
+                id="sidebar-close-btn"
+                aria-label="Cerrar filtros"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <>
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                  </>
+                </svg>
+              </button>
+            </div>
+
+            <div class="sidebar__drawer-content">
+              {/* Active Filters Container */}
+              <div
+                class="active-filters"
+                id="active-filters-section"
+                style="display: none;"
+              >
+                <div class="active-filters__header">
+                  <span class="active-filters__title">Filtros aplicados</span>
+                  <button class="active-filters__clear-all" id="clear-all-btn">
+                    Limpiar todos
+                  </button>
+                </div>
+                <div class="active-filters__chips" id="active-chips-container">
+                  {/* Chips dynamically added by JS */}
+                </div>
+              </div>
+
+              {/* Category: Line */}
+              {lines.length > 0 && (
+                <div class="filter-section" data-section-type="line">
+                  <button
+                    class="filter-section__header"
+                    aria-expanded="true"
+                    aria-controls="filter-body-line"
+                  >
+                    <span>Línea</span>
+                    <svg
+                      class="chevron"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <polyline points="6 9 12 15 18 9" />
+                    </svg>
+                  </button>
+                  <div class="filter-section__body" id="filter-body-line">
+                    <ul class="filter-list">
+                      {lines.map((line) => (
+                        <li>
+                          <button
+                            class="filter-link"
+                            data-filter-type="line"
+                            data-filter={line}
+                          >
+                            <span>{lineLabels[line] ?? line}</span>
+                          </button>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              )}
+
+              {/* Category: Category / Type */}
+              {categories.length > 0 && (
+                <div class="filter-section" data-section-type="category">
+                  <button
+                    class="filter-section__header"
+                    aria-expanded="true"
+                    aria-controls="filter-body-category"
+                  >
+                    <span>Tipo de Producto</span>
+                    <svg
+                      class="chevron"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <polyline points="6 9 12 15 18 9" />
+                    </svg>
+                  </button>
+                  <div class="filter-section__body" id="filter-body-category">
+                    <ul class="filter-list">
+                      {categories.map((category) => (
+                        <li>
+                          <button
+                            class="filter-link"
+                            data-filter-type="category"
+                            data-filter={category}
+                          >
+                            <span>{categoryLabels[category] ?? category}</span>
+                          </button>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              )}
+
+              {/* Category: Thickness */}
+              {thicknesses.length > 0 && (
+                <div class="filter-section" data-section-type="thickness">
+                  <button
+                    class="filter-section__header"
+                    aria-expanded="true"
+                    aria-controls="filter-body-thickness"
+                  >
+                    <span>Espesor del Acero</span>
+                    <svg
+                      class="chevron"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <polyline points="6 9 12 15 18 9" />
+                    </svg>
+                  </button>
+                  <div class="filter-section__body" id="filter-body-thickness">
+                    <ul class="filter-list">
+                      {thicknesses.map((thickness) => (
+                        <li>
+                          <button
+                            class="filter-link"
+                            data-filter-type="thickness"
+                            data-filter={thickness}
+                          >
+                            <span>{thickness}</span>
+                          </button>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              )}
+
+              {/* Category: Installation Type */}
+              {installations.length > 0 && (
+                <div
+                  class="filter-section"
+                  data-section-type="installationType"
+                >
+                  <button
+                    class="filter-section__header"
+                    aria-expanded="true"
+                    aria-controls="filter-body-installation"
+                  >
+                    <span>Instalación</span>
+                    <svg
+                      class="chevron"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <polyline points="6 9 12 15 18 9" />
+                    </svg>
+                  </button>
+                  <div
+                    class="filter-section__body"
+                    id="filter-body-installation"
+                  >
+                    <ul class="filter-list">
+                      {installations.map((inst) => (
+                        <li>
+                          <button
+                            class="filter-link"
+                            data-filter-type="installationType"
+                            data-filter={inst}
+                          >
+                            <span>{installationLabels[inst] ?? inst}</span>
+                          </button>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              )}
+            </div>
+          </aside>
+          <div class="sidebar__backdrop" id="sidebar-backdrop" />
+        </div>
+      )
+    }
+
+    <div class="catalog__main">
+      <div class="catalog__grid" id="product-grid">
+        {
+          products.map((product) => (
+            <div
+              class="catalog__item"
+              data-line={product.line}
+              data-category={product.category}
+              data-thickness={product.thickness || ''}
+              data-installation={product.installationType || ''}
+            >
+              <ProductCard
+                name={product.name}
+                slug={product.slug ?? product.id}
+                line={product.line}
+                description={product.shortDescription}
+                image={product.image}
+              />
+            </div>
+          ))
+        }
+      </div>
+
+      {/* Dynamic Filter Empty State */}
+      <div
+        class="catalog__empty-filtered"
+        id="catalog-empty-filtered"
+        style="display: none;"
+      >
+        <svg
+          width="40"
+          height="40"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          ><circle cx="12" cy="12" r="10"></circle><path d="m15 9-6 6"
+          ></path><path d="m9 9 6 6"></path></svg
+        >
+        <p>No se encontraron productos con los filtros seleccionados.</p>
+        <button
+          class="btn btn--sm btn--outline"
+          id="empty-reset-btn"
+          style="margin-top: var(--space-2);"
+        >
+          Restablecer filtros
+        </button>
+      </div>
+
+      {
+        products.length === 0 && (
+          <div class="catalog__empty">
+            <p>No hay productos en esta sección.</p>
+          </div>
+        )
+      }
+    </div>
+  </div>
+</section>
+
+<script>
+  // Dynamic filter state
+  const currentFilters = {
+    line: 'all',
+    category: 'all',
+    thickness: 'all',
+    installationType: 'all',
+  };
+
+  // Human readable label mappings for active filter chips
+  const lineLabels: Record<string, string> = {
+    premium: 'Línea Premium',
+    prisma: 'Línea Prisma',
+    standard: 'Línea Standard',
+    lavadero: 'Línea Lavadero',
+    accesorios: 'Accesorios',
+  };
+
+  const categoryLabels: Record<string, string> = {
+    'bacha-simple': 'Bacha Simple',
+    'bacha-doble': 'Bacha Doble',
+    'mesada-ciega': 'Mesada Ciega',
+    'mesada-integrada': 'Mesada Integrada',
+    'pileta-lavadero': 'Pileta Lavadero',
+    accesorio: 'Accesorio',
+  };
+
+  const installationLabels: Record<string, string> = {
+    'sobre-mueble': 'Sobre Mueble',
+    'bajo-mesada': 'Bajo Mesada',
+    empotrar: 'Empotrar',
+    colgar: 'Colgar',
+    'sobre-mesada-bajo-mesada': 'Sobre/Bajo Mesada',
+  };
+
+  // DOM Elements
+  const filters = document.querySelectorAll('.filter-link');
+  const items = document.querySelectorAll('.catalog__item');
+  const emptyFiltered = document.getElementById('catalog-empty-filtered');
+  const activeFiltersSection = document.getElementById(
+    'active-filters-section',
+  );
+  const activeChipsContainer = document.getElementById(
+    'active-chips-container',
+  );
+  const clearAllBtn = document.getElementById('clear-all-btn');
+  const emptyResetBtn = document.getElementById('empty-reset-btn');
+
+  // Mobile Drawer elements
+  const mobileBtn = document.getElementById('mobile-filters-btn');
+  const sidebar = document.getElementById('catalog-sidebar');
+  const closeBtn = document.getElementById('sidebar-close-btn');
+  const backdrop = document.getElementById('sidebar-backdrop');
+
+  // Drawer handlers
+  function openSidebar() {
+    sidebar?.classList.add('is-open');
+    backdrop?.classList.add('is-open');
+    mobileBtn?.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeSidebar() {
+    sidebar?.classList.remove('is-open');
+    backdrop?.classList.remove('is-open');
+    mobileBtn?.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+
+  if (mobileBtn && sidebar) {
+    mobileBtn.addEventListener('click', openSidebar);
+    closeBtn?.addEventListener('click', closeSidebar);
+    backdrop?.addEventListener('click', closeSidebar);
+  }
+
+  // Collapsible sections logic
+  const headers = document.querySelectorAll('.filter-section__header');
+  headers.forEach((header) => {
+    header.addEventListener('click', () => {
+      const section = header.parentElement;
+      const isExpanded = header.getAttribute('aria-expanded') === 'true';
+      header.setAttribute('aria-expanded', !isExpanded ? 'true' : 'false');
+      section?.classList.toggle('collapsed');
+    });
+  });
+
+  // Filter Engine
+  function applyFilters() {
+    let visibleCount = 0;
+
+    items.forEach((item) => {
+      const line = item.getAttribute('data-line');
+      const category = item.getAttribute('data-category');
+      const thickness = item.getAttribute('data-thickness');
+      const installation = item.getAttribute('data-installation');
+
+      const matchLine =
+        currentFilters.line === 'all' || line === currentFilters.line;
+      const matchCategory =
+        currentFilters.category === 'all' ||
+        category === currentFilters.category;
+      const matchThickness =
+        currentFilters.thickness === 'all' ||
+        thickness === currentFilters.thickness;
+      const matchInstallation =
+        currentFilters.installationType === 'all' ||
+        installation === currentFilters.installationType;
+
+      const show =
+        matchLine && matchCategory && matchThickness && matchInstallation;
+      const el = item as HTMLElement;
+
+      if (show) {
+        el.style.display = '';
+        el.style.animation = 'catalogReveal 0.4s var(--ease-out-expo) forwards';
+        visibleCount++;
+      } else {
+        el.style.display = 'none';
+        el.style.animation = '';
+      }
+    });
+
+    // Update empty state
+    if (emptyFiltered) {
+      emptyFiltered.style.display =
+        visibleCount === 0 && items.length > 0 ? 'flex' : 'none';
+    }
+
+    updateUI();
+  }
+
+  function updateUI() {
+    // 1. Update filter links active states
+    filters.forEach((btn) => {
+      const type = btn.getAttribute(
+        'data-filter-type',
+      ) as keyof typeof currentFilters;
+      const val = btn.getAttribute('data-filter');
+
+      if (currentFilters[type] === val) {
+        btn.classList.add('filter-link--active');
+        btn.setAttribute('aria-selected', 'true');
+      } else {
+        btn.classList.remove('filter-link--active');
+        btn.setAttribute('aria-selected', 'false');
+      }
+    });
+
+    // 2. Render active filter chips at the top
+    if (activeChipsContainer && activeFiltersSection) {
+      activeChipsContainer.innerHTML = '';
+      let activeCount = 0;
+
+      Object.entries(currentFilters).forEach(([type, value]) => {
+        if (value !== 'all') {
+          activeCount++;
+          let label = value;
+          if (type === 'line') label = lineLabels[value] || value;
+          if (type === 'category') label = categoryLabels[value] || value;
+          if (type === 'installationType')
+            label = installationLabels[value] || value;
+
+          const chip = document.createElement('button');
+          chip.className = 'active-chip';
+          chip.innerHTML = `
+            <span>${label}</span>
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          `;
+
+          chip.addEventListener('click', () => {
+            setFilter(type as keyof typeof currentFilters, 'all');
+          });
+
+          activeChipsContainer.appendChild(chip);
+        }
+      });
+
+      activeFiltersSection.style.display = activeCount > 0 ? 'block' : 'none';
+    }
+  }
+
+  function setFilter(type: keyof typeof currentFilters, value: string) {
+    currentFilters[type] = value;
+    applyFilters();
+  }
+
+  // Bind click handlers to filter links
+  filters.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const type = btn.getAttribute(
+        'data-filter-type',
+      ) as keyof typeof currentFilters;
+      const val = btn.getAttribute('data-filter') || 'all';
+
+      // Toggle behavior: click active filter to deselect it
+      if (currentFilters[type] === val) {
+        setFilter(type, 'all');
+      } else {
+        setFilter(type, val);
+      }
+
+      // Auto close mobile drawer on filter selection for better UX
+      if (window.innerWidth < 1024) {
+        // Delay slightly for visual feedback before closing
+        setTimeout(closeSidebar, 200);
+      }
+    });
+  });
+
+  // Reset all handler
+  function resetAll() {
+    Object.keys(currentFilters).forEach((key) => {
+      currentFilters[key as keyof typeof currentFilters] = 'all';
+    });
+    applyFilters();
+  }
+
+  clearAllBtn?.addEventListener('click', resetAll);
+  emptyResetBtn?.addEventListener('click', resetAll);
+</script>
+
+<style>
+  /* ── Layout Sidebar ── */
+  .catalog__layout {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+  }
+
+  /* Mobile Filters Header */
+  .mobile-filters-header {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: var(--space-4);
+  }
+
+  .mobile-filters-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-family: var(--font-body);
+    font-size: var(--text-sm);
+    font-weight: var(--weight-medium);
+    color: var(--black-rich);
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    padding: 0.6rem 1.2rem;
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .mobile-filters-toggle:hover {
+    background: var(--white-soft);
+    border-color: var(--gray-300);
+  }
+
+  .mobile-filters-toggle[aria-expanded='true'] {
+    background: var(--black-rich);
+    color: var(--white);
+    border-color: var(--black-rich);
+  }
+
+  /* ── Drawer Sidebar Backdrop ── */
+  .sidebar__backdrop {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: calc(var(--z-modal) - 1);
+    opacity: 0;
+    transition: opacity var(--duration-base) ease;
+    backdrop-filter: blur(4px);
+  }
+
+  .sidebar__backdrop.is-open {
+    display: block;
+    opacity: 1;
+  }
+
+  /* ── Drawer Sidebar ── */
+  .catalog__sidebar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 85vw;
+    max-width: 340px;
+    height: 100vh;
+    height: 100dvh;
+    background: var(--white);
+    z-index: var(--z-modal);
+    display: flex;
+    flex-direction: column;
+    box-shadow: -4px 0 24px rgba(0, 0, 0, 0.1);
+    transition: right var(--duration-base) var(--ease-out-expo);
+  }
+
+  .catalog__sidebar.is-open {
+    right: 0;
+  }
+
+  .sidebar__drawer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-6);
+    border-bottom: 1px solid var(--border-light);
+  }
+
+  .sidebar__drawer-title {
+    font-size: var(--text-lg);
+    font-family: var(--font-display);
+    font-weight: var(--weight-bold);
+    margin: 0;
+    letter-spacing: var(--tracking-tight);
+  }
+
+  .sidebar__drawer-close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--gray-400);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-2);
+    border-radius: 50%;
+    transition: all var(--transition-fast);
+  }
+
+  .sidebar__drawer-close:hover {
+    background: var(--white-soft);
+    color: var(--black-rich);
+  }
+
+  .sidebar__drawer-content {
+    flex: 1;
+    overflow-y: auto;
+    padding: var(--space-6);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+  }
+
+  /* ── Active Filters (Chips Area) ── */
+  .active-filters {
+    margin-bottom: var(--space-2);
+    border-bottom: 1px solid var(--border-light);
+    padding-bottom: var(--space-6);
+  }
+
+  .active-filters__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-3);
+  }
+
+  .active-filters__title {
+    font-size: 11px;
+    font-weight: var(--weight-bold);
+    color: var(--black-rich);
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wider);
+  }
+
+  .active-filters__clear-all {
+    font-size: 12px;
+    color: var(--gray-500);
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color var(--transition-fast);
+    padding: 0;
+  }
+
+  .active-filters__clear-all:hover {
+    color: var(--black-rich);
+    text-decoration: underline;
+  }
+
+  .active-filters__chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+
+  .active-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1.5);
+    background-color: var(--white-soft);
+    border: 1px solid var(--gray-200);
+    border-radius: 4px;
+    padding: var(--space-1.5) var(--space-3);
+    font-size: 12px;
+    font-weight: var(--weight-medium);
+    color: var(--gray-700);
+    transition: all var(--transition-fast);
+    cursor: pointer;
+  }
+
+  .active-chip:hover {
+    border-color: var(--gray-400);
+    color: var(--black-rich);
+    background-color: var(--white);
+  }
+
+  .active-chip svg {
+    color: var(--gray-400);
+    transition: color var(--transition-fast);
+  }
+
+  .active-chip:hover svg {
+    color: var(--black-rich);
+  }
+
+  /* ── Collapsible Filter Category Section ── */
+  .filter-section {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid var(--border-light);
+    padding-bottom: var(--space-5);
+  }
+
+  .filter-section__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: var(--weight-bold);
+    color: var(--black-rich);
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wider);
+    padding-block: var(--space-3);
+    cursor: pointer;
+    background: none;
+    border: none;
+    text-align: left;
+  }
+
+  .filter-section__header .chevron {
+    color: var(--gray-400);
+    transform: rotate(0deg);
+    transition:
+      transform var(--transition-base),
+      color var(--transition-fast);
+  }
+
+  .filter-section__header:hover .chevron {
+    color: var(--black-rich);
+  }
+
+  /* Collapsed states */
+  .filter-section.collapsed {
+    border-bottom-color: transparent;
+    padding-bottom: 0;
+  }
+
+  .filter-section.collapsed .chevron {
+    transform: rotate(-90deg);
+  }
+
+  .filter-section.collapsed .filter-section__body {
+    display: none;
+  }
+
+  /* ── Links list ── */
+  .filter-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+  }
+
+  .filter-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 14px;
+    color: var(--gray-600);
+    padding-block: var(--space-1.5);
+    cursor: pointer;
+    background: none;
+    border: none;
+    text-align: left;
+    transition: color var(--transition-fast);
+  }
+
+  .filter-link:hover {
+    color: var(--black-rich);
+    text-decoration: underline;
+  }
+
+  .filter-link--active {
+    font-weight: var(--weight-bold);
+    color: var(--black-rich);
+  }
+
+  .filter-link--active::after {
+    content: '✕';
+    font-size: 9px;
+    font-weight: normal;
+    color: var(--gray-400);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--white-soft);
+    margin-left: var(--space-2);
+    transition: all var(--transition-fast);
+  }
+
+  .filter-link--active:hover::after {
+    background: var(--gray-200);
+    color: var(--black-rich);
+  }
+
+  /* ── Product Catalog Grid ── */
+  .catalog__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  @keyframes catalogReveal {
+    from {
+      opacity: 0;
+      transform: scale(0.97);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  /* ── Empty States ── */
+  .catalog__empty {
+    text-align: center;
+    padding: var(--space-16) 0;
+    color: var(--text-secondary);
+  }
+
+  .catalog__empty-filtered {
+    text-align: center;
+    padding: var(--space-20) var(--space-8);
+    color: var(--gray-500);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-4);
+    border: 1px dashed var(--gray-200);
+    background-color: var(--white-soft);
+  }
+
+  .catalog__empty-filtered svg {
+    color: var(--gray-300);
+  }
+
+  .catalog__empty-filtered p {
+    font-size: var(--text-base);
+    font-weight: var(--weight-medium);
+    margin: 0;
+  }
+
+  /* ── Responsive Styling ── */
+  @media (min-width: 640px) {
+    .catalog__grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-8);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .catalog__layout {
+      flex-direction: row;
+      align-items: flex-start;
+      gap: var(--space-12);
+    }
+
+    .mobile-filters-header {
+      display: none;
+    }
+
+    .sidebar__backdrop,
+    .sidebar__drawer-header {
+      display: none !important;
+    }
+
+    .catalog__sidebar {
+      position: sticky;
+      top: 110px;
+      right: auto;
+      width: 240px;
+      max-width: none;
+      height: auto;
+      box-shadow: none;
+      z-index: 1;
+      animation: none;
+      transition: none;
+      background: transparent;
+    }
+
+    .sidebar__drawer-content {
+      padding: 0;
+      overflow-y: visible;
+      gap: var(--space-6);
+    }
+
+    .catalog__main {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .catalog__grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-8);
+    }
+  }
+</style>

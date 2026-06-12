@@ -1,0 +1,671 @@
+---
+/**
+ * Homepage — Masecor Web
+ *
+ * Diseño cinematográfico premium:
+ * - Hero de viewport completo con título gigante
+ * - Statement de marca con counter animado
+ * - Productos destacados editorial
+ * - Propuesta de valor + stats
+ * - CTA final
+ */
+
+import Layout from '../layouts/Layout.astro';
+import ProductCard from '../components/ProductCard.astro';
+import { getCollection } from 'astro:content';
+import { COMPANY_INFO } from '../utils/constants';
+
+const allProducts = await getCollection('products');
+const featuredProducts = allProducts.filter((p) => p.data.featured).slice(0, 4);
+const currentYear = new Date().getFullYear();
+const yearsInBusiness = currentYear - COMPANY_INFO.foundedYear;
+
+const faqs = [
+  {
+    question: '¿Hacen envíos a todo el país?',
+    answer:
+      'Sí, realizamos envíos a las 24 provincias de Argentina a través de transporte confiable.',
+  },
+  {
+    question: '¿Qué material utilizan?',
+    answer:
+      'Todos nuestros productos están fabricados con acero inoxidable AISI 304, el estándar internacional para máxima calidad.',
+  },
+  {
+    question: '¿Puedo pedir un producto a medida?',
+    answer:
+      'Sí, trabajamos con medidas especiales. Contactanos por WhatsApp para consultar disponibilidad y presupuesto.',
+  },
+  {
+    question: '¿Cuáles son las formas de pago?',
+    answer:
+      'Aceptamos transferencia bancaria, efectivo y tarjetas. Consultá las opciones disponibles al momento de tu compra.',
+  },
+  {
+    question: '¿Los productos tienen garantía?',
+    answer:
+      'Sí, todos nuestros productos cuentan con garantía de fábrica. El acero inoxidable AISI 304 ofrece una resistencia y durabilidad excepcional a lo largo de los años.',
+  },
+];
+---
+
+<Layout title="Fábrica de Bachas y Mesadas de Acero Inoxidable">
+  <main>
+    <!-- ══════════════════════════════════════
+         HERO — Full Viewport, Cinematic
+         ══════════════════════════════════════ -->
+    <section class="hero" aria-label="Inicio">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__gradient"></div>
+      </div>
+
+      <div class="container hero__content">
+        <div class="hero__text">
+          <p class="hero__eyebrow" data-reveal="fade" data-delay="1">
+            Desde {COMPANY_INFO.foundedYear}
+          </p>
+          <h1 class="hero__title" data-reveal data-delay="2">
+            Acero inoxidable<br />
+            <span class="hero__title-accent">de alta precisión</span>
+          </h1>
+          <p class="hero__subtitle" data-reveal data-delay="3">
+            Fabricamos bachas, piletas y mesadas con acero AISI 304 para todo el
+            país.
+          </p>
+          <div class="hero__actions" data-reveal data-delay="4">
+            <a href="/productos" class="btn btn--primary btn--lg">
+              Ver productos
+            </a>
+            <a href="/contacto" class="btn btn--outline btn--lg">
+              Contacto
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <path d="M7 17L17 7M17 7H7M17 7V17"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div
+        class="hero__scroll"
+        aria-hidden="true"
+        data-reveal="fade"
+        data-delay="6"
+      >
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         BRAND STATEMENT
+         ══════════════════════════════════════ -->
+    <section
+      class="statement section section--elevated"
+      aria-label="Nuestra historia"
+    >
+      <div class="container">
+        <div class="statement__content">
+          <p class="statement__text" data-reveal>
+            Más de
+            <span
+              class="statement__number"
+              data-reveal="fade"
+              data-counter={String(yearsInBusiness)}
+              data-counter-suffix=" años">0 años</span
+            >
+            fabricando calidad.
+          </p>
+          <p class="statement__sub" data-reveal data-delay="2">
+            Cada pieza que sale de nuestra fábrica lleva la precisión y
+            durabilidad del acero inoxidable AISI 304.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         FEATURED PRODUCTS
+         ══════════════════════════════════════ -->
+    <section
+      class="featured section section--elevated"
+      aria-label="Productos destacados"
+    >
+      <div class="container">
+        <div class="featured__header" data-reveal>
+          <span class="eyebrow">Catálogo</span>
+          <h2>Productos destacados</h2>
+        </div>
+
+        <div class="featured__grid">
+          {
+            featuredProducts.map((product, i) => (
+              <div data-reveal="scale" data-delay={String(i + 1)}>
+                <ProductCard
+                  name={product.data.name}
+                  slug={product.id}
+                  line={product.data.line}
+                  description={product.data.shortDescription}
+                  image={product.data.image}
+                />
+              </div>
+            ))
+          }
+        </div>
+
+        <div class="featured__cta" data-reveal>
+          <a href="/productos" class="btn btn--outline">
+            Ver todos los productos →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         VALUE PROPOSITION (Light section)
+         ══════════════════════════════════════ -->
+    <section
+      class="value section section--light"
+      aria-label="Propuesta de valor"
+    >
+      <div class="container">
+        <div class="value__grid">
+          <div class="value__text" data-reveal="fade-left">
+            <span class="eyebrow">Material</span>
+            <h2>Acero inoxidable AISI&nbsp;304</h2>
+            <p>
+              El estándar mundial para ambientes húmedos y de alta exigencia.
+              Resistente a la corrosión, higiénico y de máxima durabilidad.
+            </p>
+            <a href="/nosotros" class="btn btn--primary"> Sobre nosotros → </a>
+          </div>
+
+          <div class="value__stats" data-reveal="fade-right" data-delay="2">
+            <div class="value__stat">
+              <span
+                class="value__stat-number"
+                data-reveal="fade"
+                data-counter={String(yearsInBusiness)}
+                data-counter-suffix="+">0+</span
+              >
+              <span class="value__stat-label">Años de trayectoria</span>
+            </div>
+            <div class="value__stat">
+              <span
+                class="value__stat-number"
+                data-reveal="fade"
+                data-counter="24"
+                data-delay="2">0</span
+              >
+              <span class="value__stat-label">Provincias alcanzadas</span>
+            </div>
+            <div class="value__stat">
+              <span class="value__stat-number">AISI 304</span>
+              <span class="value__stat-label">Acero certificado</span>
+            </div>
+            <div class="value__stat">
+              <span
+                class="value__stat-number"
+                data-reveal="fade"
+                data-counter="19"
+                data-counter-suffix="+"
+                data-delay="3">0+</span
+              >
+              <span class="value__stat-label">Modelos disponibles</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         B2B BANNER
+         ══════════════════════════════════════ -->
+    <section
+      class="b2b-banner section section--dark text-center"
+      aria-label="Soluciones para empresas"
+    >
+      <div class="container" data-reveal>
+        <span class="eyebrow">Industria & Mayoristas</span>
+        <h2>¿Buscás un proveedor confiable?</h2>
+        <p
+          style="max-width: 600px; margin-inline: auto; margin-bottom: var(--space-8); color: var(--gray-400);"
+        >
+          Ofrecemos precios mayoristas para distribuidores y fabricamos
+          proyectos especiales a medida para clínicas, laboratorios y
+          gastronomía industrial.
+        </p>
+        <div
+          class="b2b-banner__actions"
+          style="display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap;"
+        >
+          <a href="/distribuidores" class="btn btn--primary">
+            Quiero ser distribuidor
+          </a>
+          <a href="/trabajos-especiales" class="btn btn--outline">
+            Trabajos especiales
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         FAQ
+         ══════════════════════════════════════ -->
+    <section
+      class="faq section section--elevated"
+      aria-label="Preguntas frecuentes"
+    >
+      <div class="container">
+        <div class="faq-header" data-reveal>
+          <span class="eyebrow">FAQ</span>
+          <h2>Preguntas frecuentes</h2>
+        </div>
+        <div class="faq-list">
+          {
+            faqs.map((faq, i) => (
+              <details class="faq-item" data-reveal data-delay={String(i + 1)}>
+                <summary class="faq-item__question">
+                  {faq.question}
+                  <span class="faq-item__icon" aria-hidden="true">
+                    +
+                  </span>
+                </summary>
+                <p class="faq-item__answer">{faq.answer}</p>
+              </details>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         CTA FINAL
+         ══════════════════════════════════════ -->
+    <section class="cta-final section section--dark" aria-label="Contacto">
+      <div class="container">
+        <div class="cta-final__content" data-reveal>
+          <h2 class="cta-final__title">
+            ¿Listo para tu<br />próximo proyecto?
+          </h2>
+          <p class="cta-final__text">
+            Escribinos por WhatsApp y te asesoramos sin compromiso.
+          </p>
+          <div class="cta-final__actions">
+            <a href="/contacto" class="btn btn--primary btn--lg">
+              Contactar ahora
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  /* ══════════════════════════════════════
+     HERO
+     ══════════════════════════════════════ */
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    overflow: clip; /* clip background but allow content to push bounds if needed */
+    background: var(--black);
+  }
+
+  .hero__bg {
+    position: absolute;
+    inset: 0;
+    background-image: url('/images/bg/premium_hero_kitchen.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .hero__gradient {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(10, 10, 10, 0.6) 0%,
+      rgba(10, 10, 10, 0.9) 100%
+    );
+  }
+
+  .hero__content {
+    position: relative;
+    z-index: 2;
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+  }
+
+  .hero__text {
+    max-width: 800px;
+  }
+
+  .hero__eyebrow {
+    font-family: var(--font-body);
+    font-size: var(--text-xs);
+    font-weight: var(--weight-medium);
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-widest);
+    color: var(--gray-300);
+    margin-bottom: var(--space-6);
+  }
+
+  .hero__title {
+    font-family: var(--font-display);
+    font-size: var(--text-hero);
+    font-weight: var(--weight-black);
+    line-height: var(--leading-none);
+    letter-spacing: var(--tracking-tighter);
+    color: var(--white);
+    margin-bottom: var(--space-8);
+  }
+
+  .hero__title-accent {
+    color: var(--gray-300);
+  }
+
+  .hero__subtitle {
+    font-size: var(--text-lg);
+    color: var(--gray-200);
+    max-width: 500px;
+    margin-bottom: var(--space-10);
+    line-height: var(--leading-relaxed);
+  }
+
+  .hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-4);
+  }
+
+  /* Scroll indicator */
+  .hero__scroll {
+    position: absolute;
+    bottom: var(--space-10);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+
+  .hero__scroll-line {
+    width: 1px;
+    height: 60px;
+    background: linear-gradient(to bottom, var(--gray-600), transparent);
+    animation: scrollPulse 2s ease-in-out infinite;
+  }
+
+  @keyframes scrollPulse {
+    0%,
+    100% {
+      opacity: 1;
+      transform: scaleY(1);
+    }
+    50% {
+      opacity: 0.4;
+      transform: scaleY(0.6);
+    }
+  }
+
+  /* ══════════════════════════════════════
+     BRAND STATEMENT
+     ══════════════════════════════════════ */
+  .statement {
+    position: relative;
+    background-image: url('/images/bg/IMG_20210817_172008.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .statement::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85); /* Overlay muy oscuro para lectura */
+    z-index: 0;
+  }
+
+  .statement__content {
+    position: relative;
+    z-index: 1;
+    max-width: 900px;
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  .statement__text {
+    font-family: var(--font-display);
+    font-size: var(--text-4xl);
+    font-weight: var(--weight-light);
+    color: var(--white);
+    line-height: var(--leading-snug);
+    margin-bottom: var(--space-6);
+  }
+
+  .statement__number {
+    font-weight: var(--weight-extrabold);
+    color: var(--white);
+  }
+
+  .statement__sub {
+    font-size: var(--text-md);
+    color: var(--gray-500);
+    max-width: 600px;
+    margin-inline: auto;
+    margin-bottom: 0;
+  }
+
+  /* ══════════════════════════════════════
+     FEATURED PRODUCTS
+     ══════════════════════════════════════ */
+  .featured__header {
+    margin-bottom: var(--space-12);
+  }
+
+  .featured__header h2 {
+    font-size: var(--text-3xl);
+  }
+
+  .featured__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+    margin-bottom: var(--space-12);
+  }
+
+  .featured__cta {
+    text-align: center;
+  }
+
+  @media (min-width: 640px) {
+    .featured__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .featured__grid {
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--space-8);
+    }
+  }
+
+  /* ══════════════════════════════════════
+     VALUE PROPOSITION
+     ══════════════════════════════════════ */
+  .value__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-16);
+    align-items: center;
+  }
+
+  .value__text h2 {
+    color: var(--text-dark);
+    margin-bottom: var(--space-6);
+  }
+
+  .value__text p {
+    color: var(--text-dark-secondary);
+    margin-bottom: var(--space-8);
+    max-width: 480px;
+  }
+
+  .value__stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-10);
+  }
+
+  .value__stat {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .value__stat-number {
+    font-family: var(--font-display);
+    font-size: var(--text-3xl);
+    font-weight: var(--weight-black);
+    color: var(--text-dark);
+    line-height: var(--leading-none);
+  }
+
+  .value__stat-label {
+    font-size: var(--text-sm);
+    color: var(--text-dark-secondary);
+  }
+
+  @media (min-width: 1024px) {
+    .value__grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  /* ══════════════════════════════════════
+     CTA FINAL
+     ══════════════════════════════════════ */
+  .cta-final {
+    position: relative;
+    background-image: url('/images/bg/MAN_5734-1-scaled.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .cta-final::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 0;
+  }
+
+  .cta-final__content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    max-width: 700px;
+    margin-inline: auto;
+  }
+
+  .cta-final__title {
+    font-family: var(--font-display);
+    font-size: var(--text-4xl);
+    font-weight: var(--weight-extrabold);
+    color: var(--white);
+    margin-bottom: var(--space-6);
+  }
+
+  .cta-final__text {
+    font-size: var(--text-lg);
+    color: var(--gray-500);
+    margin-bottom: var(--space-10);
+  }
+
+  .cta-final__actions {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-4);
+  }
+
+  /* ══════════════════════════════════════
+     FAQ
+     ══════════════════════════════════════ */
+  .faq-header {
+    margin-bottom: var(--space-12);
+  }
+
+  .faq-list {
+    max-width: 800px;
+  }
+
+  .faq-item {
+    border-bottom: 1px solid var(--gray-200);
+  }
+
+  .faq-item__question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-6) 0;
+    font-family: var(--font-body);
+    font-size: var(--text-md);
+    font-weight: var(--weight-medium);
+    color: var(--gray-600);
+    cursor: pointer;
+    list-style: none;
+    transition: color 0.3s var(--ease-out-expo);
+  }
+
+  .faq-item__question::-webkit-details-marker {
+    display: none;
+  }
+
+  .faq-item__question:hover {
+    color: var(--text-dark);
+  }
+
+  .faq-item__icon {
+    font-size: var(--text-xl);
+    color: var(--gray-400);
+    transition: transform 0.3s var(--ease-out-expo);
+    flex-shrink: 0;
+    margin-left: var(--space-4);
+  }
+
+  .faq-item[open] .faq-item__icon {
+    transform: rotate(45deg);
+  }
+
+  .faq-item__answer {
+    font-size: var(--text-sm);
+    color: var(--text-dark-secondary);
+    line-height: var(--leading-relaxed);
+    padding-bottom: var(--space-6);
+    max-width: 600px;
+  }
+
+  /* ══════════════════════════════════════
+     REDUCED MOTION
+     ══════════════════════════════════════ */
+  @media (prefers-reduced-motion: reduce) {
+    .hero__scroll-line {
+      animation: none;
+    }
+  }
+</style>

@@ -1,0 +1,27 @@
+{
+  "name": "Esencial",
+  "line": "premium",
+  "category": "bacha-simple",
+  "shortDescription": "Bacha simple de línea esencial con diseño funcional y elegante.",
+  "description": "La bacha Esencial de Masecor ofrece un diseño limpio y funcional, fabricada con acero inoxidable AISI 304. Su geometría optimizada facilita la limpieza y maximiza el espacio útil de la pileta.",
+  "dimensions": {
+    "width": 480,
+    "depth": 400,
+    "height": 200,
+    "unit": "mm"
+  },
+  "material": "Acero Inoxidable AISI 304",
+  "thickness": "0.6mm",
+  "features": [
+    "Acero Inoxidable AISI 304",
+    "Sistema Anti-rebalse",
+    "Insonorización",
+    "Terminación Satinada"
+  ],
+  "installationType": "sobre-mueble",
+  "image": "/images/products/esencial.webp",
+  "gallery": [],
+  "sortOrder": 2,
+  "featured": false,
+  "available": true
+}
