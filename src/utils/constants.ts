@@ -50,9 +50,8 @@ export const WHATSAPP_CONFIG = {
 } as const;
 
 export const SEO_DEFAULTS = {
-  titleTemplate: '%s | Masecor - Bachas y Mesadas de Acero Inoxidable',
-  defaultTitle:
-    'Masecor | Fábrica de Bachas y Mesadas de Acero Inoxidable en Argentina',
+  titleTemplate: '%s | Masecor',
+  defaultTitle: 'Masecor | Acero Inoxidable',
   defaultDescription: SITE_CONFIG.description,
   defaultImage: '/og-image.jpg',
   twitterHandle: '@masecor',
