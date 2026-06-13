@@ -20,6 +20,10 @@ export const COMPANY_INFO = {
   material: 'Acero Inoxidable AISI 304',
   country: 'Argentina',
   province: 'Córdoba',
+  address: 'Eco Parque Industrial Córdoba',
+  mapsUrl: 'https://maps.app.goo.gl/7kLYTQNb1PaQygxZ8',
+  mapsLat: -31.3827248,
+  mapsLng: -64.0797741,
   phone: '+54 351 665-9066',
   email: 'masecor@masecor.com',
 } as const;

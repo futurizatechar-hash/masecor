@@ -14,6 +14,8 @@
  *   <div data-reveal="line">       → horizontal line grow
  *   <div data-delay="2">           → 200ms stagger delay
  *   <div data-reveal data-counter="37"> → animated counter
+ *   <div data-parallax>            → subtle parallax on scroll (15% speed)
+ *   <div data-parallax="slow">     → slower parallax (8% speed)
  */
 
 function initScrollReveal(): void {
@@ -100,12 +102,73 @@ function animateCounter(el: HTMLElement, target: number): void {
   requestAnimationFrame(update);
 }
 
+/**
+ * Parallax — Subtle depth on scroll.
+ * GPU-only: uses transform: translateY() via requestAnimationFrame.
+ * Only activates on desktop (no touch devices).
+ */
+function initParallax(): void {
+  const prefersReducedMotion = window.matchMedia(
+    '(prefers-reduced-motion: reduce)',
+  ).matches;
+
+  if (prefersReducedMotion) return;
+
+  // Only on desktop — parallax feels bad on touch
+  if ('ontouchstart' in window || navigator.maxTouchPoints > 0) return;
+
+  const elements = document.querySelectorAll<HTMLElement>('[data-parallax]');
+  if (elements.length === 0) return;
+
+  let ticking = false;
+
+  function onScroll(): void {
+    if (!ticking) {
+      requestAnimationFrame(() => {
+        const scrollY = window.scrollY;
+
+        elements.forEach((el) => {
+          const rect = el.getBoundingClientRect();
+          const elTop = rect.top + scrollY;
+          const elHeight = rect.height;
+          const viewportH = window.innerHeight;
+
+          // Only apply when element is in or near viewport
+          if (
+            scrollY + viewportH < elTop - 100 ||
+            scrollY > elTop + elHeight + 100
+          ) {
+            return;
+          }
+
+          const speed = el.dataset.parallax === 'slow' ? 0.08 : 0.15;
+          const offset = (scrollY - elTop) * speed;
+
+          el.style.transform = `translateY(${offset}px)`;
+        });
+
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+}
+
 // Initialize when DOM is ready
 if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', initScrollReveal);
+  document.addEventListener('DOMContentLoaded', () => {
+    initScrollReveal();
+    initParallax();
+  });
 } else {
   initScrollReveal();
+  initParallax();
 }
 
 // Re-initialize on Astro page transitions (View Transitions API)
-document.addEventListener('astro:after-swap', initScrollReveal);
+document.addEventListener('astro:after-swap', () => {
+  initScrollReveal();
+  initParallax();
+});

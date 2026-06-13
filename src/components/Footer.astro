@@ -41,7 +41,7 @@ const footerLinks = [
   <!-- Separator -->
   <div class="footer__separator">
     <div class="container">
-      <div class="footer__line"></div>
+      <div class="footer__line" data-reveal="line"></div>
     </div>
   </div>
 
@@ -49,7 +49,7 @@ const footerLinks = [
   <div class="footer__main">
     <div class="container footer__grid">
       <!-- Brand Column -->
-      <div class="footer__brand">
+      <div class="footer__brand" data-reveal="fade" data-delay="1">
         <a href="/" class="footer__logo" aria-label="Ir al inicio">
           <img
             src="/images/logo-m-isolated.webp"
@@ -154,7 +154,13 @@ const footerLinks = [
         <div class="footer__column-content" data-accordion-content>
           <ul class="footer__column-list" role="list">
             <li class="footer__contact-item">
-              <span>{COMPANY_INFO.province}, {COMPANY_INFO.country}</span>
+              <a
+                href={COMPANY_INFO.mapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer__link"
+                >{COMPANY_INFO.address}, {COMPANY_INFO.province}</a
+              >
             </li>
             <li class="footer__contact-item">
               <a
@@ -166,6 +172,11 @@ const footerLinks = [
               <a href={`mailto:${COMPANY_INFO.email}`} class="footer__link"
                 >{COMPANY_INFO.email}</a
               >
+            </li>
+            <li class="footer__contact-item">
+              <a href="/contacto" class="footer__link footer__link--accent">
+                Contactanos
+              </a>
             </li>
           </ul>
         </div>
@@ -366,6 +377,16 @@ const footerLinks = [
   .footer__contact-item {
     font-size: var(--text-sm);
     color: var(--gray-400);
+  }
+
+  .footer__link--accent {
+    color: var(--color-whatsapp) !important;
+    font-weight: var(--weight-medium);
+  }
+
+  .footer__link--accent:hover {
+    color: var(--color-whatsapp-hover) !important;
+    text-decoration: underline;
   }
 
   .footer__social-group {

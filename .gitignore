@@ -29,6 +29,8 @@ ECOSYSTEM_ARCHITECTURE.md
 
 # scripts de un solo uso (ya utilizados)
 scrape-images.mjs
+optimize-images.mjs
 
-# imagenes de fondo (assets pesados, no van en git)
-public/images/bg/
+# imagenes de fondo originales pesadas (solo se suben las .webp optimizadas)
+public/images/bg/*.jpg
+public/images/bg/*.png

@@ -19,7 +19,7 @@ const whatsappUrl = getWhatsAppUrl(WHATSAPP_CONFIG.distributorMessage);
     <section class="page-header section section--dark">
       <div class="container">
         <span class="eyebrow" data-reveal="fade">Oportunidad B2B</span>
-        <h1 class="page-header__title" data-reveal data-delay="1">
+        <h1 class="page-header__title steel-shimmer" data-reveal data-delay="1">
           Sumate a nuestra red
         </h1>
         <p class="page-header__subtitle" data-reveal data-delay="2">
@@ -148,7 +148,7 @@ const whatsappUrl = getWhatsAppUrl(WHATSAPP_CONFIG.distributorMessage);
     position: relative;
     padding-top: 10rem;
     padding-bottom: var(--section-py-sm);
-    background-image: url('/images/bg/IMG_20210817_171315-1.jpg');
+    background-image: url('/images/bg/IMG_20210817_171315-1.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -252,6 +252,18 @@ const whatsappUrl = getWhatsAppUrl(WHATSAPP_CONFIG.distributorMessage);
     border: 1px solid var(--border-light);
     position: relative;
     overflow: hidden;
+    transition:
+      transform 0.4s var(--ease-out-expo),
+      box-shadow 0.4s var(--ease-out-expo),
+      border-color 0.4s var(--ease-out-expo);
+  }
+
+  .step-card:hover {
+    transform: translateY(-4px);
+    box-shadow:
+      0 12px 24px rgba(0, 0, 0, 0.06),
+      0 4px 8px rgba(0, 0, 0, 0.04);
+    border-color: var(--gray-300);
   }
 
   .step-number {

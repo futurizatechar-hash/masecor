@@ -249,7 +249,9 @@ button {
   letter-spacing: var(--tracking-wider);
   padding: var(--space-4) var(--space-8);
   border-radius: var(--radius-none);
-  transition: all var(--transition-base);
+  transition:
+    all var(--transition-base),
+    padding 0.3s var(--ease-out-expo);
   cursor: pointer;
   text-decoration: none;
   white-space: nowrap;
@@ -438,10 +440,211 @@ button {
     transform: none;
     transition: none;
   }
+
+  .steel-shimmer.revealed::after,
+  .section--dark:has([data-reveal].revealed)::after {
+    animation: none;
+  }
+
+  .cursor-dot {
+    display: none !important;
+  }
+
+  .hover-lift:hover {
+    transform: none;
+  }
 }
 
 /* ── Focus Visible (Accessibility) ── */
 :focus-visible {
   outline: 1px solid var(--gray-400);
   outline-offset: 3px;
+}
+
+/* ========================================
+ * PREMIUM ANIMATION SYSTEM
+ * Subtle, GPU-only micro-animations
+ * ======================================== */
+
+/* ── Steel Shimmer — One-shot metallic shine ── */
+.steel-shimmer {
+  position: relative;
+}
+
+.steel-shimmer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    105deg,
+    transparent 20%,
+    rgba(255, 255, 255, 0.12) 45%,
+    rgba(255, 255, 255, 0.25) 50%,
+    rgba(255, 255, 255, 0.12) 55%,
+    transparent 80%
+  );
+  pointer-events: none;
+  z-index: 1;
+  transform: translateX(-200%);
+}
+
+.steel-shimmer.revealed::after {
+  animation: steelShine 1.4s var(--ease-out-expo) 0.6s forwards;
+}
+
+@keyframes steelShine {
+  from {
+    transform: translateX(-200%);
+  }
+  to {
+    transform: translateX(350%);
+  }
+}
+
+/* ── Button Arrow Slide ── */
+.btn--primary,
+.btn--outline {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn--primary::after,
+.btn--outline::after {
+  content: '→';
+  position: absolute;
+  right: var(--space-8);
+  opacity: 0;
+  transform: translateX(-8px);
+  transition:
+    opacity 0.3s var(--ease-out-expo),
+    transform 0.3s var(--ease-out-expo);
+  font-size: var(--text-sm);
+}
+
+.btn--primary:hover,
+.btn--outline:hover {
+  padding-right: calc(var(--space-8) + 1.2em);
+}
+
+.btn--primary:hover::after,
+.btn--outline:hover::after {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Don't show arrow on buttons that already have SVG icons */
+.btn--primary:has(svg)::after,
+.btn--outline:has(svg)::after {
+  display: none;
+}
+
+.btn--primary:has(svg):hover,
+.btn--outline:has(svg):hover {
+  padding-right: var(--space-8);
+}
+
+/* ── Custom Cursor (desktop only) ── */
+.cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background-color: var(--black);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+  transform: translate(-50%, -50%);
+  transition:
+    width 0.3s var(--ease-out-expo),
+    height 0.3s var(--ease-out-expo),
+    background-color 0.3s var(--ease-out-expo),
+    opacity 0.3s var(--ease-out-expo);
+  opacity: 0;
+  will-change: transform;
+}
+
+.cursor-dot--visible {
+  opacity: 1;
+}
+
+.cursor-dot--hover {
+  width: 40px;
+  height: 40px;
+  background-color: var(--white);
+}
+
+.cursor-dot--hidden {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Hide on touch/mobile */
+@media (pointer: coarse) {
+  .cursor-dot {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1023px) {
+  .cursor-dot {
+    display: none !important;
+  }
+}
+
+/* ── Dark Section Shine ── */
+.section--dark {
+  position: relative;
+}
+
+.section--dark::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    105deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.03) 48%,
+    rgba(255, 255, 255, 0.06) 50%,
+    rgba(255, 255, 255, 0.03) 52%,
+    transparent 70%
+  );
+  pointer-events: none;
+  z-index: 0;
+  transform: translateX(-300%);
+}
+
+.section--dark:has([data-reveal].revealed)::after {
+  animation: sectionShine 2s var(--ease-out-expo) 0.3s forwards;
+}
+
+@keyframes sectionShine {
+  from {
+    transform: translateX(-300%);
+  }
+  to {
+    transform: translateX(400%);
+  }
+}
+
+/* ── Value/Info Card Hover Lift ── */
+.hover-lift {
+  transition:
+    transform 0.4s var(--ease-out-expo),
+    box-shadow 0.4s var(--ease-out-expo);
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 12px 24px rgba(0, 0, 0, 0.06),
+    0 4px 8px rgba(0, 0, 0, 0.04);
 }

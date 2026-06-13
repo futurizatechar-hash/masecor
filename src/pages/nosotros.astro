@@ -22,7 +22,9 @@ const yearsInBusiness = currentYear - COMPANY_INFO.foundedYear;
     <section class="page-header section section--dark">
       <div class="container">
         <span class="eyebrow" data-reveal="fade">Nuestra historia</span>
-        <h1 class="page-header__title" data-reveal data-delay="1">Nosotros</h1>
+        <h1 class="page-header__title steel-shimmer" data-reveal data-delay="1">
+          Nosotros
+        </h1>
         <p class="page-header__subtitle" data-reveal data-delay="2">
           Desde {COMPANY_INFO.foundedYear}, fabricando calidad en acero
           inoxidable para todo el país.
@@ -77,7 +79,14 @@ const yearsInBusiness = currentYear - COMPANY_INFO.foundedYear;
               Masecor nació en {COMPANY_INFO.foundedYear} en la provincia de {
                 COMPANY_INFO.province
               } con un objetivo claro: fabricar productos de acero inoxidable que
-              combinen durabilidad, funcionalidad y diseño.
+              combinen durabilidad, funcionalidad y diseño. Hoy, nuestra fábrica opera
+              desde el <a
+                href={COMPANY_INFO.mapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                style="color: inherit; text-decoration: underline; text-underline-offset: 3px;"
+                >{COMPANY_INFO.address}</a
+              >.
             </p>
             <p>
               A lo largo de más de {yearsInBusiness} años, hemos crecido hasta convertirnos
@@ -159,7 +168,7 @@ const yearsInBusiness = currentYear - COMPANY_INFO.foundedYear;
     position: relative;
     padding-top: 10rem;
     padding-bottom: var(--section-py-sm);
-    background-image: url('/images/bg/MAN_5814-scaled.jpg');
+    background-image: url('/images/bg/MAN_5814-scaled.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -257,6 +266,18 @@ const yearsInBusiness = currentYear - COMPANY_INFO.foundedYear;
     padding: var(--space-8);
     border: 1px solid var(--gray-200);
     background: var(--white);
+    transition:
+      transform 0.4s var(--ease-out-expo),
+      box-shadow 0.4s var(--ease-out-expo),
+      border-color 0.4s var(--ease-out-expo);
+  }
+
+  .value-card:hover {
+    transform: translateY(-4px);
+    box-shadow:
+      0 12px 24px rgba(0, 0, 0, 0.06),
+      0 4px 8px rgba(0, 0, 0, 0.04);
+    border-color: var(--gray-300);
   }
 
   .value-card__title {

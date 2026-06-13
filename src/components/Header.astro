@@ -651,7 +651,9 @@ const currentPath = Astro.url.pathname;
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .header__mobile--open {
@@ -661,7 +663,6 @@ const currentPath = Astro.url.pathname;
 
   .header__mobile-nav {
     text-align: left;
-    overflow-y: auto;
     padding-right: var(--space-4);
     padding-left: 2rem; /* Espacio para el punto verde animado */
   }
@@ -732,7 +733,7 @@ const currentPath = Astro.url.pathname;
     height: 10px;
     border-radius: 50%;
     background-color: #cbd5e1; /* Plateado acero */
-    animation: pulseDot 2s infinite cubic-bezier(0.4, 0, 0.2, 1);
+    animation: pulseDot 1.5s infinite cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   @keyframes pulseDot {
@@ -760,7 +761,7 @@ const currentPath = Astro.url.pathname;
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    animation: shimmer 4s linear infinite;
+    animation: shimmer 2s linear infinite;
     display: inline-block;
   }
 
@@ -842,6 +843,8 @@ const currentPath = Astro.url.pathname;
     gap: var(--space-6);
     border-top: 1px solid var(--gray-800);
     padding-top: var(--space-6);
+    margin-top: auto;
+    padding-bottom: var(--space-4);
     opacity: 0;
     transform: translateY(16px);
     transition:

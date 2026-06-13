@@ -23,7 +23,7 @@ const whatsappUrl = getWhatsAppUrl(WHATSAPP_CONFIG.specialWorkMessage);
       </div>
       <div class="container hero__content text-center" data-reveal>
         <span class="eyebrow">Industria & Proyectos</span>
-        <h1 class="hero__title">
+        <h1 class="hero__title steel-shimmer">
           Trabajos Especiales<br />
           <span class="text-gradient">A Medida</span>
         </h1>
@@ -158,7 +158,7 @@ const whatsappUrl = getWhatsAppUrl(WHATSAPP_CONFIG.specialWorkMessage);
     position: absolute;
     inset: 0;
     background-color: var(--black-rich);
-    background-image: url('/images/bg/ppp-scaled.jpg');
+    background-image: url('/images/bg/ppp-scaled.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -235,12 +235,16 @@ const whatsappUrl = getWhatsAppUrl(WHATSAPP_CONFIG.specialWorkMessage);
     border: 1px solid var(--border-light);
     transition:
       transform 0.4s var(--ease-out-expo),
-      box-shadow 0.4s var(--ease-out-expo);
+      box-shadow 0.4s var(--ease-out-expo),
+      border-color 0.4s var(--ease-out-expo);
   }
 
   .sector-card:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
+    box-shadow:
+      0 12px 24px rgba(0, 0, 0, 0.06),
+      0 4px 8px rgba(0, 0, 0, 0.04);
+    border-color: var(--gray-300);
   }
 
   .sector-card h3 {
