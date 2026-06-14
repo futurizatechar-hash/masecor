@@ -628,7 +628,7 @@ button {
 }
 
 .section--dark:has([data-reveal].revealed)::after {
-  animation: sectionShine 2s var(--ease-out-expo) 0.3s forwards;
+  animation: sectionShine 3.2s ease-in-out 1.5s forwards;
 }
 
 @keyframes sectionShine {
