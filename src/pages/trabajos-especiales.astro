@@ -161,7 +161,13 @@ const whatsappUrl = getWhatsAppUrl(WHATSAPP_CONFIG.specialWorkMessage);
     background-image: url('/images/bg/ppp-scaled.webp');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
+  }
+
+  @media (min-width: 1024px) {
+    .hero__bg {
+      background-attachment: fixed;
+    }
   }
 
   .hero__gradient {

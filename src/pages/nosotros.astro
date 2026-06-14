@@ -171,7 +171,13 @@ const yearsInBusiness = currentYear - COMPANY_INFO.foundedYear;
     background-image: url('/images/bg/MAN_5814-scaled.webp');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
+  }
+
+  @media (min-width: 1024px) {
+    .page-header {
+      background-attachment: fixed;
+    }
   }
 
   .page-header::before {

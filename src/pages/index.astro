@@ -102,7 +102,6 @@ const faqs = [
         data-delay="6"
       >
         <div class="hero__scroll-line"></div>
-        <span class="hero__scroll-text">Scroll</span>
       </div>
     </section>
 
@@ -331,7 +330,13 @@ const faqs = [
     background-image: url('/images/bg/premium_hero_kitchen.webp');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
+  }
+
+  @media (min-width: 1024px) {
+    .hero__bg {
+      background-attachment: fixed;
+    }
   }
 
   .hero__gradient {
@@ -464,7 +469,13 @@ const faqs = [
     background-image: url('/images/bg/IMG_20210817_172008.webp');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
+  }
+
+  @media (min-width: 1024px) {
+    .statement {
+      background-attachment: fixed;
+    }
   }
 
   .statement::before {
@@ -600,7 +611,13 @@ const faqs = [
     background-image: url('/images/bg/MAN_5734-1-scaled.webp');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
+  }
+
+  @media (min-width: 1024px) {
+    .cta-final {
+      background-attachment: fixed;
+    }
   }
 
   .cta-final::before {

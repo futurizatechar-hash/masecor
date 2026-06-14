@@ -63,7 +63,13 @@ const products = allProducts.map((p) => ({
     background-image: url('/images/bg/ppp-scaled.webp');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
+  }
+
+  @media (min-width: 1024px) {
+    .page-header {
+      background-attachment: fixed;
+    }
   }
 
   .page-header::before {

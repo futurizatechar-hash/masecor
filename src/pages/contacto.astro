@@ -313,7 +313,13 @@ const mapsEmbedUrl = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406
     background-image: url('/images/bg/IMG_20210817_171315-1.webp');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
+  }
+
+  @media (min-width: 1024px) {
+    .page-header {
+      background-attachment: fixed;
+    }
   }
 
   .page-header::before {
