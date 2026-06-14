@@ -492,14 +492,17 @@ button {
 }
 
 .steel-shimmer.revealed::after {
-  animation: steelShine 1.4s var(--ease-out-expo) 0.6s forwards;
+  animation: steelShine 5.7s ease-in-out 0.6s infinite;
 }
 
 @keyframes steelShine {
-  from {
+  0% {
     transform: translateX(-200%);
   }
-  to {
+  56% {
+    transform: translateX(350%);
+  }
+  100% {
     transform: translateX(350%);
   }
 }
