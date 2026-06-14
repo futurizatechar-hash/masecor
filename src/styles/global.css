@@ -442,6 +442,7 @@ button {
   }
 
   .steel-shimmer.revealed::after,
+  [data-reveal].revealed .steel-shimmer::after,
   .section--dark:has([data-reveal].revealed)::after {
     animation: none;
   }
@@ -491,7 +492,8 @@ button {
   transform: translateX(-200%);
 }
 
-.steel-shimmer.revealed::after {
+.steel-shimmer.revealed::after,
+[data-reveal].revealed .steel-shimmer::after {
   animation: steelShine 5.7s ease-in-out 0.6s infinite;
 }
 
