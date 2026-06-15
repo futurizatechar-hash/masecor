@@ -1,0 +1,74 @@
+{
+  "name": "GEMA Acero 304 68X45X22CM",
+  "line": "premium",
+  "category": "bacha-simple",
+  "shortDescription": "Calidad superior y resistencia excepcional. Esta pieza destaca por su formato ergonómico, aportando una estética minimalista y profesional a tu espacio.",
+  "description": "Renová tu espacio con este producto de Masecor. Calidad superior y resistencia excepcional. Esta pieza destaca por su formato ergonómico, aportando una estética minimalista y profesional a tu espacio. Especialmente diseñado para adaptarse a cualquier mesada y ofrecerte la mejor experiencia de uso.",
+  "dimensions": {
+    "width": 680,
+    "depth": 450,
+    "height": 220,
+    "unit": "mm"
+  },
+  "material": "Acero de alta calidad AISI 304",
+  "thickness": "0.6mm",
+  "features": [
+    "Acero de alta calidad AISI 304",
+    "Alta durabilidad y resistencia",
+    "Terminación satinada premium"
+  ],
+  "installationType": "bajo-mesada",
+  "image": "/images/products/gema-acero-304-68x45x22cm-1.webp",
+  "gallery": [
+    "/images/products/gema-acero-304-68x45x22cm-2.webp",
+    "/images/products/gema-acero-304-68x45x22cm-4.webp"
+  ],
+  "sortOrder": 100,
+  "featured": false,
+  "available": true,
+  "options": [
+    {
+      "name": "Combos",
+      "values": [
+        "BACHA+KIT COMPLETO DE INSTALACIÓN.",
+        "BACHA+DOSIFICADOR DE DETERGENTE+KIT COMPLETO DE INSTALACIÓN.",
+        "BACHA+DOSIFICADOR DE DETERGENTE+CANASTO SECAPLATOS+KIT COMPLETO DE INSTALACIÓN.",
+        "BACHA+DOSIFICADOR DE DETERGENTE+CANASTO SECAPLATOS+GRIFERIA PIAZZA+KIT COMPLETO DE INSTALACIÓN."
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": 1494265176,
+      "options": {
+        "Combos": "BACHA+KIT COMPLETO DE INSTALACIÓN."
+      },
+      "available": true,
+      "image": "/images/products/gema-acero-304-68x45x22cm-1.webp"
+    },
+    {
+      "id": 1494265177,
+      "options": {
+        "Combos": "BACHA+DOSIFICADOR DE DETERGENTE+KIT COMPLETO DE INSTALACIÓN."
+      },
+      "available": true,
+      "image": "/images/products/gema-acero-304-68x45x22cm-4.webp"
+    },
+    {
+      "id": 1494265178,
+      "options": {
+        "Combos": "BACHA+DOSIFICADOR DE DETERGENTE+CANASTO SECAPLATOS+KIT COMPLETO DE INSTALACIÓN."
+      },
+      "available": true,
+      "image": "/images/products/gema-acero-304-68x45x22cm-4.webp"
+    },
+    {
+      "id": 1494265180,
+      "options": {
+        "Combos": "BACHA+DOSIFICADOR DE DETERGENTE+CANASTO SECAPLATOS+GRIFERIA PIAZZA+KIT COMPLETO DE INSTALACIÓN."
+      },
+      "available": true,
+      "image": "/images/products/gema-acero-304-68x45x22cm-4.webp"
+    }
+  ]
+}

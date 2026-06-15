@@ -1,0 +1,29 @@
+{
+  "name": "Bacha De Cocina Simple Lavadero M20pc Acero Inoxidable Sopapa Medidas 50*33*15.5 Cm Bajo Mesada Acero Inoxidable Terminacion Mate",
+  "line": "accesorios",
+  "category": "accesorio",
+  "shortDescription": "BACHA DE COCINA MASECOR",
+  "description": "BACHA DE COCINA MASECOR",
+  "dimensions": {
+    "width": 500,
+    "depth": 330,
+    "height": 150,
+    "unit": "mm"
+  },
+  "material": "Acero Inoxidable AISI 304",
+  "thickness": "0.6mm",
+  "features": [
+    "Acero Inoxidable AISI 304",
+    "Alta durabilidad y resistencia"
+  ],
+  "installationType": "sobre-mueble",
+  "image": "/images/products/bacha-de-cocina-simple-lavadero-m20pc-acero-inoxidable-sopapa-medidas-50-33-15-5-cm-bajo-mesada-acero-inoxidable-terminacion-mate-1.webp",
+  "gallery": [
+    "/images/products/bacha-de-cocina-simple-lavadero-m20pc-acero-inoxidable-sopapa-medidas-50-33-15-5-cm-bajo-mesada-acero-inoxidable-terminacion-mate-2.webp",
+    "/images/products/bacha-de-cocina-simple-lavadero-m20pc-acero-inoxidable-sopapa-medidas-50-33-15-5-cm-bajo-mesada-acero-inoxidable-terminacion-mate-3.webp",
+    "/images/products/bacha-de-cocina-simple-lavadero-m20pc-acero-inoxidable-sopapa-medidas-50-33-15-5-cm-bajo-mesada-acero-inoxidable-terminacion-mate-4.webp"
+  ],
+  "sortOrder": 100,
+  "featured": false,
+  "available": true
+}

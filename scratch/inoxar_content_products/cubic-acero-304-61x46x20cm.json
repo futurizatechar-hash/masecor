@@ -1,0 +1,28 @@
+{
+  "name": "CUBIC Acero 304 61X46X20CM",
+  "line": "standard",
+  "category": "bacha-simple",
+  "shortDescription": "BACHA DE COCINA CUBIC MASECOR",
+  "description": "BACHA DE COCINA CUBIC MASECOR",
+  "dimensions": {
+    "width": 610,
+    "depth": 460,
+    "height": 200,
+    "unit": "mm"
+  },
+  "material": "Acero Inoxidable AISI 304",
+  "thickness": "0.6mm",
+  "features": [
+    "Acero Inoxidable AISI 304",
+    "Alta durabilidad y resistencia"
+  ],
+  "installationType": "bajo-mesada",
+  "image": "/images/products/cubic-acero-304-61x46x20cm-1.webp",
+  "gallery": [
+    "/images/products/cubic-acero-304-61x46x20cm-2.webp",
+    "/images/products/cubic-acero-304-61x46x20cm-3.webp"
+  ],
+  "sortOrder": 100,
+  "featured": false,
+  "available": true
+}

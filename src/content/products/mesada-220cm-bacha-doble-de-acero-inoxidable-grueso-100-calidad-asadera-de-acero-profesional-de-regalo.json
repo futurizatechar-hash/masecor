@@ -1,0 +1,214 @@
+{
+  "name": "Mesada 220cm Bacha Doble De Acero de alta calidad Grueso - 100% Calidad + Asadera De Acero Profesional De Regalo",
+  "line": "standard",
+  "category": "mesada-integrada",
+  "shortDescription": "Optimiza tu espacio con esta solución de alta gama. Su estructura robusta asegura un rendimiento impecable y una apariencia sofisticada en todo momento.",
+  "description": "Renová tu espacio con este producto de Masecor. Optimiza tu espacio con esta solución de alta gama. Su estructura robusta asegura un rendimiento impecable y una apariencia sofisticada en todo momento. Especialmente diseñado para adaptarse a cualquier mesada y ofrecerte la mejor experiencia de uso.",
+  "dimensions": {
+    "width": 500,
+    "depth": 320,
+    "height": 140,
+    "unit": "mm"
+  },
+  "material": "Acero de alta calidad AISI 304",
+  "thickness": "0.7mm",
+  "features": [
+    "Mesada reforzada con MDF simil madera resistente a la humedad, asegurando durabilidad y firmeza.",
+    "Zócalo trasero de 45 mm incluido, que protege la pared y aporta un acabado impecable.",
+    "Bandeja para horno profesional de regalo, un plus para tus preparaciones diarias.",
+    "Realizamos perforación para grifería sin cargo, adaptándonos a canillas monocomando o mezcladoras."
+  ],
+  "installationType": "sobre-mueble",
+  "image": "/images/products/mesada-220cm-bacha-doble-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp",
+  "gallery": [],
+  "sortOrder": 100,
+  "featured": false,
+  "available": true,
+  "options": [
+    {
+      "name": "Medida",
+      "values": [
+        "220*61",
+        "220*55"
+      ]
+    },
+    {
+      "name": "Ubicación",
+      "values": [
+        "IZQUIERDA MONOCOMANDO",
+        "IZQUIERDA MEZCLADORA",
+        "IZQUIERDA SIN PEFORO",
+        "DERECHA MONOCOMANDO",
+        "DERECHA MEZCLADORA",
+        "DERECHA SIN PERFORO",
+        "CENTRO MONOCOMANDO",
+        "CENTRO MEZCLADORA",
+        "CENTRO SIN PERFORO"
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": 1296340222,
+      "options": {
+        "Medida": "220*61",
+        "Ubicación": "IZQUIERDA MONOCOMANDO"
+      },
+      "available": true,
+      "image": "/images/products/mesada-220cm-bacha-doble-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp"
+    },
+    {
+      "id": 1296340227,
+      "options": {
+        "Medida": "220*61",
+        "Ubicación": "IZQUIERDA MEZCLADORA"
+      },
+      "available": true,
+      "image": "/images/products/mesada-220cm-bacha-doble-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp"
+    },
+    {
+      "id": 1296340232,
+      "options": {
+        "Medida": "220*61",
+        "Ubicación": "IZQUIERDA SIN PEFORO"
+      },
+      "available": true,
+      "image": "/images/products/mesada-220cm-bacha-doble-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp"
+    },
+    {
+      "id": 1296340237,
+      "options": {
+        "Medida": "220*61",
+        "Ubicación": "DERECHA MONOCOMANDO"
+      },
+      "available": true,
+      "image": "/images/products/mesada-220cm-bacha-doble-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp"
+    },
+    {
+      "id": 1296340243,
+      "options": {
+        "Medida": "220*61",
+        "Ubicación": "DERECHA MEZCLADORA"
+      },
+      "available": true,
+      "image": "/images/products/mesada-220cm-bacha-doble-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp"
+    },
+    {
+      "id": 1296340247,
+      "options": {
+        "Medida": "220*61",
+        "Ubicación": "DERECHA SIN PERFORO"
+      },
+      "available": true,
+      "image": "/images/products/mesada-220cm-bacha-doble-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp"
+    },
+    {
+      "id": 1296340251,
+      "options": {
+        "Medida": "220*61",
+        "Ubicación": "CENTRO MONOCOMANDO"
+      },
+      "available": true,
+      "image": "/images/products/mesada-220cm-bacha-doble-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp"
+    },
+    {
+      "id": 1296340254,
+      "options": {
+        "Medida": "220*61",
+        "Ubicación": "CENTRO MEZCLADORA"
+      },
+      "available": true,
+      "image": "/images/products/mesada-220cm-bacha-doble-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp"
+    },
+    {
+      "id": 1296340259,
+      "options": {
+        "Medida": "220*61",
+        "Ubicación": "CENTRO SIN PERFORO"
+      },
+      "available": true,
+      "image": "/images/products/mesada-220cm-bacha-doble-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp"
+    },
+    {
+      "id": 1296340264,
+      "options": {
+        "Medida": "220*55",
+        "Ubicación": "IZQUIERDA MONOCOMANDO"
+      },
+      "available": true,
+      "image": "/images/products/mesada-220cm-bacha-doble-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp"
+    },
+    {
+      "id": 1296340273,
+      "options": {
+        "Medida": "220*55",
+        "Ubicación": "IZQUIERDA MEZCLADORA"
+      },
+      "available": true,
+      "image": "/images/products/mesada-220cm-bacha-doble-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp"
+    },
+    {
+      "id": 1296340276,
+      "options": {
+        "Medida": "220*55",
+        "Ubicación": "IZQUIERDA SIN PEFORO"
+      },
+      "available": true,
+      "image": "/images/products/mesada-220cm-bacha-doble-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp"
+    },
+    {
+      "id": 1296340279,
+      "options": {
+        "Medida": "220*55",
+        "Ubicación": "DERECHA MONOCOMANDO"
+      },
+      "available": true,
+      "image": "/images/products/mesada-220cm-bacha-doble-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp"
+    },
+    {
+      "id": 1296340283,
+      "options": {
+        "Medida": "220*55",
+        "Ubicación": "DERECHA MEZCLADORA"
+      },
+      "available": true,
+      "image": "/images/products/mesada-220cm-bacha-doble-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp"
+    },
+    {
+      "id": 1296340286,
+      "options": {
+        "Medida": "220*55",
+        "Ubicación": "DERECHA SIN PERFORO"
+      },
+      "available": true,
+      "image": "/images/products/mesada-220cm-bacha-doble-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp"
+    },
+    {
+      "id": 1296340292,
+      "options": {
+        "Medida": "220*55",
+        "Ubicación": "CENTRO MONOCOMANDO"
+      },
+      "available": true,
+      "image": "/images/products/mesada-220cm-bacha-doble-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp"
+    },
+    {
+      "id": 1296340297,
+      "options": {
+        "Medida": "220*55",
+        "Ubicación": "CENTRO MEZCLADORA"
+      },
+      "available": true,
+      "image": "/images/products/mesada-220cm-bacha-doble-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp"
+    },
+    {
+      "id": 1296340301,
+      "options": {
+        "Medida": "220*55",
+        "Ubicación": "CENTRO SIN PERFORO"
+      },
+      "available": true,
+      "image": "/images/products/mesada-220cm-bacha-doble-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp"
+    }
+  ]
+}

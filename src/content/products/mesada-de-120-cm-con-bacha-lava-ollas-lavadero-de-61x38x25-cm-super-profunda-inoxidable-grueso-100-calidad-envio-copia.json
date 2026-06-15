@@ -1,0 +1,220 @@
+{
+  "name": "Mesada De 120 Cm Con Bacha Lava Ollas / Lavadero De 61x38x25 Cm Super Profunda- de alta calidad Grueso 100% Calidad + Envío - (copia)",
+  "line": "lavadero",
+  "category": "mesada-integrada",
+  "shortDescription": "Optimiza tu espacio con esta solución de alta gama. Su estructura robusta asegura un rendimiento impecable y una apariencia sofisticada en todo momento.",
+  "description": "Renová tu espacio con este producto de Masecor. Optimiza tu espacio con esta solución de alta gama. Su estructura robusta asegura un rendimiento impecable y una apariencia sofisticada en todo momento. Especialmente diseñado para adaptarse a cualquier mesada y ofrecerte la mejor experiencia de uso.",
+  "dimensions": {
+    "width": 610,
+    "depth": 380,
+    "height": 250,
+    "unit": "mm"
+  },
+  "material": "Acero de alta calidad AISI 304",
+  "thickness": "0.7mm",
+  "features": [
+    "Zócalo trasero opcional de 45 mm: Protege la pared y brinda un acabado profesional y cuidado."
+  ],
+  "installationType": "sobre-mueble",
+  "image": "/images/products/mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-1.webp",
+  "gallery": [
+    "/images/products/mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-2.webp",
+    "/images/products/mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-3.webp",
+    "/images/products/mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-4.webp",
+    "/images/products/mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-5.webp",
+    "/images/products/mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-6.webp",
+    "/images/products/mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-7.webp",
+    "/images/products/mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-8.webp",
+    "/images/products/mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-9.webp"
+  ],
+  "sortOrder": 100,
+  "featured": false,
+  "available": true,
+  "options": [
+    {
+      "name": "Medida",
+      "values": [
+        "120*55",
+        "120*61"
+      ]
+    },
+    {
+      "name": "Ubicación",
+      "values": [
+        "CENTRO MEZCLADORA",
+        "CENTRO SIN PERFORO",
+        "CENTRO MONOCOMANDO",
+        "DERECHA MEZCLADORA",
+        "DERECHA MONOCOMANDO",
+        "DERECHA SIN PERFORO",
+        "IZQUIERDA MEZCLADORA",
+        "IZQUIERDA MONOCOMANDO",
+        "IZQUIERDA SIN PEFORO"
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": 1270386339,
+      "options": {
+        "Medida": "120*55",
+        "Ubicación": "CENTRO MEZCLADORA"
+      },
+      "available": true,
+      "image": "/images/products/mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-1.webp"
+    },
+    {
+      "id": 1270386346,
+      "options": {
+        "Medida": "120*55",
+        "Ubicación": "CENTRO SIN PERFORO"
+      },
+      "available": true,
+      "image": "/images/products/mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-1.webp"
+    },
+    {
+      "id": 1270386351,
+      "options": {
+        "Medida": "120*55",
+        "Ubicación": "CENTRO MONOCOMANDO"
+      },
+      "available": true,
+      "image": "/images/products/mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-1.webp"
+    },
+    {
+      "id": 1270386354,
+      "options": {
+        "Medida": "120*55",
+        "Ubicación": "DERECHA MEZCLADORA"
+      },
+      "available": true,
+      "image": "/images/products/mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-1.webp"
+    },
+    {
+      "id": 1270386360,
+      "options": {
+        "Medida": "120*55",
+        "Ubicación": "DERECHA MONOCOMANDO"
+      },
+      "available": true,
+      "image": "/images/products/mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-1.webp"
+    },
+    {
+      "id": 1270386364,
+      "options": {
+        "Medida": "120*55",
+        "Ubicación": "DERECHA SIN PERFORO"
+      },
+      "available": true,
+      "image": "/images/products/mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-1.webp"
+    },
+    {
+      "id": 1270386369,
+      "options": {
+        "Medida": "120*55",
+        "Ubicación": "IZQUIERDA MEZCLADORA"
+      },
+      "available": true,
+      "image": "/images/products/mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-1.webp"
+    },
+    {
+      "id": 1270386375,
+      "options": {
+        "Medida": "120*55",
+        "Ubicación": "IZQUIERDA MONOCOMANDO"
+      },
+      "available": true,
+      "image": "/images/products/mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-1.webp"
+    },
+    {
+      "id": 1270386384,
+      "options": {
+        "Medida": "120*55",
+        "Ubicación": "IZQUIERDA SIN PEFORO"
+      },
+      "available": true,
+      "image": "/images/products/mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-1.webp"
+    },
+    {
+      "id": 1270386392,
+      "options": {
+        "Medida": "120*61",
+        "Ubicación": "CENTRO MEZCLADORA"
+      },
+      "available": true,
+      "image": "/images/products/mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-1.webp"
+    },
+    {
+      "id": 1270386396,
+      "options": {
+        "Medida": "120*61",
+        "Ubicación": "CENTRO SIN PERFORO"
+      },
+      "available": true,
+      "image": "/images/products/mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-1.webp"
+    },
+    {
+      "id": 1270386404,
+      "options": {
+        "Medida": "120*61",
+        "Ubicación": "CENTRO MONOCOMANDO"
+      },
+      "available": true,
+      "image": "/images/products/mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-1.webp"
+    },
+    {
+      "id": 1270386409,
+      "options": {
+        "Medida": "120*61",
+        "Ubicación": "DERECHA MEZCLADORA"
+      },
+      "available": true,
+      "image": "/images/products/mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-1.webp"
+    },
+    {
+      "id": 1270386414,
+      "options": {
+        "Medida": "120*61",
+        "Ubicación": "DERECHA MONOCOMANDO"
+      },
+      "available": true,
+      "image": "/images/products/mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-1.webp"
+    },
+    {
+      "id": 1270386419,
+      "options": {
+        "Medida": "120*61",
+        "Ubicación": "DERECHA SIN PERFORO"
+      },
+      "available": true,
+      "image": "/images/products/mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-1.webp"
+    },
+    {
+      "id": 1270386425,
+      "options": {
+        "Medida": "120*61",
+        "Ubicación": "IZQUIERDA MEZCLADORA"
+      },
+      "available": true,
+      "image": "/images/products/mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-1.webp"
+    },
+    {
+      "id": 1270386432,
+      "options": {
+        "Medida": "120*61",
+        "Ubicación": "IZQUIERDA MONOCOMANDO"
+      },
+      "available": true,
+      "image": "/images/products/mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-1.webp"
+    },
+    {
+      "id": 1270386438,
+      "options": {
+        "Medida": "120*61",
+        "Ubicación": "IZQUIERDA SIN PEFORO"
+      },
+      "available": true,
+      "image": "/images/products/mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-1.webp"
+    }
+  ]
+}

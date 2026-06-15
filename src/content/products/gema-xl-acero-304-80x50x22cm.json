@@ -1,0 +1,75 @@
+{
+  "name": "GEMA XL Acero 304 80X50X22CM",
+  "line": "premium",
+  "category": "bacha-simple",
+  "shortDescription": "La combinación perfecta entre estética y practicidad. Pensada para el uso intensivo, garantiza un mantenimiento sencillo y una vida útil prolongada.",
+  "description": "Renová tu espacio con este producto de Masecor. La combinación perfecta entre estética y practicidad. Pensada para el uso intensivo, garantiza un mantenimiento sencillo y una vida útil prolongada. Especialmente diseñado para adaptarse a cualquier mesada y ofrecerte la mejor experiencia de uso.",
+  "dimensions": {
+    "width": 800,
+    "depth": 500,
+    "height": 220,
+    "unit": "mm"
+  },
+  "material": "Acero de alta calidad AISI 304",
+  "thickness": "0.6mm",
+  "features": [
+    "Acero de alta calidad AISI 304",
+    "Alta durabilidad y resistencia",
+    "Terminación satinada premium"
+  ],
+  "installationType": "bajo-mesada",
+  "image": "/images/products/gema-xl-acero-304-80x50x22cm-1.webp",
+  "gallery": [
+    "/images/products/gema-xl-acero-304-80x50x22cm-3.webp",
+    "/images/products/gema-xl-acero-304-80x50x22cm-2.webp",
+    "/images/products/gema-xl-acero-304-80x50x22cm-5.webp"
+  ],
+  "sortOrder": 100,
+  "featured": true,
+  "available": true,
+  "options": [
+    {
+      "name": "Combos",
+      "values": [
+        "BACHA+KIT COMPLETO DE INSTALACIÓN.",
+        "BACHA+DOSIFICADOR DE DETERGENTE+KIT COMPLETO DE INSTALACIÓN.",
+        "BACHA+DOSIFICADOR DE DETERGENTE+CANASTO SECAPLATOS+KIT COMPLETO DE INSTALACIÓN.",
+        "BACHA+DOSIFICADOR DE DETERGENTE+CANASTO SECAPLATOS+GRIFERÍA PIAZZA+KIT COMPLETO DE INSTALACIÓN."
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": 1494264503,
+      "options": {
+        "Combos": "BACHA+KIT COMPLETO DE INSTALACIÓN."
+      },
+      "available": true,
+      "image": "/images/products/gema-xl-acero-304-80x50x22cm-1.webp"
+    },
+    {
+      "id": 1494264504,
+      "options": {
+        "Combos": "BACHA+DOSIFICADOR DE DETERGENTE+KIT COMPLETO DE INSTALACIÓN."
+      },
+      "available": true,
+      "image": "/images/products/gema-xl-acero-304-80x50x22cm-5.webp"
+    },
+    {
+      "id": 1494264505,
+      "options": {
+        "Combos": "BACHA+DOSIFICADOR DE DETERGENTE+CANASTO SECAPLATOS+KIT COMPLETO DE INSTALACIÓN."
+      },
+      "available": true,
+      "image": "/images/products/gema-xl-acero-304-80x50x22cm-5.webp"
+    },
+    {
+      "id": 1494264506,
+      "options": {
+        "Combos": "BACHA+DOSIFICADOR DE DETERGENTE+CANASTO SECAPLATOS+GRIFERÍA PIAZZA+KIT COMPLETO DE INSTALACIÓN."
+      },
+      "available": true,
+      "image": "/images/products/gema-xl-acero-304-80x50x22cm-5.webp"
+    }
+  ]
+}

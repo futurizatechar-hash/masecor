@@ -7,6 +7,7 @@
  */
 
 import Layout from '../layouts/Layout.astro';
+import BackToCatalog from '../components/BackToCatalog.astro';
 import { COMPANY_INFO } from '../utils/constants';
 
 const currentYear = new Date().getFullYear();
@@ -160,6 +161,8 @@ const yearsInBusiness = currentYear - COMPANY_INFO.foundedYear;
         </div>
       </div>
     </section>
+
+    <BackToCatalog />
   </main>
 </Layout>
 

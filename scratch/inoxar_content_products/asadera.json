@@ -1,0 +1,21 @@
+{
+  "name": "ASADERA",
+  "line": "standard",
+  "category": "bacha-simple",
+  "shortDescription": "34CM",
+  "description": "34CM",
+  "material": "Acero Inoxidable AISI 304",
+  "thickness": "0.6mm",
+  "features": [
+    "Acero Inoxidable AISI 304",
+    "Alta durabilidad y resistencia"
+  ],
+  "installationType": "bajo-mesada",
+  "image": "/images/products/asadera-1.webp",
+  "gallery": [
+    "/images/products/asadera-2.webp"
+  ],
+  "sortOrder": 100,
+  "featured": false,
+  "available": true
+}

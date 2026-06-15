@@ -1,0 +1,23 @@
+{
+  "name": "Bacha De Cocina Esquinera Mate Acero Inox 430 0,9 Mm Grueso",
+  "line": "standard",
+  "category": "bacha-simple",
+  "shortDescription": "BACHA DE COCINA MASECOR",
+  "description": "BACHA DE COCINA MASECOR",
+  "material": "Acero Inoxidable AISI 304",
+  "thickness": "0.9mm",
+  "features": [
+    "Acero Inoxidable AISI 304",
+    "Alta durabilidad y resistencia"
+  ],
+  "installationType": "bajo-mesada",
+  "image": "/images/products/bacha-de-cocina-esquinera-mate-acero-inox-430-0-9-mm-grueso-1.webp",
+  "gallery": [
+    "/images/products/bacha-de-cocina-esquinera-mate-acero-inox-430-0-9-mm-grueso-2.webp",
+    "/images/products/bacha-de-cocina-esquinera-mate-acero-inox-430-0-9-mm-grueso-3.webp",
+    "/images/products/bacha-de-cocina-esquinera-mate-acero-inox-430-0-9-mm-grueso-4.webp"
+  ],
+  "sortOrder": 100,
+  "featured": false,
+  "available": true
+}

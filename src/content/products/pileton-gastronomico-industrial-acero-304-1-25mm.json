@@ -1,0 +1,22 @@
+{
+  "name": "PILETON gastronómico INDUSTRIAL Acero 304 1.25mm",
+  "line": "standard",
+  "category": "bacha-simple",
+  "shortDescription": "Calidad superior y resistencia excepcional. Esta pieza destaca por su formato ergonómico, aportando una estética minimalista y profesional a tu espacio.",
+  "description": "Renová tu espacio con este producto de Masecor. Calidad superior y resistencia excepcional. Esta pieza destaca por su formato ergonómico, aportando una estética minimalista y profesional a tu espacio. Especialmente diseñado para adaptarse a cualquier mesada y ofrecerte la mejor experiencia de uso.",
+  "material": "Acero de alta calidad AISI 304",
+  "thickness": "0.6mm",
+  "features": [
+    "Acero de alta calidad AISI 304",
+    "Alta durabilidad y resistencia"
+  ],
+  "installationType": "bajo-mesada",
+  "image": "/images/products/pileton-gastronomico-industrial-acero-304-1-25mm-1.webp",
+  "gallery": [
+    "/images/products/pileton-gastronomico-industrial-acero-304-1-25mm-2.webp"
+  ],
+  "sortOrder": 100,
+  "featured": false,
+  "available": true,
+  "blueprint": "/images/products/pileton-gastronomico-industrial-acero-304-1-25mm-3.webp"
+}

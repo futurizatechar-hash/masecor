@@ -1,0 +1,30 @@
+{
+  "name": "GEMA Acero 304 68X45X22CM",
+  "line": "premium",
+  "category": "bacha-simple",
+  "shortDescription": "BACHA DE COCINA GEMA MASECOR",
+  "description": "BACHA DE COCINA GEMA MASECOR",
+  "dimensions": {
+    "width": 680,
+    "depth": 450,
+    "height": 220,
+    "unit": "mm"
+  },
+  "material": "Acero Inoxidable AISI 304",
+  "thickness": "0.6mm",
+  "features": [
+    "Acero Inoxidable AISI 304",
+    "Alta durabilidad y resistencia",
+    "Terminación satinada premium"
+  ],
+  "installationType": "bajo-mesada",
+  "image": "/images/products/gema-acero-304-68x45x22cm-1.webp",
+  "gallery": [
+    "/images/products/gema-acero-304-68x45x22cm-2.webp",
+    "/images/products/gema-acero-304-68x45x22cm-3.webp",
+    "/images/products/gema-acero-304-68x45x22cm-4.webp"
+  ],
+  "sortOrder": 100,
+  "featured": false,
+  "available": true
+}

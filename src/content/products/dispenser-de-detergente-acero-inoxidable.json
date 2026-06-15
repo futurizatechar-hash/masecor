@@ -1,0 +1,22 @@
+{
+  "name": "DISPENSER DE DETERGENTE ACERO de alta calidad",
+  "line": "accesorios",
+  "category": "accesorio",
+  "shortDescription": "Optimiza tu espacio con esta solución de alta gama. Su estructura robusta asegura un rendimiento impecable y una apariencia sofisticada en todo momento.",
+  "description": "Renová tu espacio con este producto de Masecor. Optimiza tu espacio con esta solución de alta gama. Su estructura robusta asegura un rendimiento impecable y una apariencia sofisticada en todo momento. Especialmente diseñado para adaptarse a cualquier mesada y ofrecerte la mejor experiencia de uso.",
+  "material": "Acero de alta calidad AISI 304",
+  "thickness": "0.6mm",
+  "features": [
+    "Acero de alta calidad AISI 304",
+    "Alta durabilidad y resistencia"
+  ],
+  "installationType": "bajo-mesada",
+  "image": "/images/products/dispenser-de-detergente-acero-inoxidable-1.webp",
+  "gallery": [
+    "/images/products/dispenser-de-detergente-acero-inoxidable-con-cabezal-cuadrado-negro-1.webp",
+    "/images/products/dispenser-de-detergente-acero-inoxidable-2.webp"
+  ],
+  "sortOrder": 100,
+  "featured": false,
+  "available": true
+}

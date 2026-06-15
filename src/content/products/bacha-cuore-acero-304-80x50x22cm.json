@@ -1,0 +1,74 @@
+{
+  "name": "BACHA CUORE Acero 304 80X50X22CM",
+  "line": "premium",
+  "category": "bacha-simple",
+  "shortDescription": "Optimiza tu espacio con esta solución de alta gama. Su estructura robusta asegura un rendimiento impecable y una apariencia sofisticada en todo momento.",
+  "description": "Renová tu espacio con este producto de Masecor. Optimiza tu espacio con esta solución de alta gama. Su estructura robusta asegura un rendimiento impecable y una apariencia sofisticada en todo momento. Especialmente diseñado para adaptarse a cualquier mesada y ofrecerte la mejor experiencia de uso.",
+  "dimensions": {
+    "width": 800,
+    "depth": 500,
+    "height": 220,
+    "unit": "mm"
+  },
+  "material": "Acero de alta calidad AISI 304",
+  "thickness": "0.6mm",
+  "features": [
+    "Acero de alta calidad AISI 304",
+    "Alta durabilidad y resistencia",
+    "Terminación satinada premium"
+  ],
+  "installationType": "bajo-mesada",
+  "image": "/images/products/bacha-cuore-acero-304-80x50x22cm-1.webp",
+  "gallery": [
+    "/images/products/bacha-cuore-acero-304-80x50x22cm-3.webp"
+  ],
+  "sortOrder": 100,
+  "featured": false,
+  "available": true,
+  "options": [
+    {
+      "name": "Combos",
+      "values": [
+        "BACHA+KIT COMPLETO DE INSTALACIÓN.",
+        "BACHA+DISPENSER DE DETERGENTE+KIT COMPLETO DE INSTALACIÓN.",
+        "BACHA+DISPENSER DE DETERGENTE+CANASTO SECAPLATOS+KIT COMPLETO DE INSTALACIÓN.",
+        "BACHA+DISPENSER DE DETERGENTE+CANASTO SECAPLATOS+GRIFERIA PIAZZA+KIT COMPLETO DE INSTALACIÓN."
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": 1494262554,
+      "options": {
+        "Combos": "BACHA+KIT COMPLETO DE INSTALACIÓN."
+      },
+      "available": true,
+      "image": "/images/products/bacha-cuore-acero-304-80x50x22cm-1.webp"
+    },
+    {
+      "id": 1494262351,
+      "options": {
+        "Combos": "BACHA+DISPENSER DE DETERGENTE+KIT COMPLETO DE INSTALACIÓN."
+      },
+      "available": true,
+      "image": "/images/products/bacha-cuore-acero-304-80x50x22cm-2.webp"
+    },
+    {
+      "id": 1494262352,
+      "options": {
+        "Combos": "BACHA+DISPENSER DE DETERGENTE+CANASTO SECAPLATOS+KIT COMPLETO DE INSTALACIÓN."
+      },
+      "available": true,
+      "image": "/images/products/bacha-cuore-acero-304-80x50x22cm-2.webp"
+    },
+    {
+      "id": 1494262353,
+      "options": {
+        "Combos": "BACHA+DISPENSER DE DETERGENTE+CANASTO SECAPLATOS+GRIFERIA PIAZZA+KIT COMPLETO DE INSTALACIÓN."
+      },
+      "available": true,
+      "image": "/images/products/bacha-cuore-acero-304-80x50x22cm-2.webp"
+    }
+  ],
+  "blueprint": "/images/products/bacha-cuore-acero-304-80x50x22cm-2.webp"
+}

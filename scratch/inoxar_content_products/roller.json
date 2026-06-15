@@ -1,0 +1,21 @@
+{
+  "name": "ROLLER",
+  "line": "accesorios",
+  "category": "accesorio",
+  "shortDescription": "ROLLER ESCURRIDOR",
+  "description": "ROLLER ESCURRIDOR",
+  "material": "Acero Inoxidable AISI 304",
+  "thickness": "0.6mm",
+  "features": [
+    "Acero Inoxidable AISI 304",
+    "Alta durabilidad y resistencia"
+  ],
+  "installationType": "bajo-mesada",
+  "image": "/images/products/roller-1.webp",
+  "gallery": [
+    "/images/products/roller-2.webp"
+  ],
+  "sortOrder": 100,
+  "featured": false,
+  "available": true
+}

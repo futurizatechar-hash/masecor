@@ -1,0 +1,22 @@
+{
+  "name": "GRIFERIA PICO ALTO 10614",
+  "line": "accesorios",
+  "category": "accesorio",
+  "shortDescription": "Producto de acero inoxidable de alta calidad y precisión.",
+  "description": "",
+  "material": "Acero Inoxidable AISI 304",
+  "thickness": "0.6mm",
+  "features": [
+    "Acero Inoxidable AISI 304",
+    "Alta durabilidad y resistencia"
+  ],
+  "installationType": "bajo-mesada",
+  "image": "/images/products/griferia-pico-alto-10614-1.webp",
+  "gallery": [
+    "/images/products/griferia-pico-alto-10614-2.webp",
+    "/images/products/griferia-pico-alto-10614-3.webp"
+  ],
+  "sortOrder": 100,
+  "featured": false,
+  "available": true
+}

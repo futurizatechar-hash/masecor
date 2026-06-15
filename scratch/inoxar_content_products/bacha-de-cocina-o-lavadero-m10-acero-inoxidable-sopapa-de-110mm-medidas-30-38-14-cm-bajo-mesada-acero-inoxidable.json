@@ -1,0 +1,29 @@
+{
+  "name": "Bacha De Cocina O Lavadero M10 Acero Inoxidable Sopapa De 110mm Medidas 30*38*14 Cm Bajo Mesada Acero Inoxidable",
+  "line": "accesorios",
+  "category": "accesorio",
+  "shortDescription": "BACHA DE COCINA MASECOR",
+  "description": "BACHA DE COCINA MASECOR",
+  "dimensions": {
+    "width": 300,
+    "depth": 380,
+    "height": 140,
+    "unit": "mm"
+  },
+  "material": "Acero Inoxidable AISI 304",
+  "thickness": "0.6mm",
+  "features": [
+    "Acero Inoxidable AISI 304",
+    "Alta durabilidad y resistencia"
+  ],
+  "installationType": "sobre-mueble",
+  "image": "/images/products/bacha-de-cocina-o-lavadero-m10-acero-inoxidable-sopapa-de-110mm-medidas-30-38-14-cm-bajo-mesada-acero-inoxidable-1.webp",
+  "gallery": [
+    "/images/products/bacha-de-cocina-o-lavadero-m10-acero-inoxidable-sopapa-de-110mm-medidas-30-38-14-cm-bajo-mesada-acero-inoxidable-2.webp",
+    "/images/products/bacha-de-cocina-o-lavadero-m10-acero-inoxidable-sopapa-de-110mm-medidas-30-38-14-cm-bajo-mesada-acero-inoxidable-3.webp",
+    "/images/products/bacha-de-cocina-o-lavadero-m10-acero-inoxidable-sopapa-de-110mm-medidas-30-38-14-cm-bajo-mesada-acero-inoxidable-4.webp"
+  ],
+  "sortOrder": 100,
+  "featured": false,
+  "available": true
+}

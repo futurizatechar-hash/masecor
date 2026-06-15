@@ -1,0 +1,21 @@
+{
+  "name": "SIFON SIMPLE",
+  "line": "accesorios",
+  "category": "accesorio",
+  "shortDescription": "SIFON SIMPLE DUKE",
+  "description": "SIFON SIMPLE DUKE",
+  "material": "Acero Inoxidable AISI 304",
+  "thickness": "0.6mm",
+  "features": [
+    "Acero Inoxidable AISI 304",
+    "Alta durabilidad y resistencia"
+  ],
+  "installationType": "bajo-mesada",
+  "image": "/images/products/sifon-simple-1.webp",
+  "gallery": [
+    "/images/products/sifon-simple-2.webp"
+  ],
+  "sortOrder": 100,
+  "featured": false,
+  "available": true
+}

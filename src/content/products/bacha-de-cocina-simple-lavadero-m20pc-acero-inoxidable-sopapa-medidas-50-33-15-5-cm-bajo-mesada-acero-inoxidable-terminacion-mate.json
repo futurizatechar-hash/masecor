@@ -1,0 +1,28 @@
+{
+  "name": "Bacha De Cocina Simple Lavadero M20pc Acero de alta calidad Sopapa Medidas 50*33*15.5 Cm Bajo Mesada Acero de alta calidad Terminacion Mate",
+  "line": "lavadero",
+  "category": "pileta-lavadero",
+  "dimensions": {
+    "width": 500,
+    "depth": 330,
+    "height": 150,
+    "unit": "mm"
+  },
+  "material": "Acero de alta calidad AISI 304",
+  "thickness": "0.6mm",
+  "features": [
+    "Acero de alta calidad AISI 304",
+    "Alta durabilidad y resistencia"
+  ],
+  "installationType": "bajo-mesada",
+  "image": "/images/products/bacha-de-cocina-simple-lavadero-m20pc-acero-inoxidable-sopapa-medidas-50-33-15-5-cm-bajo-mesada-acero-inoxidable-terminacion-mate-1.webp",
+  "gallery": [
+    "/images/products/bacha-de-cocina-simple-lavadero-m20pc-acero-inoxidable-sopapa-medidas-50-33-15-5-cm-bajo-mesada-acero-inoxidable-terminacion-mate-3.webp"
+  ],
+  "sortOrder": 100,
+  "featured": false,
+  "available": true,
+  "description": "Renová tu espacio con este producto de Masecor. Calidad superior y resistencia excepcional. Esta pieza destaca por su formato ergonómico, aportando una estética minimalista y profesional a tu espacio. Especialmente diseñado para adaptarse a cualquier mesada y ofrecerte la mejor experiencia de uso.",
+  "shortDescription": "Calidad superior y resistencia excepcional. Esta pieza destaca por su formato ergonómico, aportando una estética minimalista y profesional a tu espacio.",
+  "blueprint": "/images/products/bacha-de-cocina-simple-lavadero-m20pc-acero-inoxidable-sopapa-medidas-50-33-15-5-cm-bajo-mesada-acero-inoxidable-terminacion-mate-2.webp"
+}

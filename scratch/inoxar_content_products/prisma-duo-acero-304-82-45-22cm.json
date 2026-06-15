@@ -1,0 +1,30 @@
+{
+  "name": "PRISMA DUO Acero 304 82*45*22CM",
+  "line": "prisma",
+  "category": "bacha-doble",
+  "shortDescription": "BACHA DE COCINA PRISMA DUO MASECOR",
+  "description": "BACHA DE COCINA PRISMA DUO MASECOR",
+  "dimensions": {
+    "width": 820,
+    "depth": 450,
+    "height": 220,
+    "unit": "mm"
+  },
+  "material": "Acero Inoxidable AISI 304",
+  "thickness": "0.6mm",
+  "features": [
+    "Acero Inoxidable AISI 304",
+    "Alta durabilidad y resistencia"
+  ],
+  "installationType": "bajo-mesada",
+  "image": "/images/products/prisma-duo-acero-304-82-45-22cm-1.webp",
+  "gallery": [
+    "/images/products/prisma-duo-acero-304-82-45-22cm-2.webp",
+    "/images/products/prisma-duo-acero-304-82-45-22cm-3.webp",
+    "/images/products/prisma-duo-acero-304-82-45-22cm-4.webp",
+    "/images/products/prisma-duo-acero-304-82-45-22cm-5.webp"
+  ],
+  "sortOrder": 100,
+  "featured": false,
+  "available": true
+}

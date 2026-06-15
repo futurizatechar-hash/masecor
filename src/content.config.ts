@@ -69,6 +69,28 @@ const productSchema = z.object({
   featured: z.boolean().default(false),
   /** Disponibilidad */
   available: z.boolean().default(true),
+  /** Opciones de personalización del producto (opcional) */
+  options: z
+    .array(
+      z.object({
+        name: z.string(),
+        values: z.array(z.string()),
+      })
+    )
+    .optional(),
+  /** Variaciones del producto con sus combinaciones (opcional) */
+  variants: z
+    .array(
+      z.object({
+        id: z.union([z.number(), z.string()]),
+        options: z.record(z.string(), z.string()),
+        available: z.boolean().default(true),
+        image: z.string().optional(),
+      })
+    )
+    .optional(),
+  /** Plano técnico o croquis de medidas del producto (opcional) */
+  blueprint: z.string().optional(),
 });
 
 const products = defineCollection({

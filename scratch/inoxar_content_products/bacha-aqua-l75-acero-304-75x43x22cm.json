@@ -1,0 +1,30 @@
+{
+  "name": "BACHA AQUA L75 Acero 304 75x43x22cm",
+  "line": "standard",
+  "category": "bacha-simple",
+  "shortDescription": "BACHA DE COCINA L75 MASECOR",
+  "description": "BACHA DE COCINA L75 MASECOR",
+  "dimensions": {
+    "width": 750,
+    "depth": 430,
+    "height": 220,
+    "unit": "mm"
+  },
+  "material": "Acero Inoxidable AISI 304",
+  "thickness": "0.6mm",
+  "features": [
+    "Acero Inoxidable AISI 304",
+    "Alta durabilidad y resistencia"
+  ],
+  "installationType": "bajo-mesada",
+  "image": "/images/products/bacha-aqua-l75-acero-304-75x43x22cm-1.webp",
+  "gallery": [
+    "/images/products/bacha-aqua-l75-acero-304-75x43x22cm-2.webp",
+    "/images/products/bacha-aqua-l75-acero-304-75x43x22cm-3.webp",
+    "/images/products/bacha-aqua-l75-acero-304-75x43x22cm-4.webp",
+    "/images/products/bacha-aqua-l75-acero-304-75x43x22cm-5.webp"
+  ],
+  "sortOrder": 100,
+  "featured": false,
+  "available": true
+}

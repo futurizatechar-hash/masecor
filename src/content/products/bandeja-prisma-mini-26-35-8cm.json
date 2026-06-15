@@ -1,0 +1,25 @@
+{
+  "name": "BANDEJA PRISMA MINI 26*35*8CM",
+  "line": "accesorios",
+  "category": "accesorio",
+  "dimensions": {
+    "width": 260,
+    "depth": 350,
+    "height": 80,
+    "unit": "mm"
+  },
+  "material": "Acero de alta calidad AISI 304",
+  "thickness": "0.6mm",
+  "features": [
+    "Acero de alta calidad AISI 304",
+    "Alta durabilidad y resistencia"
+  ],
+  "installationType": "bajo-mesada",
+  "image": "/images/products/bandeja-prisma-mini-26-35-8cm-1.webp",
+  "gallery": [],
+  "sortOrder": 100,
+  "featured": false,
+  "available": true,
+  "description": "Renová tu espacio con este producto de Masecor. Diseño elegante y gran durabilidad. Ideal para cocinas modernas que buscan funcionalidad sin sacrificar el estilo. Su acabado premium facilita la limpieza diaria. Especialmente diseñado para adaptarse a cualquier mesada y ofrecerte la mejor experiencia de uso.",
+  "shortDescription": "Diseño elegante y gran durabilidad. Ideal para cocinas modernas que buscan funcionalidad sin sacrificar el estilo. Su acabado premium facilita la limpieza diaria."
+}

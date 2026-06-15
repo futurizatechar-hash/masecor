@@ -1,0 +1,29 @@
+{
+  "name": "BACHA ESENCIAL Acero 304 56x42x22cm",
+  "line": "standard",
+  "category": "bacha-simple",
+  "shortDescription": "BACHA DE COCINA ESENCIAL MASECOR",
+  "description": "BACHA DE COCINA ESENCIAL MASECOR",
+  "dimensions": {
+    "width": 560,
+    "depth": 420,
+    "height": 220,
+    "unit": "mm"
+  },
+  "material": "Acero Inoxidable AISI 304",
+  "thickness": "0.6mm",
+  "features": [
+    "Acero Inoxidable AISI 304",
+    "Alta durabilidad y resistencia"
+  ],
+  "installationType": "bajo-mesada",
+  "image": "/images/products/bacha-esencial-acero-304-56x42x22cm-1.webp",
+  "gallery": [
+    "/images/products/bacha-esencial-acero-304-56x42x22cm-2.webp",
+    "/images/products/bacha-esencial-acero-304-56x42x22cm-3.webp",
+    "/images/products/bacha-esencial-acero-304-56x42x22cm-4.webp"
+  ],
+  "sortOrder": 100,
+  "featured": false,
+  "available": true
+}

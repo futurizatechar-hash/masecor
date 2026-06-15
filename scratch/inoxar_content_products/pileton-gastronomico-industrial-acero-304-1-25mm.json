@@ -1,0 +1,23 @@
+{
+  "name": "PILETON gastronómico INDUSTRIAL Acero 304 1.25mm",
+  "line": "standard",
+  "category": "bacha-simple",
+  "shortDescription": "BACHA DE COCINA PILETON GASTRONOMICO MASECOR",
+  "description": "BACHA DE COCINA PILETON GASTRONOMICO MASECOR",
+  "material": "Acero Inoxidable AISI 304",
+  "thickness": "0.6mm",
+  "features": [
+    "Acero Inoxidable AISI 304",
+    "Alta durabilidad y resistencia"
+  ],
+  "installationType": "bajo-mesada",
+  "image": "/images/products/pileton-gastronomico-industrial-acero-304-1-25mm-1.webp",
+  "gallery": [
+    "/images/products/pileton-gastronomico-industrial-acero-304-1-25mm-2.webp",
+    "/images/products/pileton-gastronomico-industrial-acero-304-1-25mm-3.webp",
+    "/images/products/pileton-gastronomico-industrial-acero-304-1-25mm-4.webp"
+  ],
+  "sortOrder": 100,
+  "featured": false,
+  "available": true
+}

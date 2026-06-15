@@ -1,0 +1,26 @@
+{
+  "name": "CANASTO GEMA O AQUA L75 22X34X11CM",
+  "line": "premium",
+  "category": "bacha-simple",
+  "shortDescription": "Producto de acero inoxidable de alta calidad y precisión.",
+  "description": "",
+  "dimensions": {
+    "width": 220,
+    "depth": 340,
+    "height": 110,
+    "unit": "mm"
+  },
+  "material": "Acero Inoxidable AISI 304",
+  "thickness": "0.6mm",
+  "features": [
+    "Acero Inoxidable AISI 304",
+    "Alta durabilidad y resistencia",
+    "Terminación satinada premium"
+  ],
+  "installationType": "bajo-mesada",
+  "image": "/images/products/canasto-gema-o-aqua-l75-22x34x11cm-1.webp",
+  "gallery": [],
+  "sortOrder": 100,
+  "featured": false,
+  "available": true
+}

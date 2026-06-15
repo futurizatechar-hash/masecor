@@ -17,6 +17,12 @@ interface Product {
   featured?: boolean;
   thickness?: string;
   installationType?: string;
+  dimensions?: {
+    width?: number;
+    depth?: number;
+    height?: number;
+    unit?: string;
+  };
 }
 
 interface Props {
@@ -28,11 +34,61 @@ import ProductCard from './ProductCard.astro';
 
 const { products, showFilters = false } = Astro.props;
 
+// Helper function to tag widths into sensible ranges
+function getWidthRangeTag(width: number | undefined): string | null {
+  if (width === undefined || isNaN(width)) return null;
+  if (width < 600) return 'under-60';
+  if (width >= 600 && width < 800) return '60-79';
+  if (width >= 800 && width < 1200) return '80-119';
+  if (width >= 1200 && width < 1600) return '120-159';
+  if (width >= 1600) return 'over-160';
+  return null;
+}
+
+// Hierarchical classification helper
+function getProductCategories(product: Product) {
+  const name = product.name.toLowerCase();
+  const cat = product.category;
+  
+  let mainCategory = '';
+  let subCategory = '';
+  
+  if (cat === 'bacha-simple') {
+    mainCategory = 'bachas';
+    subCategory = 'simple';
+  } else if (cat === 'bacha-doble') {
+    mainCategory = 'bachas';
+    subCategory = 'doble';
+  } else if (cat === 'mesada-ciega') {
+    mainCategory = 'mesadas';
+    subCategory = 'ciega';
+  } else if (cat === 'mesada-integrada') {
+    mainCategory = 'mesadas';
+    subCategory = 'integrada';
+  } else if (cat === 'pileta-lavadero') {
+    mainCategory = 'lavadero';
+    subCategory = 'pileta';
+  } else if (cat === 'accesorio') {
+    mainCategory = 'accesorios';
+    if (name.includes('canasto')) subCategory = 'canastos';
+    else if (name.includes('colador')) subCategory = 'coladores';
+    else if (name.includes('griferia')) subCategory = 'griferia';
+    else if (name.includes('dispenser') || name.includes('dosificador')) subCategory = 'dispenser';
+    else if (name.includes('sifon')) subCategory = 'sifones';
+    else if (name.includes('sopapa') || name.includes('sop-')) subCategory = 'sopapas';
+    else if (name.includes('roller')) subCategory = 'roller';
+    else if (name.includes('asadera')) subCategory = 'asadera';
+    else subCategory = 'otros';
+  } else {
+    mainCategory = 'otros';
+    subCategory = 'otros';
+  }
+  
+  return { mainCategory, subCategory };
+}
+
 // Extract unique filterable dimensions dynamically
 const lines = [...new Set(products.map((p) => p.line))].filter(Boolean);
-const categories = [...new Set(products.map((p) => p.category))].filter(
-  Boolean,
-);
 const thicknesses = [...new Set(products.map((p) => p.thickness))]
   .filter(Boolean)
   .sort();
@@ -40,21 +96,38 @@ const installations = [
   ...new Set(products.map((p) => p.installationType)),
 ].filter(Boolean);
 
+const widthRanges = ['under-60', '60-79', '80-119', '120-159', 'over-160'];
+
 const lineLabels: Record<string, string> = {
   premium: 'Premium',
   prisma: 'Prisma',
-  standard: 'Standard',
+  standard: 'Estándar',
   lavadero: 'Lavadero',
   accesorios: 'Accesorios',
 };
 
-const categoryLabels: Record<string, string> = {
-  'bacha-simple': 'Bacha Simple',
-  'bacha-doble': 'Bacha Doble',
-  'mesada-ciega': 'Mesada Ciega',
-  'mesada-integrada': 'Mesada Integrada',
-  'pileta-lavadero': 'Pileta Lavadero',
-  accesorio: 'Accesorio',
+const mainCategoryLabels: Record<string, string> = {
+  bachas: 'Bachas',
+  mesadas: 'Mesadas',
+  accesorios: 'Accesorios',
+  lavadero: 'Lavaderos',
+};
+
+const subCategoryLabels: Record<string, string> = {
+  simple: 'Simple',
+  doble: 'Doble',
+  ciega: 'Ciega',
+  integrada: 'Integrada',
+  pileta: 'Pileta',
+  canastos: 'Canastos',
+  coladores: 'Coladores',
+  griferia: 'Grifería',
+  dispenser: 'Dosificadores',
+  sifones: 'Sifones',
+  sopapas: 'Sopapas',
+  roller: 'Roller / Escurridor',
+  asadera: 'Asadera',
+  otros: 'Otros Accesorios',
 };
 
 const installationLabels: Record<string, string> = {
@@ -64,6 +137,57 @@ const installationLabels: Record<string, string> = {
   colgar: 'Colgar',
   'sobre-mesada-bajo-mesada': 'Sobre/Bajo Mesada',
 };
+
+const widthRangeLabels: Record<string, string> = {
+  'under-60': 'Menos de 60 cm',
+  '60-79': '60 a 79 cm',
+  '80-119': '80 a 119 cm',
+  '120-159': '120 a 159 cm',
+  'over-160': '160 cm o más',
+};
+
+// Compute counts statically for catalog overview
+const lineCounts: Record<string, number> = {};
+const mainCategoryCounts: Record<string, number> = {};
+const categoryCounts: Record<string, number> = {};
+const thicknessCounts: Record<string, number> = {};
+const installationCounts: Record<string, number> = {};
+const widthRangeCounts: Record<string, number> = {};
+
+// Build groupedCategories
+const groupedCategories: Record<string, string[]> = {};
+products.forEach((p) => {
+  const { mainCategory, subCategory } = getProductCategories(p);
+  if (mainCategory && subCategory) {
+    if (!groupedCategories[mainCategory]) {
+      groupedCategories[mainCategory] = [];
+    }
+    if (!groupedCategories[mainCategory].includes(subCategory)) {
+      groupedCategories[mainCategory].push(subCategory);
+    }
+  }
+});
+
+products.forEach((p) => {
+  if (p.line) lineCounts[p.line] = (lineCounts[p.line] || 0) + 1;
+  if (p.thickness) thicknessCounts[p.thickness] = (thicknessCounts[p.thickness] || 0) + 1;
+  if (p.installationType) installationCounts[p.installationType] = (installationCounts[p.installationType] || 0) + 1;
+  
+  const { mainCategory, subCategory } = getProductCategories(p);
+  if (mainCategory) {
+    mainCategoryCounts[mainCategory] = (mainCategoryCounts[mainCategory] || 0) + 1;
+  }
+  if (subCategory) {
+    categoryCounts[subCategory] = (categoryCounts[subCategory] || 0) + 1;
+  }
+  
+  const wRange = getWidthRangeTag(p.dimensions?.width);
+  if (wRange) {
+    widthRangeCounts[wRange] = (widthRangeCounts[wRange] || 0) + 1;
+  }
+});
+
+const activeWidthRanges = widthRanges.filter((range) => (widthRangeCounts[range] || 0) > 0);
 ---
 
 <section class="catalog" aria-label="Catálogo de productos">
@@ -163,13 +287,17 @@ const installationLabels: Record<string, string> = {
                     <ul class="filter-list">
                       {lines.map((line) => (
                         <li>
-                          <button
-                            class="filter-link"
-                            data-filter-type="line"
-                            data-filter={line}
-                          >
-                            <span>{lineLabels[line] ?? line}</span>
-                          </button>
+                          <label class="filter-checkbox-label">
+                            <input
+                              type="checkbox"
+                              class="filter-checkbox"
+                              data-filter-type="line"
+                              value={line}
+                            />
+                            <span class="checkbox-custom"></span>
+                            <span class="label-text">{lineLabels[line] ?? line}</span>
+                            <span class="filter-count">({lineCounts[line] || 0})</span>
+                          </label>
                         </li>
                       ))}
                     </ul>
@@ -178,7 +306,7 @@ const installationLabels: Record<string, string> = {
               )}
 
               {/* Category: Category / Type */}
-              {categories.length > 0 && (
+              {Object.keys(groupedCategories).length > 0 && (
                 <div class="filter-section" data-section-type="category">
                   <button
                     class="filter-section__header"
@@ -201,19 +329,39 @@ const installationLabels: Record<string, string> = {
                     </svg>
                   </button>
                   <div class="filter-section__body" id="filter-body-category">
-                    <ul class="filter-list">
-                      {categories.map((category) => (
-                        <li>
-                          <button
-                            class="filter-link"
-                            data-filter-type="category"
-                            data-filter={category}
-                          >
-                            <span>{categoryLabels[category] ?? category}</span>
-                          </button>
-                        </li>
-                      ))}
-                    </ul>
+                    {Object.keys(groupedCategories).map((mainCat) => (
+                      <div class="filter-subgroup">
+                        <label class="filter-checkbox-label filter-checkbox-label--main">
+                          <input
+                            type="checkbox"
+                            class="filter-checkbox main-category-checkbox"
+                            value={mainCat}
+                          />
+                          <span class="checkbox-custom"></span>
+                          <span class="label-text">{mainCategoryLabels[mainCat]}</span>
+                          <button class="filter-only-btn" data-main-category={mainCat}>Solo</button>
+                          <span class="filter-count">({mainCategoryCounts[mainCat] || 0})</span>
+                        </label>
+                        <ul class="filter-list filter-list--sub">
+                          {groupedCategories[mainCat].map((subCat) => (
+                            <li>
+                              <label class="filter-checkbox-label">
+                                <input
+                                  type="checkbox"
+                                  class="filter-checkbox sub-category-checkbox"
+                                  data-filter-type="category"
+                                  data-parent-category={mainCat}
+                                  value={subCat}
+                                />
+                                <span class="checkbox-custom"></span>
+                                <span class="label-text">{subCategoryLabels[subCat]}</span>
+                                <span class="filter-count">({categoryCounts[subCat] || 0})</span>
+                              </label>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
                   </div>
                 </div>
               )}
@@ -245,13 +393,17 @@ const installationLabels: Record<string, string> = {
                     <ul class="filter-list">
                       {thicknesses.map((thickness) => (
                         <li>
-                          <button
-                            class="filter-link"
-                            data-filter-type="thickness"
-                            data-filter={thickness}
-                          >
-                            <span>{thickness}</span>
-                          </button>
+                          <label class="filter-checkbox-label">
+                            <input
+                              type="checkbox"
+                              class="filter-checkbox"
+                              data-filter-type="thickness"
+                              value={thickness}
+                            />
+                            <span class="checkbox-custom"></span>
+                            <span class="label-text">{thickness}</span>
+                            <span class="filter-count">({thicknessCounts[thickness] || 0})</span>
+                          </label>
                         </li>
                       ))}
                     </ul>
@@ -292,13 +444,62 @@ const installationLabels: Record<string, string> = {
                     <ul class="filter-list">
                       {installations.map((inst) => (
                         <li>
-                          <button
-                            class="filter-link"
-                            data-filter-type="installationType"
-                            data-filter={inst}
-                          >
-                            <span>{installationLabels[inst] ?? inst}</span>
-                          </button>
+                          <label class="filter-checkbox-label">
+                            <input
+                              type="checkbox"
+                              class="filter-checkbox"
+                              data-filter-type="installationType"
+                              value={inst}
+                            />
+                            <span class="checkbox-custom"></span>
+                            <span class="label-text">{installationLabels[inst] ?? inst}</span>
+                            <span class="filter-count">({installationCounts[inst] || 0})</span>
+                          </label>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              )}
+
+              {/* Category: Width Range */}
+              {activeWidthRanges.length > 0 && (
+                <div class="filter-section" data-section-type="widthRange">
+                  <button
+                    class="filter-section__header"
+                    aria-expanded="true"
+                    aria-controls="filter-body-widthRange"
+                  >
+                    <span>Ancho</span>
+                    <svg
+                      class="chevron"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <polyline points="6 9 12 15 18 9" />
+                    </svg>
+                  </button>
+                  <div class="filter-section__body" id="filter-body-widthRange">
+                    <ul class="filter-list">
+                      {activeWidthRanges.map((range) => (
+                        <li>
+                          <label class="filter-checkbox-label">
+                            <input
+                              type="checkbox"
+                              class="filter-checkbox"
+                              data-filter-type="widthRange"
+                              value={range}
+                            />
+                            <span class="checkbox-custom"></span>
+                            <span class="label-text">{widthRangeLabels[range] ?? range}</span>
+                            <span class="filter-count">({widthRangeCounts[range] || 0})</span>
+                          </label>
                         </li>
                       ))}
                     </ul>
@@ -313,15 +514,42 @@ const installationLabels: Record<string, string> = {
     }
 
     <div class="catalog__main">
+      <div class="catalog__search-wrapper">
+        <svg
+          class="search-icon"
+          width="18"
+          height="18"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input
+          type="search"
+          id="catalog-search"
+          placeholder="Buscar por nombre, línea o características..."
+          aria-label="Buscar productos"
+        />
+      </div>
+
       <div class="catalog__grid" id="product-grid">
         {
           products.map((product) => (
             <div
               class="catalog__item"
               data-line={product.line}
-              data-category={product.category}
+              data-maincategory={getProductCategories(product).mainCategory || ''}
+              data-subcategory={getProductCategories(product).subCategory || ''}
               data-thickness={product.thickness || ''}
               data-installation={product.installationType || ''}
+              data-width-range={getWidthRangeTag(product.dimensions?.width) || ''}
+              data-name={product.name.toLowerCase()}
+              data-description={product.shortDescription.toLowerCase()}
             >
               <ProductCard
                 name={product.name}
@@ -370,35 +598,59 @@ const installationLabels: Record<string, string> = {
           </div>
         )
       }
+
+      {/* Load More Button */}
+      <div class="load-more-wrapper" id="load-more-wrapper" style="display: none;">
+        <button class="load-more-btn" id="load-more-btn">
+          <span id="load-more-label">Ver más productos</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9" />
+          </svg>
+        </button>
+        <p class="load-more-count" id="load-more-count"></p>
+      </div>
     </div>
   </div>
 </section>
 
 <script>
+  // Pagination config
+  const PAGE_SIZE = 12;
+  let visibleLimit = PAGE_SIZE;
+
   // Dynamic filter state
-  const currentFilters = {
-    line: 'all',
-    category: 'all',
-    thickness: 'all',
-    installationType: 'all',
+  const currentFilters: Record<string, string[]> = {
+    line: [],
+    category: [],
+    thickness: [],
+    installationType: [],
+    widthRange: [],
   };
 
   // Human readable label mappings for active filter chips
   const lineLabels: Record<string, string> = {
     premium: 'Línea Premium',
     prisma: 'Línea Prisma',
-    standard: 'Línea Standard',
+    standard: 'Línea Estándar',
     lavadero: 'Línea Lavadero',
     accesorios: 'Accesorios',
   };
 
-  const categoryLabels: Record<string, string> = {
-    'bacha-simple': 'Bacha Simple',
-    'bacha-doble': 'Bacha Doble',
-    'mesada-ciega': 'Mesada Ciega',
-    'mesada-integrada': 'Mesada Integrada',
-    'pileta-lavadero': 'Pileta Lavadero',
-    accesorio: 'Accesorio',
+  const subCategoryLabels: Record<string, string> = {
+    simple: 'Simple',
+    doble: 'Doble',
+    ciega: 'Ciega',
+    integrada: 'Integrada',
+    pileta: 'Pileta',
+    canastos: 'Canastos',
+    coladores: 'Coladores',
+    griferia: 'Grifería',
+    dispenser: 'Dosificadores',
+    sifones: 'Sifones',
+    sopapas: 'Sopapas',
+    roller: 'Roller / Escurridor',
+    asadera: 'Asadera',
+    otros: 'Otros Accesorios',
   };
 
   const installationLabels: Record<string, string> = {
@@ -409,16 +661,20 @@ const installationLabels: Record<string, string> = {
     'sobre-mesada-bajo-mesada': 'Sobre/Bajo Mesada',
   };
 
+  const widthRangeLabels: Record<string, string> = {
+    'under-60': 'Ancho: < 60 cm',
+    '60-79': 'Ancho: 60-79 cm',
+    '80-119': 'Ancho: 80-119 cm',
+    '120-159': 'Ancho: 120-159 cm',
+    'over-160': 'Ancho: ≥ 160 cm',
+  };
+
   // DOM Elements
-  const filters = document.querySelectorAll('.filter-link');
+  const checkboxes = document.querySelectorAll('.filter-checkbox:not(.main-category-checkbox)');
   const items = document.querySelectorAll('.catalog__item');
   const emptyFiltered = document.getElementById('catalog-empty-filtered');
-  const activeFiltersSection = document.getElementById(
-    'active-filters-section',
-  );
-  const activeChipsContainer = document.getElementById(
-    'active-chips-container',
-  );
+  const activeFiltersSection = document.getElementById('active-filters-section');
+  const activeChipsContainer = document.getElementById('active-chips-container');
   const clearAllBtn = document.getElementById('clear-all-btn');
   const emptyResetBtn = document.getElementById('empty-reset-btn');
 
@@ -463,30 +719,49 @@ const installationLabels: Record<string, string> = {
   // Filter Engine
   function applyFilters() {
     let visibleCount = 0;
+    let matchedItems: HTMLElement[] = [];
+    const searchInput = document.getElementById('catalog-search') as HTMLInputElement;
+    const query = searchInput?.value.toLowerCase().trim() || '';
 
     items.forEach((item) => {
-      const line = item.getAttribute('data-line');
-      const category = item.getAttribute('data-category');
-      const thickness = item.getAttribute('data-thickness');
-      const installation = item.getAttribute('data-installation');
+      const line = item.getAttribute('data-line') || '';
+      const subcategory = item.getAttribute('data-subcategory') || '';
+      const thickness = item.getAttribute('data-thickness') || '';
+      const installation = item.getAttribute('data-installation') || '';
+      const widthRange = item.getAttribute('data-width-range') || '';
+      const name = item.getAttribute('data-name') || '';
+      const description = item.getAttribute('data-description') || '';
 
       const matchLine =
-        currentFilters.line === 'all' || line === currentFilters.line;
+        currentFilters.line.length === 0 || currentFilters.line.includes(line);
       const matchCategory =
-        currentFilters.category === 'all' ||
-        category === currentFilters.category;
+        currentFilters.category.length === 0 || currentFilters.category.includes(subcategory);
       const matchThickness =
-        currentFilters.thickness === 'all' ||
-        thickness === currentFilters.thickness;
+        currentFilters.thickness.length === 0 || currentFilters.thickness.includes(thickness);
       const matchInstallation =
-        currentFilters.installationType === 'all' ||
-        installation === currentFilters.installationType;
+        currentFilters.installationType.length === 0 || currentFilters.installationType.includes(installation);
+      const matchWidthRange =
+        currentFilters.widthRange.length === 0 || currentFilters.widthRange.includes(widthRange);
+      const matchSearch =
+        query === '' ||
+        name.includes(query) ||
+        description.includes(query);
 
-      const show =
-        matchLine && matchCategory && matchThickness && matchInstallation;
+      const passesFilter =
+        matchLine && matchCategory && matchThickness && matchInstallation && matchWidthRange && matchSearch;
       const el = item as HTMLElement;
 
-      if (show) {
+      if (passesFilter) {
+        matchedItems.push(el);
+      } else {
+        el.style.display = 'none';
+        el.style.animation = '';
+      }
+    });
+
+    // Apply pagination to matched items
+    matchedItems.forEach((el, idx) => {
+      if (idx < visibleLimit) {
         el.style.display = '';
         el.style.animation = 'catalogReveal 0.4s var(--ease-out-expo) forwards';
         visibleCount++;
@@ -496,45 +771,95 @@ const installationLabels: Record<string, string> = {
       }
     });
 
+    // Update "load more" button
+    const loadMoreWrapper = document.getElementById('load-more-wrapper');
+    const loadMoreLabel = document.getElementById('load-more-label');
+    const loadMoreCount = document.getElementById('load-more-count');
+    const remaining = matchedItems.length - visibleLimit;
+    if (loadMoreWrapper) {
+      if (remaining > 0) {
+        loadMoreWrapper.style.display = 'flex';
+        if (loadMoreLabel) loadMoreLabel.textContent = 'Ver más productos';
+        if (loadMoreCount) loadMoreCount.textContent = `Mostrando ${Math.min(visibleLimit, matchedItems.length)} de ${matchedItems.length} productos`;
+      } else {
+        loadMoreWrapper.style.display = matchedItems.length > PAGE_SIZE ? 'flex' : 'none';
+        if (remaining <= 0 && matchedItems.length > PAGE_SIZE) {
+          if (loadMoreLabel) loadMoreLabel.textContent = 'Ver menos';
+          if (loadMoreCount) loadMoreCount.textContent = `Mostrando todos los ${matchedItems.length} productos`;
+        }
+      }
+    }
+
     // Update empty state
+    const totalVisible = matchedItems.length;
     if (emptyFiltered) {
       emptyFiltered.style.display =
-        visibleCount === 0 && items.length > 0 ? 'flex' : 'none';
+        totalVisible === 0 && items.length > 0 ? 'flex' : 'none';
     }
 
     updateUI();
+    saveFilters();
+  }
+
+  function saveFilters() {
+    const searchInput = document.getElementById('catalog-search') as HTMLInputElement;
+    const state = {
+      filters: currentFilters,
+      search: searchInput?.value || ''
+    };
+    sessionStorage.setItem('masecorFilters', JSON.stringify(state));
   }
 
   function updateUI() {
-    // 1. Update filter links active states
-    filters.forEach((btn) => {
-      const type = btn.getAttribute(
-        'data-filter-type',
-      ) as keyof typeof currentFilters;
-      const val = btn.getAttribute('data-filter');
+    // 1. Sync checkbox states with currentFilters
+    checkboxes.forEach((cb) => {
+      const input = cb as HTMLInputElement;
+      const type = input.getAttribute('data-filter-type');
+      const val = input.value;
 
-      if (currentFilters[type] === val) {
-        btn.classList.add('filter-link--active');
-        btn.setAttribute('aria-selected', 'true');
-      } else {
-        btn.classList.remove('filter-link--active');
-        btn.setAttribute('aria-selected', 'false');
+      if (type && currentFilters[type]) {
+        input.checked = currentFilters[type].includes(val);
       }
     });
 
-    // 2. Render active filter chips at the top
+    // 2. Sync main category parent checkboxes based on their children (including indeterminate state)
+    const mainCheckboxes = document.querySelectorAll('.main-category-checkbox');
+    mainCheckboxes.forEach((mcb) => {
+      const mainInput = mcb as HTMLInputElement;
+      const mainCat = mainInput.value;
+      const children = document.querySelectorAll(`.sub-category-checkbox[data-parent-category="${mainCat}"]`);
+      if (children.length > 0) {
+        const childrenArray = Array.from(children) as HTMLInputElement[];
+        const checkedCount = childrenArray.filter((child) => child.checked).length;
+        
+        if (checkedCount === childrenArray.length) {
+          mainInput.checked = true;
+          mainInput.indeterminate = false;
+        } else if (checkedCount > 0) {
+          mainInput.checked = false;
+          mainInput.indeterminate = true;
+        } else {
+          mainInput.checked = false;
+          mainInput.indeterminate = false;
+        }
+      }
+    });
+
+    // 3. Render active filter chips at the top
     if (activeChipsContainer && activeFiltersSection) {
       activeChipsContainer.innerHTML = '';
       let activeCount = 0;
 
-      Object.entries(currentFilters).forEach(([type, value]) => {
-        if (value !== 'all') {
+      Object.entries(currentFilters).forEach(([type, values]) => {
+        values.forEach((value) => {
           activeCount++;
           let label = value;
           if (type === 'line') label = lineLabels[value] || value;
-          if (type === 'category') label = categoryLabels[value] || value;
+          if (type === 'category') label = subCategoryLabels[value] || value;
           if (type === 'installationType')
             label = installationLabels[value] || value;
+          if (type === 'widthRange')
+            label = widthRangeLabels[value] || value;
 
           const chip = document.createElement('button');
           chip.className = 'active-chip';
@@ -544,55 +869,174 @@ const installationLabels: Record<string, string> = {
           `;
 
           chip.addEventListener('click', () => {
-            setFilter(type as keyof typeof currentFilters, 'all');
+            currentFilters[type] = currentFilters[type].filter((v) => v !== value);
+            applyFilters();
           });
 
           activeChipsContainer.appendChild(chip);
-        }
+        });
       });
 
       activeFiltersSection.style.display = activeCount > 0 ? 'block' : 'none';
     }
   }
 
-  function setFilter(type: keyof typeof currentFilters, value: string) {
-    currentFilters[type] = value;
-    applyFilters();
-  }
+  // Bind change handlers to checkboxes
+  checkboxes.forEach((cb) => {
+    cb.addEventListener('change', () => {
+      const input = cb as HTMLInputElement;
+      const type = input.getAttribute('data-filter-type');
+      const val = input.value;
 
-  // Bind click handlers to filter links
-  filters.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const type = btn.getAttribute(
-        'data-filter-type',
-      ) as keyof typeof currentFilters;
-      const val = btn.getAttribute('data-filter') || 'all';
-
-      // Toggle behavior: click active filter to deselect it
-      if (currentFilters[type] === val) {
-        setFilter(type, 'all');
-      } else {
-        setFilter(type, val);
+      if (type && currentFilters[type]) {
+        if (input.checked) {
+          if (!currentFilters[type].includes(val)) {
+            currentFilters[type].push(val);
+          }
+        } else {
+          currentFilters[type] = currentFilters[type].filter((v) => v !== val);
+        }
+        visibleLimit = PAGE_SIZE; // reset pagination on filter change
+        applyFilters();
       }
+    });
+  });
 
-      // Auto close mobile drawer on filter selection for better UX
-      if (window.innerWidth < 1024) {
-        // Delay slightly for visual feedback before closing
-        setTimeout(closeSidebar, 200);
-      }
+  // Bind change handlers to main category checkboxes
+  const mainCategoryCheckboxes = document.querySelectorAll('.main-category-checkbox');
+  mainCategoryCheckboxes.forEach((mcb) => {
+    mcb.addEventListener('change', () => {
+      const input = mcb as HTMLInputElement;
+      const mainCat = input.value;
+      const isChecked = input.checked;
+
+      const children = document.querySelectorAll(`.sub-category-checkbox[data-parent-category="${mainCat}"]`);
+      children.forEach((child) => {
+        const childInput = child as HTMLInputElement;
+        const val = childInput.value;
+
+        if (isChecked) {
+          if (!currentFilters.category.includes(val)) {
+            currentFilters.category.push(val);
+          }
+        } else {
+          currentFilters.category = currentFilters.category.filter((v) => v !== val);
+        }
+      });
+      applyFilters();
     });
   });
 
   // Reset all handler
   function resetAll() {
     Object.keys(currentFilters).forEach((key) => {
-      currentFilters[key as keyof typeof currentFilters] = 'all';
+      currentFilters[key] = [];
     });
+    const searchInput = document.getElementById('catalog-search') as HTMLInputElement;
+    if (searchInput) {
+      searchInput.value = '';
+    }
+    visibleLimit = PAGE_SIZE; // reset pagination
     applyFilters();
   }
 
   clearAllBtn?.addEventListener('click', resetAll);
   emptyResetBtn?.addEventListener('click', resetAll);
+
+  // Search input change listener
+  const searchInput = document.getElementById('catalog-search') as HTMLInputElement;
+  searchInput?.addEventListener('input', () => {
+    visibleLimit = PAGE_SIZE; // reset pagination on new search
+    applyFilters();
+  });
+
+  // Bind click handlers to "Ver Solo" buttons next to main categories
+  const onlyButtons = document.querySelectorAll('.filter-only-btn');
+  onlyButtons.forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      const mainCat = btn.getAttribute('data-main-category');
+      if (mainCat) {
+        // Clear all subcategory filters
+        currentFilters.category = [];
+        // Add all subcategories under this main category
+        const children = document.querySelectorAll(`.sub-category-checkbox[data-parent-category="${mainCat}"]`);
+        children.forEach((child) => {
+          const childInput = child as HTMLInputElement;
+          currentFilters.category.push(childInput.value);
+        });
+        visibleLimit = PAGE_SIZE; // reset pagination
+        applyFilters();
+      }
+    });
+  });
+
+  // Load more button handler
+  const loadMoreBtn = document.getElementById('load-more-btn');
+  const loadMoreLabel = document.getElementById('load-more-label');
+  loadMoreBtn?.addEventListener('click', () => {
+    if (loadMoreLabel?.textContent?.includes('menos')) {
+      // Collapse back to initial page
+      visibleLimit = PAGE_SIZE;
+    } else {
+      // Expand by one page
+      visibleLimit += PAGE_SIZE;
+    }
+    applyFilters();
+    // Smooth scroll hint - only scroll if we expanded
+    if (!loadMoreLabel?.textContent?.includes('menos')) {
+      const grid = document.getElementById('product-grid');
+      if (grid) {
+        const lastVisible = Array.from(grid.querySelectorAll('.catalog__item')).filter(
+          (el) => (el as HTMLElement).style.display !== 'none'
+        ).pop();
+        lastVisible?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    }
+  });
+
+  // Load filters from session storage on initial render
+  function loadFilters() {
+    let hadSavedFilters = false;
+    try {
+      const saved = sessionStorage.getItem('masecorFilters');
+      if (saved) {
+        const state = JSON.parse(saved);
+        if (state.filters) {
+          Object.assign(currentFilters, state.filters);
+        }
+        if (state.search && searchInput) {
+          searchInput.value = state.search;
+        }
+        // Check if any filter was actually active
+        const hasActiveFilters = Object.values(currentFilters).some((arr) => arr.length > 0);
+        const hasSearch = searchInput?.value?.trim() !== '';
+        hadSavedFilters = hasActiveFilters || hasSearch;
+      }
+    } catch (e) {
+      console.error('Error loading filters from session storage', e);
+    }
+    // Always apply filters on load to enforce pagination
+    applyFilters();
+
+    // If we restored filters (user came back from a product page), scroll to the catalog grid
+    if (hadSavedFilters) {
+      requestAnimationFrame(() => {
+        const catalog = document.querySelector('.catalog');
+        if (catalog) {
+          const offset = 100; // leave some space above for the navbar
+          const top = catalog.getBoundingClientRect().top + window.scrollY - offset;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      });
+    }
+  }
+
+  // Use Astro's astro:page-load event to ensure script runs on client navigation
+  document.addEventListener('astro:page-load', loadFilters, { once: true });
+  // Also run immediately in case astro:page-load already fired or is not used
+  loadFilters();
 </script>
 
 <style>
@@ -601,6 +1045,50 @@ const installationLabels: Record<string, string> = {
     display: flex;
     flex-direction: column;
     gap: var(--space-6);
+  }
+
+  /* ── Search Bar ── */
+  .catalog__search-wrapper {
+    position: relative;
+    width: 100%;
+    margin-bottom: var(--space-8);
+  }
+
+  .catalog__search-wrapper .search-icon {
+    position: absolute;
+    left: 1.25rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--gray-400);
+    pointer-events: none;
+    transition: color var(--transition-fast);
+  }
+
+  .catalog__search-wrapper input[type='search'] {
+    width: 100%;
+    padding: 1rem 1rem 1rem 3.25rem;
+    font-family: var(--font-body);
+    font-size: var(--text-sm);
+    color: var(--black-rich);
+    background-color: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: 8px;
+    outline: none;
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-fast);
+  }
+
+  .catalog__search-wrapper input[type='search']::placeholder {
+    color: var(--gray-400);
+  }
+
+  .catalog__search-wrapper input[type='search']:focus {
+    border-color: var(--black-rich);
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05), var(--shadow-md);
+  }
+
+  .catalog__search-wrapper input[type='search']:focus + .search-icon {
+    color: var(--black-rich);
   }
 
   /* Mobile Filters Header */
@@ -844,7 +1332,7 @@ const installationLabels: Record<string, string> = {
     display: none;
   }
 
-  /* ── Links list ── */
+  /* ── Filter Checkbox List ── */
   .filter-list {
     list-style: none;
     padding: 0;
@@ -854,50 +1342,191 @@ const installationLabels: Record<string, string> = {
     gap: var(--space-1);
   }
 
-  .filter-link {
+  .filter-checkbox-label {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 100%;
-    font-size: 14px;
-    color: var(--gray-600);
+    position: relative;
     padding-block: var(--space-1.5);
     cursor: pointer;
-    background: none;
-    border: none;
-    text-align: left;
+    font-size: 14px;
+    color: var(--gray-600);
+    user-select: none;
     transition: color var(--transition-fast);
   }
 
-  .filter-link:hover {
-    color: var(--black-rich);
-    text-decoration: underline;
-  }
-
-  .filter-link--active {
-    font-weight: var(--weight-bold);
+  .filter-checkbox-label:hover {
     color: var(--black-rich);
   }
 
-  .filter-link--active::after {
-    content: '✕';
-    font-size: 9px;
-    font-weight: normal;
-    color: var(--gray-400);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    background: var(--white-soft);
-    margin-left: var(--space-2);
+  /* Hide the browser's default checkbox */
+  .filter-checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  /* Create a custom checkbox */
+  .checkbox-custom {
+    position: relative;
+    height: 16px;
+    width: 16px;
+    background-color: var(--white);
+    border: 1.5px solid var(--gray-300);
+    border-radius: 4px;
+    margin-right: var(--space-3);
+    flex-shrink: 0;
     transition: all var(--transition-fast);
   }
 
-  .filter-link--active:hover::after {
-    background: var(--gray-200);
+  /* On hover, add a darker border */
+  .filter-checkbox-label:hover .checkbox-custom {
+    border-color: var(--gray-500);
+  }
+
+  /* When the checkbox is checked, add a black background */
+  .filter-checkbox:checked + .checkbox-custom {
+    background-color: var(--black-rich);
+    border-color: var(--black-rich);
+  }
+
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkbox-custom::after {
+    content: '';
+    position: absolute;
+    display: none;
+    left: 4.5px;
+    top: 1px;
+    width: 4px;
+    height: 8px;
+    border: solid var(--white);
+    border-width: 0 1.5px 1.5px 0;
+    transform: rotate(45deg);
+  }
+
+  /* Show the checkmark when checked */
+  .filter-checkbox:checked + .checkbox-custom::after {
+    display: block;
+  }
+
+  .label-text {
+    flex-grow: 1;
+  }
+
+  .filter-count {
+    font-size: 12px;
+    color: var(--gray-400);
+    margin-left: var(--space-2);
+  }
+
+  /* ── Filter Subgroups & Hierarchy ── */
+  .filter-subgroup {
+    margin-top: var(--space-4);
+    padding-left: var(--space-1);
+  }
+
+  .filter-subgroup:first-of-type {
+    margin-top: var(--space-2);
+  }
+
+  .filter-checkbox-label--main {
+    font-weight: var(--weight-bold) !important;
+    color: var(--black-rich) !important;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-block: var(--space-2);
+  }
+
+  .filter-checkbox-label--main .label-text {
+    font-weight: var(--weight-bold);
+  }
+
+  .filter-list--sub {
+    padding-left: var(--space-4) !important;
+    margin-top: var(--space-1);
+    margin-bottom: var(--space-3);
+    border-left: 1.5px solid var(--gray-200);
+    padding-block: var(--space-0.5);
+  }
+
+  .filter-list--sub .filter-checkbox-label {
+    font-size: 13px;
+    padding-block: var(--space-1);
+    color: var(--gray-500);
+  }
+
+  .filter-list--sub .checkbox-custom {
+    height: 14px;
+    width: 14px;
+    margin-right: var(--space-2);
+  }
+
+  .filter-list--sub .checkbox-custom::after {
+    left: 4px;
+    top: 1px;
+    width: 3px;
+    height: 6px;
+  }
+
+  /* Indeterminate state styling */
+  .filter-checkbox:indeterminate + .checkbox-custom {
+    background-color: var(--black-rich);
+    border-color: var(--black-rich);
+  }
+
+  .filter-checkbox:indeterminate + .checkbox-custom::after {
+    display: block;
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 2px;
+    background-color: var(--white);
+    border: none;
+  }
+
+  /* "Ver Solo" Button Styling */
+  .filter-only-btn {
+    background: none;
+    border: none;
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: var(--weight-bold);
+    color: var(--gray-400);
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wider);
+    cursor: pointer;
+    padding: var(--space-0.5) var(--space-2);
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: var(--space-2);
+    opacity: 0;
+    transition: all var(--transition-fast);
+  }
+
+  .filter-checkbox-label--main:hover .filter-only-btn,
+  .filter-only-btn:focus {
+    opacity: 1;
+  }
+
+  /* Keep it slightly visible on mobile since hover doesn't exist */
+  @media (max-width: 1023px) {
+    .filter-only-btn {
+      opacity: 0.6;
+    }
+  }
+
+  .filter-only-btn:hover {
     color: var(--black-rich);
+    background-color: var(--white-soft);
+    opacity: 1 !important;
   }
 
   /* ── Product Catalog Grid ── */
@@ -1001,5 +1630,57 @@ const installationLabels: Record<string, string> = {
       grid-template-columns: repeat(3, 1fr);
       gap: var(--space-8);
     }
+  }
+
+  /* ── Load More ── */
+  .load-more-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-3);
+    margin-top: var(--space-10);
+    padding-top: var(--space-8);
+    border-top: 1px solid var(--gray-100);
+  }
+
+  .load-more-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: 0.75rem 2rem;
+    font-family: var(--font-body);
+    font-size: var(--text-sm);
+    font-weight: var(--weight-semibold);
+    color: var(--black-rich);
+    background: var(--white);
+    border: 1.5px solid var(--gray-200);
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    box-shadow: var(--shadow-sm);
+    letter-spacing: var(--tracking-wide);
+  }
+
+  .load-more-btn:hover {
+    background: var(--black-rich);
+    color: var(--white);
+    border-color: var(--black-rich);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-1px);
+  }
+
+  .load-more-btn svg {
+    transition: transform var(--transition-fast);
+  }
+
+  .load-more-btn:hover svg {
+    transform: translateY(2px);
+  }
+
+  .load-more-count {
+    font-size: var(--text-xs);
+    color: var(--gray-400);
+    margin: 0;
+    font-family: var(--font-body);
   }
 </style>

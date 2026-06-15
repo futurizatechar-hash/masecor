@@ -1,0 +1,23 @@
+{
+  "name": "Bacha Cocina Standar M20 Bacha Profunda Acero Mate",
+  "line": "standard",
+  "category": "bacha-simple",
+  "shortDescription": "BACHA DE COCINA MASECOR",
+  "description": "BACHA DE COCINA MASECOR",
+  "material": "Acero Inoxidable AISI 304",
+  "thickness": "0.6mm",
+  "features": [
+    "Acero Inoxidable AISI 304",
+    "Alta durabilidad y resistencia"
+  ],
+  "installationType": "bajo-mesada",
+  "image": "/images/products/bacha-cocina-standar-m20-bacha-profunda-acero-mate-1.webp",
+  "gallery": [
+    "/images/products/bacha-cocina-standar-m20-bacha-profunda-acero-mate-2.webp",
+    "/images/products/bacha-cocina-standar-m20-bacha-profunda-acero-mate-3.webp",
+    "/images/products/bacha-cocina-standar-m20-bacha-profunda-acero-mate-4.webp"
+  ],
+  "sortOrder": 100,
+  "featured": false,
+  "available": true
+}

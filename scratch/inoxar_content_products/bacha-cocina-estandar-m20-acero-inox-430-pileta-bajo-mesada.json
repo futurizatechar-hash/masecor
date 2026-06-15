@@ -1,0 +1,23 @@
+{
+  "name": "Bacha Cocina Estandar M20 Acero Inox 430 Pileta Bajo Mesada",
+  "line": "lavadero",
+  "category": "mesada-integrada",
+  "shortDescription": "BACHA DE COCINA MASECOR",
+  "description": "BACHA DE COCINA MASECOR",
+  "material": "Acero Inoxidable AISI 304",
+  "thickness": "0.6mm",
+  "features": [
+    "Acero Inoxidable AISI 304",
+    "Alta durabilidad y resistencia"
+  ],
+  "installationType": "sobre-mueble",
+  "image": "/images/products/bacha-cocina-estandar-m20-acero-inox-430-pileta-bajo-mesada-1.webp",
+  "gallery": [
+    "/images/products/bacha-cocina-estandar-m20-acero-inox-430-pileta-bajo-mesada-2.webp",
+    "/images/products/bacha-cocina-estandar-m20-acero-inox-430-pileta-bajo-mesada-3.webp",
+    "/images/products/bacha-cocina-estandar-m20-acero-inox-430-pileta-bajo-mesada-4.webp"
+  ],
+  "sortOrder": 100,
+  "featured": false,
+  "available": true
+}

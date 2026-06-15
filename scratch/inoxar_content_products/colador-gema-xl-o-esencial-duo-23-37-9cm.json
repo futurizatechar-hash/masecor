@@ -1,0 +1,28 @@
+{
+  "name": "COLADOR GEMA XL O ESENCIAL DUO 23*37*9CM",
+  "line": "premium",
+  "category": "bacha-doble",
+  "shortDescription": "Producto de acero inoxidable de alta calidad y precisión.",
+  "description": "",
+  "dimensions": {
+    "width": 230,
+    "depth": 370,
+    "height": 90,
+    "unit": "mm"
+  },
+  "material": "Acero Inoxidable AISI 304",
+  "thickness": "0.6mm",
+  "features": [
+    "Acero Inoxidable AISI 304",
+    "Alta durabilidad y resistencia",
+    "Terminación satinada premium"
+  ],
+  "installationType": "bajo-mesada",
+  "image": "/images/products/colador-gema-xl-o-esencial-duo-23-37-9cm-1.webp",
+  "gallery": [
+    "/images/products/colador-gema-xl-o-esencial-duo-23-37-9cm-2.webp"
+  ],
+  "sortOrder": 100,
+  "featured": false,
+  "available": true
+}

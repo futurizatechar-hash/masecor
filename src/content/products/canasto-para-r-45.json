@@ -1,0 +1,25 @@
+{
+  "name": "CANASTO PARA R 45",
+  "line": "accesorios",
+  "category": "accesorio",
+  "shortDescription": "Optimiza tu espacio con esta solución de alta gama. Su estructura robusta asegura un rendimiento impecable y una apariencia sofisticada en todo momento.",
+  "description": "Renová tu espacio con este producto de Masecor. Optimiza tu espacio con esta solución de alta gama. Su estructura robusta asegura un rendimiento impecable y una apariencia sofisticada en todo momento. Especialmente diseñado para adaptarse a cualquier mesada y ofrecerte la mejor experiencia de uso.",
+  "dimensions": {
+    "width": 260,
+    "depth": 380,
+    "height": 130,
+    "unit": "mm"
+  },
+  "material": "Acero de alta calidad AISI 304",
+  "thickness": "0.6mm",
+  "features": [
+    "Acero de alta calidad AISI 304",
+    "Alta durabilidad y resistencia"
+  ],
+  "installationType": "bajo-mesada",
+  "image": "/images/products/canasto-para-r-45-1.webp",
+  "gallery": [],
+  "sortOrder": 100,
+  "featured": false,
+  "available": true
+}

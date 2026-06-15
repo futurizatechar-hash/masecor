@@ -1,0 +1,30 @@
+{
+  "name": "BACHA CUORE Acero 304 80X50X22CM",
+  "line": "premium",
+  "category": "bacha-simple",
+  "shortDescription": "BACHA DE COCINA CUORE MASECOR",
+  "description": "BACHA DE COCINA CUORE MASECOR",
+  "dimensions": {
+    "width": 800,
+    "depth": 500,
+    "height": 220,
+    "unit": "mm"
+  },
+  "material": "Acero Inoxidable AISI 304",
+  "thickness": "0.6mm",
+  "features": [
+    "Acero Inoxidable AISI 304",
+    "Alta durabilidad y resistencia",
+    "Terminación satinada premium"
+  ],
+  "installationType": "bajo-mesada",
+  "image": "/images/products/bacha-cuore-acero-304-80x50x22cm-1.webp",
+  "gallery": [
+    "/images/products/bacha-cuore-acero-304-80x50x22cm-2.webp",
+    "/images/products/bacha-cuore-acero-304-80x50x22cm-3.webp",
+    "/images/products/bacha-cuore-acero-304-80x50x22cm-4.webp"
+  ],
+  "sortOrder": 100,
+  "featured": false,
+  "available": true
+}

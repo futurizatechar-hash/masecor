@@ -1,0 +1,21 @@
+{
+  "name": "Bacha Cocina Estandar M30c Acero Inox 430 Pileta Bajo Mesada SOP 110MM",
+  "line": "lavadero",
+  "category": "mesada-integrada",
+  "shortDescription": "BACHA DE COCINA MASECOR",
+  "description": "BACHA DE COCINA MASECOR",
+  "material": "Acero Inoxidable AISI 304",
+  "thickness": "0.6mm",
+  "features": [
+    "Acero Inoxidable AISI 304",
+    "Alta durabilidad y resistencia"
+  ],
+  "installationType": "sobre-mueble",
+  "image": "/images/products/bacha-cocina-estandar-m30c-acero-inox-430-pileta-bajo-mesada-sop-110mm-1.webp",
+  "gallery": [
+    "/images/products/bacha-cocina-estandar-m30c-acero-inox-430-pileta-bajo-mesada-sop-110mm-2.webp"
+  ],
+  "sortOrder": 100,
+  "featured": false,
+  "available": true
+}

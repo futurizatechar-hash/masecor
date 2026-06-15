@@ -1,0 +1,29 @@
+{
+  "name": "BLACK 60 Acero 304 60x46x22cm",
+  "line": "premium",
+  "category": "bacha-simple",
+  "shortDescription": "BACHA DE COCINA MASECOR",
+  "description": "BACHA DE COCINA MASECOR",
+  "dimensions": {
+    "width": 600,
+    "depth": 460,
+    "height": 220,
+    "unit": "mm"
+  },
+  "material": "Acero Inoxidable AISI 304",
+  "thickness": "0.6mm",
+  "features": [
+    "Acero Inoxidable AISI 304",
+    "Alta durabilidad y resistencia",
+    "Terminación satinada premium"
+  ],
+  "installationType": "bajo-mesada",
+  "image": "/images/products/black-60-acero-304-60x46x22cm-1.webp",
+  "gallery": [
+    "/images/products/black-60-acero-304-60x46x22cm-2.webp",
+    "/images/products/black-60-acero-304-60x46x22cm-3.webp"
+  ],
+  "sortOrder": 100,
+  "featured": false,
+  "available": true
+}

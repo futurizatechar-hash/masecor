@@ -1,0 +1,3394 @@
+[
+  {
+    "product": "asadera.json",
+    "name": "ASADERA",
+    "category": "accesorio",
+    "currentBlueprint": null,
+    "currentGallery": [],
+    "currentImage": "/images/products/asadera-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "asadera-1.webp",
+        "index": 1,
+        "path": "/images/products/asadera-1.webp",
+        "sizeKB": 11.7,
+        "entropy": 3.418,
+        "width": 800,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "product": "bacha-aqua-l57-acero-304-57x43x22cm.json",
+    "name": "BACHA AQUA L57 Acero 304 57X43X22CM",
+    "category": "bacha-simple",
+    "currentBlueprint": "/images/products/bacha-aqua-l57-acero-304-57x43x22cm-5.webp",
+    "currentGallery": [
+      "/images/products/bacha-aqua-l57-acero-304-57x43x22cm-2.webp",
+      "/images/products/bacha-aqua-l57-acero-304-57x43x22cm-3.webp",
+      "/images/products/bacha-aqua-l57-acero-304-57x43x22cm-4.webp"
+    ],
+    "currentImage": "/images/products/bacha-aqua-l57-acero-304-57x43x22cm-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "bacha-aqua-l57-acero-304-57x43x22cm-1.webp",
+        "index": 1,
+        "path": "/images/products/bacha-aqua-l57-acero-304-57x43x22cm-1.webp",
+        "sizeKB": 16.9,
+        "entropy": 4.133,
+        "width": 800,
+        "height": 1000
+      },
+      {
+        "filename": "bacha-aqua-l57-acero-304-57x43x22cm-2.webp",
+        "index": 2,
+        "path": "/images/products/bacha-aqua-l57-acero-304-57x43x22cm-2.webp",
+        "sizeKB": 15.4,
+        "entropy": 5.504,
+        "width": 800,
+        "height": 1000
+      },
+      {
+        "filename": "bacha-aqua-l57-acero-304-57x43x22cm-3.webp",
+        "index": 3,
+        "path": "/images/products/bacha-aqua-l57-acero-304-57x43x22cm-3.webp",
+        "sizeKB": 8.2,
+        "entropy": 1.555,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "bacha-aqua-l57-acero-304-57x43x22cm-4.webp",
+        "index": 4,
+        "path": "/images/products/bacha-aqua-l57-acero-304-57x43x22cm-4.webp",
+        "sizeKB": 45.4,
+        "entropy": 6.226,
+        "width": 800,
+        "height": 1000
+      },
+      {
+        "filename": "bacha-aqua-l57-acero-304-57x43x22cm-5.webp",
+        "index": 5,
+        "path": "/images/products/bacha-aqua-l57-acero-304-57x43x22cm-5.webp",
+        "sizeKB": 46.4,
+        "entropy": 3.246,
+        "width": 596,
+        "height": 815
+      }
+    ]
+  },
+  {
+    "product": "bacha-aqua-l75-acero-304-75x43x22cm.json",
+    "name": "BACHA AQUA L75 Acero 304 75x43x22cm",
+    "category": "bacha-simple",
+    "currentBlueprint": "/images/products/bacha-aqua-l75-acero-304-75x43x22cm-2.webp",
+    "currentGallery": [
+      "/images/products/bacha-aqua-l75-acero-304-75x43x22cm-4.webp"
+    ],
+    "currentImage": "/images/products/bacha-aqua-l75-acero-304-75x43x22cm-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "bacha-aqua-l75-acero-304-75x43x22cm-1.webp",
+        "index": 1,
+        "path": "/images/products/bacha-aqua-l75-acero-304-75x43x22cm-1.webp",
+        "sizeKB": 16.9,
+        "entropy": 4.133,
+        "width": 800,
+        "height": 1000
+      },
+      {
+        "filename": "bacha-aqua-l75-acero-304-75x43x22cm-2.webp",
+        "index": 2,
+        "path": "/images/products/bacha-aqua-l75-acero-304-75x43x22cm-2.webp",
+        "sizeKB": 46.6,
+        "entropy": 7.54,
+        "width": 596,
+        "height": 809
+      },
+      {
+        "filename": "bacha-aqua-l75-acero-304-75x43x22cm-3.webp",
+        "index": 3,
+        "path": "/images/products/bacha-aqua-l75-acero-304-75x43x22cm-3.webp",
+        "sizeKB": 9,
+        "entropy": 1.628,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "bacha-aqua-l75-acero-304-75x43x22cm-4.webp",
+        "index": 4,
+        "path": "/images/products/bacha-aqua-l75-acero-304-75x43x22cm-4.webp",
+        "sizeKB": 45.4,
+        "entropy": 6.226,
+        "width": 800,
+        "height": 1000
+      }
+    ]
+  },
+  {
+    "product": "bacha-cocina-estandar-m20-acero-inox-430-pileta-bajo-mesada.json",
+    "name": "Bacha Cocina Estandar M20 Acero premium 430 Pileta Bajo Mesada",
+    "category": "pileta-lavadero",
+    "currentBlueprint": "/images/products/bacha-cocina-estandar-m20-acero-inox-430-pileta-bajo-mesada-3.webp",
+    "currentGallery": [
+      "/images/products/bacha-cocina-estandar-m20-acero-inox-430-pileta-bajo-mesada-2.webp"
+    ],
+    "currentImage": "/images/products/bacha-cocina-estandar-m20-acero-inox-430-pileta-bajo-mesada-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "bacha-cocina-estandar-m20-acero-inox-430-pileta-bajo-mesada-1.webp",
+        "index": 1,
+        "path": "/images/products/bacha-cocina-estandar-m20-acero-inox-430-pileta-bajo-mesada-1.webp",
+        "sizeKB": 9,
+        "entropy": 3.552,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "bacha-cocina-estandar-m20-acero-inox-430-pileta-bajo-mesada-2.webp",
+        "index": 2,
+        "path": "/images/products/bacha-cocina-estandar-m20-acero-inox-430-pileta-bajo-mesada-2.webp",
+        "sizeKB": 8.8,
+        "entropy": 1.439,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "bacha-cocina-estandar-m20-acero-inox-430-pileta-bajo-mesada-3.webp",
+        "index": 3,
+        "path": "/images/products/bacha-cocina-estandar-m20-acero-inox-430-pileta-bajo-mesada-3.webp",
+        "sizeKB": 46.4,
+        "entropy": 3.246,
+        "width": 596,
+        "height": 815
+      }
+    ]
+  },
+  {
+    "product": "bacha-cocina-estandar-m30-acero-inox-430-pileta-bajo-mesada-sop-70mm.json",
+    "name": "Bacha Cocina Estandar M30 Acero premium 430 Pileta Bajo Mesada SOP 70MM",
+    "category": "pileta-lavadero",
+    "currentBlueprint": null,
+    "currentGallery": [
+      "/images/products/bacha-cocina-estandar-m30-acero-inox-430-pileta-bajo-mesada-sop-70mm-2.webp"
+    ],
+    "currentImage": "/images/products/bacha-cocina-estandar-m30-acero-inox-430-pileta-bajo-mesada-sop-70mm-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "bacha-cocina-estandar-m30-acero-inox-430-pileta-bajo-mesada-sop-70mm-1.webp",
+        "index": 1,
+        "path": "/images/products/bacha-cocina-estandar-m30-acero-inox-430-pileta-bajo-mesada-sop-70mm-1.webp",
+        "sizeKB": 13.2,
+        "entropy": 3.648,
+        "width": 800,
+        "height": 1000
+      },
+      {
+        "filename": "bacha-cocina-estandar-m30-acero-inox-430-pileta-bajo-mesada-sop-70mm-2.webp",
+        "index": 2,
+        "path": "/images/products/bacha-cocina-estandar-m30-acero-inox-430-pileta-bajo-mesada-sop-70mm-2.webp",
+        "sizeKB": 9.5,
+        "entropy": 1.643,
+        "width": 800,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "product": "bacha-cocina-estandar-m30c-acero-inox-430-pileta-bajo-mesada-sop-110mm.json",
+    "name": "Bacha Cocina Estandar M30c Acero premium 430 Pileta Bajo Mesada SOP 110MM",
+    "category": "pileta-lavadero",
+    "currentBlueprint": null,
+    "currentGallery": [
+      "/images/products/bacha-cocina-estandar-m30c-acero-inox-430-pileta-bajo-mesada-sop-110mm-2.webp"
+    ],
+    "currentImage": "/images/products/bacha-cocina-estandar-m30c-acero-inox-430-pileta-bajo-mesada-sop-110mm-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "bacha-cocina-estandar-m30c-acero-inox-430-pileta-bajo-mesada-sop-110mm-1.webp",
+        "index": 1,
+        "path": "/images/products/bacha-cocina-estandar-m30c-acero-inox-430-pileta-bajo-mesada-sop-110mm-1.webp",
+        "sizeKB": 12.8,
+        "entropy": 3.174,
+        "width": 800,
+        "height": 1000
+      },
+      {
+        "filename": "bacha-cocina-estandar-m30c-acero-inox-430-pileta-bajo-mesada-sop-110mm-2.webp",
+        "index": 2,
+        "path": "/images/products/bacha-cocina-estandar-m30c-acero-inox-430-pileta-bajo-mesada-sop-110mm-2.webp",
+        "sizeKB": 9.5,
+        "entropy": 1.643,
+        "width": 800,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "product": "bacha-cocina-standar-m20-bacha-profunda-acero-mate.json",
+    "name": "Bacha Cocina Standar M20 Bacha Profunda Acero Mate",
+    "category": "bacha-simple",
+    "currentBlueprint": "/images/products/bacha-cocina-standar-m20-bacha-profunda-acero-mate-3.webp",
+    "currentGallery": [
+      "/images/products/bacha-cocina-standar-m20-bacha-profunda-acero-mate-2.webp"
+    ],
+    "currentImage": "/images/products/bacha-cocina-standar-m20-bacha-profunda-acero-mate-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "bacha-cocina-standar-m20-bacha-profunda-acero-mate-1.webp",
+        "index": 1,
+        "path": "/images/products/bacha-cocina-standar-m20-bacha-profunda-acero-mate-1.webp",
+        "sizeKB": 9,
+        "entropy": 3.552,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "bacha-cocina-standar-m20-bacha-profunda-acero-mate-2.webp",
+        "index": 2,
+        "path": "/images/products/bacha-cocina-standar-m20-bacha-profunda-acero-mate-2.webp",
+        "sizeKB": 9,
+        "entropy": 1.461,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "bacha-cocina-standar-m20-bacha-profunda-acero-mate-3.webp",
+        "index": 3,
+        "path": "/images/products/bacha-cocina-standar-m20-bacha-profunda-acero-mate-3.webp",
+        "sizeKB": 46.4,
+        "entropy": 3.246,
+        "width": 596,
+        "height": 815
+      }
+    ]
+  },
+  {
+    "product": "bacha-cuore-acero-304-80x50x22cm.json",
+    "name": "BACHA CUORE Acero 304 80X50X22CM",
+    "category": "bacha-simple",
+    "currentBlueprint": "/images/products/bacha-cuore-acero-304-80x50x22cm-3.webp",
+    "currentGallery": [
+      "/images/products/bacha-cuore-acero-304-80x50x22cm-2.webp"
+    ],
+    "currentImage": "/images/products/bacha-cuore-acero-304-80x50x22cm-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "bacha-cuore-acero-304-80x50x22cm-1.webp",
+        "index": 1,
+        "path": "/images/products/bacha-cuore-acero-304-80x50x22cm-1.webp",
+        "sizeKB": 9.2,
+        "entropy": 2.652,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "bacha-cuore-acero-304-80x50x22cm-2.webp",
+        "index": 2,
+        "path": "/images/products/bacha-cuore-acero-304-80x50x22cm-2.webp",
+        "sizeKB": 8.8,
+        "entropy": 1.659,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "bacha-cuore-acero-304-80x50x22cm-3.webp",
+        "index": 3,
+        "path": "/images/products/bacha-cuore-acero-304-80x50x22cm-3.webp",
+        "sizeKB": 46.4,
+        "entropy": 3.246,
+        "width": 596,
+        "height": 815
+      }
+    ]
+  },
+  {
+    "product": "bacha-de-cocina-esquinera-mate-acero-inox-430-0-9-mm-grueso.json",
+    "name": "Bacha De Cocina Esquinera Mate Acero premium 430 0,9 Mm Grueso",
+    "category": "bacha-simple",
+    "currentBlueprint": "/images/products/bacha-de-cocina-esquinera-mate-acero-inox-430-0-9-mm-grueso-3.webp",
+    "currentGallery": [
+      "/images/products/bacha-de-cocina-esquinera-mate-acero-inox-430-0-9-mm-grueso-2.webp"
+    ],
+    "currentImage": "/images/products/bacha-de-cocina-esquinera-mate-acero-inox-430-0-9-mm-grueso-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "bacha-de-cocina-esquinera-mate-acero-inox-430-0-9-mm-grueso-1.webp",
+        "index": 1,
+        "path": "/images/products/bacha-de-cocina-esquinera-mate-acero-inox-430-0-9-mm-grueso-1.webp",
+        "sizeKB": 9.8,
+        "entropy": 2.115,
+        "width": 800,
+        "height": 1000
+      },
+      {
+        "filename": "bacha-de-cocina-esquinera-mate-acero-inox-430-0-9-mm-grueso-2.webp",
+        "index": 2,
+        "path": "/images/products/bacha-de-cocina-esquinera-mate-acero-inox-430-0-9-mm-grueso-2.webp",
+        "sizeKB": 12.8,
+        "entropy": 1.498,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "bacha-de-cocina-esquinera-mate-acero-inox-430-0-9-mm-grueso-3.webp",
+        "index": 3,
+        "path": "/images/products/bacha-de-cocina-esquinera-mate-acero-inox-430-0-9-mm-grueso-3.webp",
+        "sizeKB": 46.4,
+        "entropy": 3.246,
+        "width": 596,
+        "height": 815
+      }
+    ]
+  },
+  {
+    "product": "bacha-de-cocina-o-lavadero-m10-acero-inoxidable-sopapa-de-110mm-medidas-30-38-14-cm-bajo-mesada-acero-inoxidable.json",
+    "name": "Bacha De Cocina O Lavadero M10 Acero de alta calidad Sopapa De 110mm Medidas 30*38*14 Cm Bajo Mesada Acero de alta calidad",
+    "category": "pileta-lavadero",
+    "currentBlueprint": "/images/products/bacha-de-cocina-o-lavadero-m10-acero-inoxidable-sopapa-de-110mm-medidas-30-38-14-cm-bajo-mesada-acero-inoxidable-3.webp",
+    "currentGallery": [
+      "/images/products/bacha-de-cocina-o-lavadero-m10-acero-inoxidable-sopapa-de-110mm-medidas-30-38-14-cm-bajo-mesada-acero-inoxidable-2.webp"
+    ],
+    "currentImage": "/images/products/bacha-de-cocina-o-lavadero-m10-acero-inoxidable-sopapa-de-110mm-medidas-30-38-14-cm-bajo-mesada-acero-inoxidable-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "bacha-de-cocina-o-lavadero-m10-acero-inoxidable-sopapa-de-110mm-medidas-30-38-14-cm-bajo-mesada-acero-inoxidable-1.webp",
+        "index": 1,
+        "path": "/images/products/bacha-de-cocina-o-lavadero-m10-acero-inoxidable-sopapa-de-110mm-medidas-30-38-14-cm-bajo-mesada-acero-inoxidable-1.webp",
+        "sizeKB": 9.3,
+        "entropy": 3.739,
+        "width": 800,
+        "height": 534
+      },
+      {
+        "filename": "bacha-de-cocina-o-lavadero-m10-acero-inoxidable-sopapa-de-110mm-medidas-30-38-14-cm-bajo-mesada-acero-inoxidable-2.webp",
+        "index": 2,
+        "path": "/images/products/bacha-de-cocina-o-lavadero-m10-acero-inoxidable-sopapa-de-110mm-medidas-30-38-14-cm-bajo-mesada-acero-inoxidable-2.webp",
+        "sizeKB": 9.6,
+        "entropy": 1.482,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "bacha-de-cocina-o-lavadero-m10-acero-inoxidable-sopapa-de-110mm-medidas-30-38-14-cm-bajo-mesada-acero-inoxidable-3.webp",
+        "index": 3,
+        "path": "/images/products/bacha-de-cocina-o-lavadero-m10-acero-inoxidable-sopapa-de-110mm-medidas-30-38-14-cm-bajo-mesada-acero-inoxidable-3.webp",
+        "sizeKB": 46.4,
+        "entropy": 3.246,
+        "width": 596,
+        "height": 815
+      }
+    ]
+  },
+  {
+    "product": "bacha-de-cocina-o-lavadero-m10-acero-inoxidable-sopapa-de-110mm-medidas-30-38-15-5-cm-bajo-mesada-acero-inoxidabl.json",
+    "name": "Bacha De Cocina O Lavadero M10 Acero de alta calidad Sopapa De 110mm Medidas 30*38*15.5 Cm Bajo Mesada Acero premiumidabl",
+    "category": "pileta-lavadero",
+    "currentBlueprint": null,
+    "currentGallery": [
+      "/images/products/bacha-de-cocina-o-lavadero-m10-acero-inoxidable-sopapa-de-110mm-medidas-30-38-15-5-cm-bajo-mesada-acero-inoxidabl-2.webp",
+      "/images/products/bacha-de-cocina-o-lavadero-m10-acero-inoxidable-sopapa-de-110mm-medidas-30-38-15-5-cm-bajo-mesada-acero-inoxidabl-3.webp"
+    ],
+    "currentImage": "/images/products/bacha-de-cocina-o-lavadero-m10-acero-inoxidable-sopapa-de-110mm-medidas-30-38-15-5-cm-bajo-mesada-acero-inoxidabl-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "bacha-de-cocina-o-lavadero-m10-acero-inoxidable-sopapa-de-110mm-medidas-30-38-15-5-cm-bajo-mesada-acero-inoxidabl-1.webp",
+        "index": 1,
+        "path": "/images/products/bacha-de-cocina-o-lavadero-m10-acero-inoxidable-sopapa-de-110mm-medidas-30-38-15-5-cm-bajo-mesada-acero-inoxidabl-1.webp",
+        "sizeKB": 5.8,
+        "entropy": 1.88,
+        "width": 800,
+        "height": 1000
+      },
+      {
+        "filename": "bacha-de-cocina-o-lavadero-m10-acero-inoxidable-sopapa-de-110mm-medidas-30-38-15-5-cm-bajo-mesada-acero-inoxidabl-2.webp",
+        "index": 2,
+        "path": "/images/products/bacha-de-cocina-o-lavadero-m10-acero-inoxidable-sopapa-de-110mm-medidas-30-38-15-5-cm-bajo-mesada-acero-inoxidabl-2.webp",
+        "sizeKB": 8.5,
+        "entropy": 1.349,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "bacha-de-cocina-o-lavadero-m10-acero-inoxidable-sopapa-de-110mm-medidas-30-38-15-5-cm-bajo-mesada-acero-inoxidabl-3.webp",
+        "index": 3,
+        "path": "/images/products/bacha-de-cocina-o-lavadero-m10-acero-inoxidable-sopapa-de-110mm-medidas-30-38-15-5-cm-bajo-mesada-acero-inoxidabl-3.webp",
+        "sizeKB": 46.4,
+        "entropy": 3.246,
+        "width": 596,
+        "height": 815
+      }
+    ]
+  },
+  {
+    "product": "bacha-de-cocina-o-lavadero-m10-acero-inoxidable-sopapa-de-110mm-medidas-30-38-15-5-cm-bajo-mesada-acero-inoxidable.json",
+    "name": "Bacha De Cocina O Lavadero M10 Acero de alta calidad Sopapa De 110mm Medidas 30*38*15.5 Cm Bajo Mesada Acero de alta calidad",
+    "category": "pileta-lavadero",
+    "currentBlueprint": null,
+    "currentGallery": [
+      "/images/products/bacha-de-cocina-o-lavadero-m10-acero-inoxidable-sopapa-de-110mm-medidas-30-38-15-5-cm-bajo-mesada-acero-inoxidable-2.webp"
+    ],
+    "currentImage": "/images/products/bacha-de-cocina-o-lavadero-m10-acero-inoxidable-sopapa-de-110mm-medidas-30-38-15-5-cm-bajo-mesada-acero-inoxidable-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "bacha-de-cocina-o-lavadero-m10-acero-inoxidable-sopapa-de-110mm-medidas-30-38-15-5-cm-bajo-mesada-acero-inoxidable-1.webp",
+        "index": 1,
+        "path": "/images/products/bacha-de-cocina-o-lavadero-m10-acero-inoxidable-sopapa-de-110mm-medidas-30-38-15-5-cm-bajo-mesada-acero-inoxidable-1.webp",
+        "sizeKB": 9.3,
+        "entropy": 3.739,
+        "width": 800,
+        "height": 534
+      },
+      {
+        "filename": "bacha-de-cocina-o-lavadero-m10-acero-inoxidable-sopapa-de-110mm-medidas-30-38-15-5-cm-bajo-mesada-acero-inoxidable-2.webp",
+        "index": 2,
+        "path": "/images/products/bacha-de-cocina-o-lavadero-m10-acero-inoxidable-sopapa-de-110mm-medidas-30-38-15-5-cm-bajo-mesada-acero-inoxidable-2.webp",
+        "sizeKB": 10.1,
+        "entropy": 1.527,
+        "width": 800,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "product": "bacha-de-cocina-o-lavadero-m10-acero-inoxidable-sopapa-de-70mm-medidas-30-38-14-cm-bajo-mesada-acero-inoxidable.json",
+    "name": "Bacha De Cocina O Lavadero M10 Acero de alta calidad Sopapa De 70mm Medidas 30*38*14 Cm Bajo Mesada Acero de alta calidad",
+    "category": "pileta-lavadero",
+    "currentBlueprint": "/images/products/bacha-de-cocina-o-lavadero-m10-acero-inoxidable-sopapa-de-70mm-medidas-30-38-14-cm-bajo-mesada-acero-inoxidable-3.webp",
+    "currentGallery": [
+      "/images/products/bacha-de-cocina-o-lavadero-m10-acero-inoxidable-sopapa-de-70mm-medidas-30-38-14-cm-bajo-mesada-acero-inoxidable-2.webp"
+    ],
+    "currentImage": "/images/products/bacha-de-cocina-o-lavadero-m10-acero-inoxidable-sopapa-de-70mm-medidas-30-38-14-cm-bajo-mesada-acero-inoxidable-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "bacha-de-cocina-o-lavadero-m10-acero-inoxidable-sopapa-de-70mm-medidas-30-38-14-cm-bajo-mesada-acero-inoxidable-1.webp",
+        "index": 1,
+        "path": "/images/products/bacha-de-cocina-o-lavadero-m10-acero-inoxidable-sopapa-de-70mm-medidas-30-38-14-cm-bajo-mesada-acero-inoxidable-1.webp",
+        "sizeKB": 5.8,
+        "entropy": 1.88,
+        "width": 800,
+        "height": 1000
+      },
+      {
+        "filename": "bacha-de-cocina-o-lavadero-m10-acero-inoxidable-sopapa-de-70mm-medidas-30-38-14-cm-bajo-mesada-acero-inoxidable-2.webp",
+        "index": 2,
+        "path": "/images/products/bacha-de-cocina-o-lavadero-m10-acero-inoxidable-sopapa-de-70mm-medidas-30-38-14-cm-bajo-mesada-acero-inoxidable-2.webp",
+        "sizeKB": 8.9,
+        "entropy": 1.41,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "bacha-de-cocina-o-lavadero-m10-acero-inoxidable-sopapa-de-70mm-medidas-30-38-14-cm-bajo-mesada-acero-inoxidable-3.webp",
+        "index": 3,
+        "path": "/images/products/bacha-de-cocina-o-lavadero-m10-acero-inoxidable-sopapa-de-70mm-medidas-30-38-14-cm-bajo-mesada-acero-inoxidable-3.webp",
+        "sizeKB": 46.4,
+        "entropy": 3.246,
+        "width": 596,
+        "height": 815
+      }
+    ]
+  },
+  {
+    "product": "bacha-de-cocina-simple-lavadero-m20pc-acero-inoxidable-sopapa-medidas-50-33-15-5-cm-bajo-mesada-acero-inoxidable-terminacion-mate.json",
+    "name": "Bacha De Cocina Simple Lavadero M20pc Acero de alta calidad Sopapa Medidas 50*33*15.5 Cm Bajo Mesada Acero de alta calidad Terminacion Mate",
+    "category": "pileta-lavadero",
+    "currentBlueprint": "/images/products/bacha-de-cocina-simple-lavadero-m20pc-acero-inoxidable-sopapa-medidas-50-33-15-5-cm-bajo-mesada-acero-inoxidable-terminacion-mate-3.webp",
+    "currentGallery": [
+      "/images/products/bacha-de-cocina-simple-lavadero-m20pc-acero-inoxidable-sopapa-medidas-50-33-15-5-cm-bajo-mesada-acero-inoxidable-terminacion-mate-2.webp"
+    ],
+    "currentImage": "/images/products/bacha-de-cocina-simple-lavadero-m20pc-acero-inoxidable-sopapa-medidas-50-33-15-5-cm-bajo-mesada-acero-inoxidable-terminacion-mate-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "bacha-de-cocina-simple-lavadero-m20pc-acero-inoxidable-sopapa-medidas-50-33-15-5-cm-bajo-mesada-acero-inoxidable-terminacion-mate-1.webp",
+        "index": 1,
+        "path": "/images/products/bacha-de-cocina-simple-lavadero-m20pc-acero-inoxidable-sopapa-medidas-50-33-15-5-cm-bajo-mesada-acero-inoxidable-terminacion-mate-1.webp",
+        "sizeKB": 8.9,
+        "entropy": 3.652,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "bacha-de-cocina-simple-lavadero-m20pc-acero-inoxidable-sopapa-medidas-50-33-15-5-cm-bajo-mesada-acero-inoxidable-terminacion-mate-2.webp",
+        "index": 2,
+        "path": "/images/products/bacha-de-cocina-simple-lavadero-m20pc-acero-inoxidable-sopapa-medidas-50-33-15-5-cm-bajo-mesada-acero-inoxidable-terminacion-mate-2.webp",
+        "sizeKB": 9.4,
+        "entropy": 1.463,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "bacha-de-cocina-simple-lavadero-m20pc-acero-inoxidable-sopapa-medidas-50-33-15-5-cm-bajo-mesada-acero-inoxidable-terminacion-mate-3.webp",
+        "index": 3,
+        "path": "/images/products/bacha-de-cocina-simple-lavadero-m20pc-acero-inoxidable-sopapa-medidas-50-33-15-5-cm-bajo-mesada-acero-inoxidable-terminacion-mate-3.webp",
+        "sizeKB": 46.4,
+        "entropy": 3.246,
+        "width": 596,
+        "height": 815
+      }
+    ]
+  },
+  {
+    "product": "bacha-esencial-acero-304-56x42x22cm.json",
+    "name": "BACHA ESENCIAL Acero 304 56x42x22cm",
+    "category": "bacha-simple",
+    "currentBlueprint": "/images/products/bacha-esencial-acero-304-56x42x22cm-3.webp",
+    "currentGallery": [
+      "/images/products/bacha-esencial-acero-304-56x42x22cm-2.webp"
+    ],
+    "currentImage": "/images/products/bacha-esencial-acero-304-56x42x22cm-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "bacha-esencial-acero-304-56x42x22cm-1.webp",
+        "index": 1,
+        "path": "/images/products/bacha-esencial-acero-304-56x42x22cm-1.webp",
+        "sizeKB": 13.8,
+        "entropy": 3.299,
+        "width": 800,
+        "height": 1000
+      },
+      {
+        "filename": "bacha-esencial-acero-304-56x42x22cm-2.webp",
+        "index": 2,
+        "path": "/images/products/bacha-esencial-acero-304-56x42x22cm-2.webp",
+        "sizeKB": 45.4,
+        "entropy": 6.226,
+        "width": 800,
+        "height": 1000
+      },
+      {
+        "filename": "bacha-esencial-acero-304-56x42x22cm-3.webp",
+        "index": 3,
+        "path": "/images/products/bacha-esencial-acero-304-56x42x22cm-3.webp",
+        "sizeKB": 46.4,
+        "entropy": 3.246,
+        "width": 596,
+        "height": 815
+      }
+    ]
+  },
+  {
+    "product": "bacha-l65-acero-304-65x43x22cm.json",
+    "name": "BACHA L65 Acero 304 65x43x22cm",
+    "category": "bacha-simple",
+    "currentBlueprint": "/images/products/bacha-l65-acero-304-65x43x22cm-5.webp",
+    "currentGallery": [
+      "/images/products/bacha-l65-acero-304-65x43x22cm-2.webp",
+      "/images/products/bacha-l65-acero-304-65x43x22cm-3.webp",
+      "/images/products/bacha-l65-acero-304-65x43x22cm-4.webp"
+    ],
+    "currentImage": "/images/products/bacha-l65-acero-304-65x43x22cm-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "bacha-l65-acero-304-65x43x22cm-1.webp",
+        "index": 1,
+        "path": "/images/products/bacha-l65-acero-304-65x43x22cm-1.webp",
+        "sizeKB": 16.9,
+        "entropy": 4.133,
+        "width": 800,
+        "height": 1000
+      },
+      {
+        "filename": "bacha-l65-acero-304-65x43x22cm-2.webp",
+        "index": 2,
+        "path": "/images/products/bacha-l65-acero-304-65x43x22cm-2.webp",
+        "sizeKB": 15.4,
+        "entropy": 5.504,
+        "width": 800,
+        "height": 1000
+      },
+      {
+        "filename": "bacha-l65-acero-304-65x43x22cm-3.webp",
+        "index": 3,
+        "path": "/images/products/bacha-l65-acero-304-65x43x22cm-3.webp",
+        "sizeKB": 8.2,
+        "entropy": 1.525,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "bacha-l65-acero-304-65x43x22cm-4.webp",
+        "index": 4,
+        "path": "/images/products/bacha-l65-acero-304-65x43x22cm-4.webp",
+        "sizeKB": 45.4,
+        "entropy": 6.226,
+        "width": 800,
+        "height": 1000
+      },
+      {
+        "filename": "bacha-l65-acero-304-65x43x22cm-5.webp",
+        "index": 5,
+        "path": "/images/products/bacha-l65-acero-304-65x43x22cm-5.webp",
+        "sizeKB": 46.4,
+        "entropy": 3.246,
+        "width": 596,
+        "height": 815
+      }
+    ]
+  },
+  {
+    "product": "bacha-l83-acero-304-83x43x22cm.json",
+    "name": "BACHA L83 acero 304 83x43x22CM",
+    "category": "bacha-simple",
+    "currentBlueprint": null,
+    "currentGallery": [],
+    "currentImage": "/images/products/bacha-l83-acero-304-83x43x22cm-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "bacha-l83-acero-304-83x43x22cm-1.webp",
+        "index": 1,
+        "path": "/images/products/bacha-l83-acero-304-83x43x22cm-1.webp",
+        "sizeKB": 20.6,
+        "entropy": 4.177,
+        "width": 800,
+        "height": 1000
+      },
+      {
+        "filename": "bacha-l83-acero-304-83x43x22cm-2.webp",
+        "index": 2,
+        "path": "/images/products/bacha-l83-acero-304-83x43x22cm-2.webp",
+        "sizeKB": 36.1,
+        "entropy": 7.591,
+        "width": 800,
+        "height": 834
+      }
+    ]
+  },
+  {
+    "product": "bacha-lav-600-acero-304-61x38x22cm.json",
+    "name": "BACHA LAV 600 Acero 304 61X38X22CM",
+    "category": "bacha-simple",
+    "currentBlueprint": "/images/products/bacha-lav-600-acero-304-61x38x22cm-3.webp",
+    "currentGallery": [
+      "/images/products/bacha-lav-600-acero-304-61x38x22cm-2.webp"
+    ],
+    "currentImage": "/images/products/bacha-lav-600-acero-304-61x38x22cm-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "bacha-lav-600-acero-304-61x38x22cm-1.webp",
+        "index": 1,
+        "path": "/images/products/bacha-lav-600-acero-304-61x38x22cm-1.webp",
+        "sizeKB": 10.9,
+        "entropy": 2.792,
+        "width": 800,
+        "height": 1000
+      },
+      {
+        "filename": "bacha-lav-600-acero-304-61x38x22cm-2.webp",
+        "index": 2,
+        "path": "/images/products/bacha-lav-600-acero-304-61x38x22cm-2.webp",
+        "sizeKB": 8.2,
+        "entropy": 1.454,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "bacha-lav-600-acero-304-61x38x22cm-3.webp",
+        "index": 3,
+        "path": "/images/products/bacha-lav-600-acero-304-61x38x22cm-3.webp",
+        "sizeKB": 46.4,
+        "entropy": 3.246,
+        "width": 596,
+        "height": 815
+      }
+    ]
+  },
+  {
+    "product": "bacha-simple-cocina-m20-cestillo-acero-inox-aisi-430-mate.json",
+    "name": "Bacha Simple Cocina M20 Cestillo Acero premium Aisi 430 Mate",
+    "category": "bacha-simple",
+    "currentBlueprint": "/images/products/bacha-simple-cocina-m20-cestillo-acero-inox-aisi-430-mate-3.webp",
+    "currentGallery": [
+      "/images/products/bacha-simple-cocina-m20-cestillo-acero-inox-aisi-430-mate-2.webp"
+    ],
+    "currentImage": "/images/products/bacha-simple-cocina-m20-cestillo-acero-inox-aisi-430-mate-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "bacha-simple-cocina-m20-cestillo-acero-inox-aisi-430-mate-1.webp",
+        "index": 1,
+        "path": "/images/products/bacha-simple-cocina-m20-cestillo-acero-inox-aisi-430-mate-1.webp",
+        "sizeKB": 8.9,
+        "entropy": 3.652,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "bacha-simple-cocina-m20-cestillo-acero-inox-aisi-430-mate-2.webp",
+        "index": 2,
+        "path": "/images/products/bacha-simple-cocina-m20-cestillo-acero-inox-aisi-430-mate-2.webp",
+        "sizeKB": 10.2,
+        "entropy": 1.575,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "bacha-simple-cocina-m20-cestillo-acero-inox-aisi-430-mate-3.webp",
+        "index": 3,
+        "path": "/images/products/bacha-simple-cocina-m20-cestillo-acero-inox-aisi-430-mate-3.webp",
+        "sizeKB": 46.4,
+        "entropy": 3.246,
+        "width": 596,
+        "height": 815
+      }
+    ]
+  },
+  {
+    "product": "bandeja-prisma-mediana-26-36-8cm.json",
+    "name": "BANDEJA PRISMA MEDIANA 26*36*8CM",
+    "category": "accesorio",
+    "currentBlueprint": null,
+    "currentGallery": [],
+    "currentImage": "/images/products/bandeja-prisma-mediana-26-36-8cm-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "bandeja-prisma-mediana-26-36-8cm-1.webp",
+        "index": 1,
+        "path": "/images/products/bandeja-prisma-mediana-26-36-8cm-1.webp",
+        "sizeKB": 8.4,
+        "entropy": 4.535,
+        "width": 800,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "product": "bandeja-prisma-mini-26-35-8cm.json",
+    "name": "BANDEJA PRISMA MINI 26*35*8CM",
+    "category": "accesorio",
+    "currentBlueprint": null,
+    "currentGallery": [],
+    "currentImage": "/images/products/bandeja-prisma-mini-26-35-8cm-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "bandeja-prisma-mini-26-35-8cm-1.webp",
+        "index": 1,
+        "path": "/images/products/bandeja-prisma-mini-26-35-8cm-1.webp",
+        "sizeKB": 10.4,
+        "entropy": 4.781,
+        "width": 800,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "product": "bandeja-prisma-xl-o-prisma-duo-20-38-6cm.json",
+    "name": "BANDEJA PRISMA XL O PRISMA DUO 20*38*6CM",
+    "category": "accesorio",
+    "currentBlueprint": null,
+    "currentGallery": [],
+    "currentImage": "/images/products/bandeja-prisma-xl-o-prisma-duo-20-38-6cm-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "bandeja-prisma-xl-o-prisma-duo-20-38-6cm-1.webp",
+        "index": 1,
+        "path": "/images/products/bandeja-prisma-xl-o-prisma-duo-20-38-6cm-1.webp",
+        "sizeKB": 3.2,
+        "entropy": 2.029,
+        "width": 800,
+        "height": 534
+      }
+    ]
+  },
+  {
+    "product": "black-60-acero-304-60x46x22cm.json",
+    "name": "BLACK 60 Acero 304 60x46x22cm",
+    "category": "bacha-simple",
+    "currentBlueprint": "/images/products/black-60-acero-304-60x46x22cm-2.webp",
+    "currentGallery": [],
+    "currentImage": "/images/products/black-60-acero-304-60x46x22cm-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "black-60-acero-304-60x46x22cm-1.webp",
+        "index": 1,
+        "path": "/images/products/black-60-acero-304-60x46x22cm-1.webp",
+        "sizeKB": 8.1,
+        "entropy": 2.938,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "black-60-acero-304-60x46x22cm-2.webp",
+        "index": 2,
+        "path": "/images/products/black-60-acero-304-60x46x22cm-2.webp",
+        "sizeKB": 46.4,
+        "entropy": 3.246,
+        "width": 596,
+        "height": 815
+      }
+    ]
+  },
+  {
+    "product": "canasto-aqua-l57-l65-26x38x13cm.json",
+    "name": "CANASTO AQUA L57-L65 26X38X13CM",
+    "category": "accesorio",
+    "currentBlueprint": null,
+    "currentGallery": [],
+    "currentImage": "/images/products/canasto-aqua-l57-l65-26x38x13cm-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "canasto-aqua-l57-l65-26x38x13cm-1.webp",
+        "index": 1,
+        "path": "/images/products/canasto-aqua-l57-l65-26x38x13cm-1.webp",
+        "sizeKB": 35.3,
+        "entropy": 4.044,
+        "width": 672,
+        "height": 472
+      }
+    ]
+  },
+  {
+    "product": "canasto-cuore-o-prisma-l-22x43x10cm.json",
+    "name": "CANASTO CUORE O PRISMA L 22X43X10CM",
+    "category": "accesorio",
+    "currentBlueprint": null,
+    "currentGallery": [],
+    "currentImage": "/images/products/canasto-cuore-o-prisma-l-22x43x10cm-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "canasto-cuore-o-prisma-l-22x43x10cm-1.webp",
+        "index": 1,
+        "path": "/images/products/canasto-cuore-o-prisma-l-22x43x10cm-1.webp",
+        "sizeKB": 2.7,
+        "entropy": 3.053,
+        "width": 234,
+        "height": 138
+      }
+    ]
+  },
+  {
+    "product": "canasto-esencial-o-gema-xl-22x36x11cm.json",
+    "name": "CANASTO ESENCIAL O GEMA XL 22X36X11CM",
+    "category": "accesorio",
+    "currentBlueprint": null,
+    "currentGallery": [],
+    "currentImage": "/images/products/canasto-esencial-o-gema-xl-22x36x11cm-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "canasto-esencial-o-gema-xl-22x36x11cm-1.webp",
+        "index": 1,
+        "path": "/images/products/canasto-esencial-o-gema-xl-22x36x11cm-1.webp",
+        "sizeKB": 18.5,
+        "entropy": 1.882,
+        "width": 800,
+        "height": 602
+      }
+    ]
+  },
+  {
+    "product": "canasto-gema-o-aqua-l75-22x34x11cm.json",
+    "name": "CANASTO GEMA O AQUA L75 22X34X11CM",
+    "category": "accesorio",
+    "currentBlueprint": null,
+    "currentGallery": [],
+    "currentImage": "/images/products/canasto-gema-o-aqua-l75-22x34x11cm-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "canasto-gema-o-aqua-l75-22x34x11cm-1.webp",
+        "index": 1,
+        "path": "/images/products/canasto-gema-o-aqua-l75-22x34x11cm-1.webp",
+        "sizeKB": 19.1,
+        "entropy": 1.536,
+        "width": 800,
+        "height": 945
+      }
+    ]
+  },
+  {
+    "product": "canasto-para-r-45.json",
+    "name": "CANASTO PARA R 45",
+    "category": "accesorio",
+    "currentBlueprint": null,
+    "currentGallery": [],
+    "currentImage": "/images/products/canasto-para-r-45-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "canasto-para-r-45-1.webp",
+        "index": 1,
+        "path": "/images/products/canasto-para-r-45-1.webp",
+        "sizeKB": 6,
+        "entropy": 0.58,
+        "width": 800,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "product": "colador-gema-xl-o-esencial-duo-23-37-9cm.json",
+    "name": "COLADOR GEMA XL O ESENCIAL DUO 23*37*9CM",
+    "category": "accesorio",
+    "currentBlueprint": null,
+    "currentGallery": [],
+    "currentImage": "/images/products/colador-gema-xl-o-esencial-duo-23-37-9cm-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "colador-gema-xl-o-esencial-duo-23-37-9cm-1.webp",
+        "index": 1,
+        "path": "/images/products/colador-gema-xl-o-esencial-duo-23-37-9cm-1.webp",
+        "sizeKB": 9.7,
+        "entropy": 4.438,
+        "width": 800,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "product": "cubic-acero-304-61x46x20cm.json",
+    "name": "CUBIC Acero 304 61X46X20CM",
+    "category": "bacha-simple",
+    "currentBlueprint": null,
+    "currentGallery": [
+      "/images/products/cubic-acero-304-61x46x20cm-2.webp"
+    ],
+    "currentImage": "/images/products/cubic-acero-304-61x46x20cm-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "cubic-acero-304-61x46x20cm-1.webp",
+        "index": 1,
+        "path": "/images/products/cubic-acero-304-61x46x20cm-1.webp",
+        "sizeKB": 12.3,
+        "entropy": 3.838,
+        "width": 800,
+        "height": 1000
+      },
+      {
+        "filename": "cubic-acero-304-61x46x20cm-2.webp",
+        "index": 2,
+        "path": "/images/products/cubic-acero-304-61x46x20cm-2.webp",
+        "sizeKB": 36.1,
+        "entropy": 7.591,
+        "width": 800,
+        "height": 834
+      }
+    ]
+  },
+  {
+    "product": "dispenser-de-detergente-acero-inoxidable-con-cabezal-cuadrado-negro.json",
+    "name": "DISPENSER DE DETERGENTE ACERO de alta calidad CON CABEZAL CUADRADO NEGRO",
+    "category": "accesorio",
+    "currentBlueprint": null,
+    "currentGallery": [],
+    "currentImage": "/images/products/dispenser-de-detergente-acero-inoxidable-con-cabezal-cuadrado-negro-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "dispenser-de-detergente-acero-inoxidable-con-cabezal-cuadrado-negro-1.webp",
+        "index": 1,
+        "path": "/images/products/dispenser-de-detergente-acero-inoxidable-con-cabezal-cuadrado-negro-1.webp",
+        "sizeKB": 6.5,
+        "entropy": 2.565,
+        "width": 800,
+        "height": 1200
+      }
+    ]
+  },
+  {
+    "product": "dispenser-de-detergente-acero-inoxidable.json",
+    "name": "DISPENSER DE DETERGENTE ACERO de alta calidad",
+    "category": "accesorio",
+    "currentBlueprint": null,
+    "currentGallery": [
+      "/images/products/dispenser-de-detergente-acero-inoxidable-2.webp"
+    ],
+    "currentImage": "/images/products/dispenser-de-detergente-acero-inoxidable-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "dispenser-de-detergente-acero-inoxidable-1.webp",
+        "index": 1,
+        "path": "/images/products/dispenser-de-detergente-acero-inoxidable-1.webp",
+        "sizeKB": 9.8,
+        "entropy": 1.91,
+        "width": 800,
+        "height": 1200
+      },
+      {
+        "filename": "dispenser-de-detergente-acero-inoxidable-2.webp",
+        "index": 2,
+        "path": "/images/products/dispenser-de-detergente-acero-inoxidable-2.webp",
+        "sizeKB": 22.1,
+        "entropy": 2.928,
+        "width": 799,
+        "height": 556
+      },
+      {
+        "filename": "dispenser-de-detergente-acero-inoxidable-con-cabezal-cuadrado-negro-1.webp",
+        "index": null,
+        "path": "/images/products/dispenser-de-detergente-acero-inoxidable-con-cabezal-cuadrado-negro-1.webp",
+        "sizeKB": 6.5,
+        "entropy": 2.565,
+        "width": 800,
+        "height": 1200
+      }
+    ]
+  },
+  {
+    "product": "esencial-duo-acero-304-78x43x20cm.json",
+    "name": "ESENCIAL DUO Acero 304 78X43X20CM",
+    "category": "bacha-doble",
+    "currentBlueprint": "/images/products/esencial-duo-acero-304-78x43x20cm-3.webp",
+    "currentGallery": [
+      "/images/products/esencial-duo-acero-304-78x43x20cm-2.webp"
+    ],
+    "currentImage": "/images/products/esencial-duo-acero-304-78x43x20cm-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "esencial-duo-acero-304-78x43x20cm-1.webp",
+        "index": 1,
+        "path": "/images/products/esencial-duo-acero-304-78x43x20cm-1.webp",
+        "sizeKB": 7,
+        "entropy": 1.887,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "esencial-duo-acero-304-78x43x20cm-2.webp",
+        "index": 2,
+        "path": "/images/products/esencial-duo-acero-304-78x43x20cm-2.webp",
+        "sizeKB": 10.3,
+        "entropy": 1.841,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "esencial-duo-acero-304-78x43x20cm-3.webp",
+        "index": 3,
+        "path": "/images/products/esencial-duo-acero-304-78x43x20cm-3.webp",
+        "sizeKB": 46.4,
+        "entropy": 3.246,
+        "width": 596,
+        "height": 815
+      }
+    ]
+  },
+  {
+    "product": "gema-acero-304-68x45x22cm.json",
+    "name": "GEMA Acero 304 68X45X22CM",
+    "category": "bacha-simple",
+    "currentBlueprint": "/images/products/gema-acero-304-68x45x22cm-2.webp",
+    "currentGallery": [
+      "/images/products/gema-acero-304-68x45x22cm-4.webp"
+    ],
+    "currentImage": "/images/products/gema-acero-304-68x45x22cm-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "gema-acero-304-68x45x22cm-1.webp",
+        "index": 1,
+        "path": "/images/products/gema-acero-304-68x45x22cm-1.webp",
+        "sizeKB": 8.4,
+        "entropy": 1.737,
+        "width": 800,
+        "height": 1000
+      },
+      {
+        "filename": "gema-acero-304-68x45x22cm-2.webp",
+        "index": 2,
+        "path": "/images/products/gema-acero-304-68x45x22cm-2.webp",
+        "sizeKB": 46.4,
+        "entropy": 3.246,
+        "width": 596,
+        "height": 815
+      },
+      {
+        "filename": "gema-acero-304-68x45x22cm-4.webp",
+        "index": 4,
+        "path": "/images/products/gema-acero-304-68x45x22cm-4.webp",
+        "sizeKB": 18.2,
+        "entropy": 3.382,
+        "width": 800,
+        "height": 1000
+      }
+    ]
+  },
+  {
+    "product": "gema-xl-acero-304-80x50x22cm.json",
+    "name": "GEMA XL Acero 304 80X50X22CM",
+    "category": "bacha-simple",
+    "currentBlueprint": "/images/products/gema-xl-acero-304-80x50x22cm-3.webp",
+    "currentGallery": [
+      "/images/products/gema-xl-acero-304-80x50x22cm-2.webp"
+    ],
+    "currentImage": "/images/products/gema-xl-acero-304-80x50x22cm-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "gema-xl-acero-304-80x50x22cm-1.webp",
+        "index": 1,
+        "path": "/images/products/gema-xl-acero-304-80x50x22cm-1.webp",
+        "sizeKB": 6.9,
+        "entropy": 2.124,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "gema-xl-acero-304-80x50x22cm-2.webp",
+        "index": 2,
+        "path": "/images/products/gema-xl-acero-304-80x50x22cm-2.webp",
+        "sizeKB": 8.3,
+        "entropy": 1.567,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "gema-xl-acero-304-80x50x22cm-3.webp",
+        "index": 3,
+        "path": "/images/products/gema-xl-acero-304-80x50x22cm-3.webp",
+        "sizeKB": 46.4,
+        "entropy": 3.246,
+        "width": 596,
+        "height": 815
+      },
+      {
+        "filename": "gema-xl-acero-304-80x50x22cm-5.webp",
+        "index": 5,
+        "path": "/images/products/gema-xl-acero-304-80x50x22cm-5.webp",
+        "sizeKB": 18.2,
+        "entropy": 3.382,
+        "width": 800,
+        "height": 1000
+      }
+    ]
+  },
+  {
+    "product": "griferia-mezcladora.json",
+    "name": "GRIFERIA MEZCLADORA",
+    "category": "accesorio",
+    "currentBlueprint": null,
+    "currentGallery": [],
+    "currentImage": "/images/products/griferia-mezcladora-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "griferia-mezcladora-1.webp",
+        "index": 1,
+        "path": "/images/products/griferia-mezcladora-1.webp",
+        "sizeKB": 10.7,
+        "entropy": 1.702,
+        "width": 800,
+        "height": 1000
+      }
+    ]
+  },
+  {
+    "product": "griferia-pico-alto-10614.json",
+    "name": "GRIFERIA PICO ALTO 10614",
+    "category": "accesorio",
+    "currentBlueprint": null,
+    "currentGallery": [
+      "/images/products/griferia-pico-alto-10614-2.webp"
+    ],
+    "currentImage": "/images/products/griferia-pico-alto-10614-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "griferia-pico-alto-10614-1.webp",
+        "index": 1,
+        "path": "/images/products/griferia-pico-alto-10614-1.webp",
+        "sizeKB": 7.7,
+        "entropy": 1.165,
+        "width": 800,
+        "height": 1000
+      },
+      {
+        "filename": "griferia-pico-alto-10614-2.webp",
+        "index": 2,
+        "path": "/images/products/griferia-pico-alto-10614-2.webp",
+        "sizeKB": 16.6,
+        "entropy": 1.788,
+        "width": 800,
+        "height": 1000
+      }
+    ]
+  },
+  {
+    "product": "griferia-pico-bar-10014.json",
+    "name": "GRIFERIA PICO BAR 10014",
+    "category": "accesorio",
+    "currentBlueprint": null,
+    "currentGallery": [
+      "/images/products/griferia-pico-bar-10014-2.webp"
+    ],
+    "currentImage": "/images/products/griferia-pico-bar-10014-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "griferia-pico-bar-10014-1.webp",
+        "index": 1,
+        "path": "/images/products/griferia-pico-bar-10014-1.webp",
+        "sizeKB": 9,
+        "entropy": 1.594,
+        "width": 800,
+        "height": 1000
+      },
+      {
+        "filename": "griferia-pico-bar-10014-2.webp",
+        "index": 2,
+        "path": "/images/products/griferia-pico-bar-10014-2.webp",
+        "sizeKB": 16.3,
+        "entropy": 1.471,
+        "width": 800,
+        "height": 1000
+      }
+    ]
+  },
+  {
+    "product": "lavacopas-de-acero-inoxidable.json",
+    "name": "LAVACOPAS DE ACERO de alta calidad",
+    "category": "bacha-simple",
+    "currentBlueprint": null,
+    "currentGallery": [],
+    "currentImage": "/images/products/lavacopas-de-acero-inoxidable-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "lavacopas-de-acero-inoxidable-1.webp",
+        "index": 1,
+        "path": "/images/products/lavacopas-de-acero-inoxidable-1.webp",
+        "sizeKB": 7,
+        "entropy": 1.592,
+        "width": 800,
+        "height": 1000
+      }
+    ]
+  },
+  {
+    "product": "mesada-100-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero.json",
+    "name": "Mesada 100 Cm Ciega Cocina (sin Bacha) -acero de alta calidad Grueso 100% Calidad Con O Sin Zócalo Trasero",
+    "category": "mesada-ciega",
+    "currentBlueprint": null,
+    "currentGallery": [],
+    "currentImage": "/images/products/mesada-100-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "mesada-100-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-1.webp",
+        "index": 1,
+        "path": "/images/products/mesada-100-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-1.webp",
+        "sizeKB": 6.9,
+        "entropy": 4.027,
+        "width": 800,
+        "height": 665
+      }
+    ]
+  },
+  {
+    "product": "mesada-100cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo.json",
+    "name": "Mesada 100cm Bacha Simple De Acero de alta calidad Grueso - 100% Calidad + Asadera De Acero Profesional De Regalo",
+    "category": "mesada-integrada",
+    "currentBlueprint": null,
+    "currentGallery": [
+      "/images/products/mesada-100cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-2.webp",
+      "/images/products/mesada-100cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-3.webp",
+      "/images/products/mesada-100cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-4.webp",
+      "/images/products/mesada-100cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-5.webp",
+      "/images/products/mesada-100cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-6.webp",
+      "/images/products/mesada-100cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-7.webp",
+      "/images/products/mesada-100cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-8.webp",
+      "/images/products/mesada-100cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-9.webp"
+    ],
+    "currentImage": "/images/products/mesada-100cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "mesada-100cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp",
+        "index": 1,
+        "path": "/images/products/mesada-100cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp",
+        "sizeKB": 16.3,
+        "entropy": 3.67,
+        "width": 800,
+        "height": 834
+      },
+      {
+        "filename": "mesada-100cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-2.webp",
+        "index": 2,
+        "path": "/images/products/mesada-100cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-2.webp",
+        "sizeKB": 6.9,
+        "entropy": 3.85,
+        "width": 383,
+        "height": 500
+      },
+      {
+        "filename": "mesada-100cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-3.webp",
+        "index": 3,
+        "path": "/images/products/mesada-100cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-3.webp",
+        "sizeKB": 18.8,
+        "entropy": 5.41,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-100cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-4.webp",
+        "index": 4,
+        "path": "/images/products/mesada-100cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-4.webp",
+        "sizeKB": 23.8,
+        "entropy": 6.984,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-100cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-5.webp",
+        "index": 5,
+        "path": "/images/products/mesada-100cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-5.webp",
+        "sizeKB": 19.8,
+        "entropy": 6.086,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-100cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-6.webp",
+        "index": 6,
+        "path": "/images/products/mesada-100cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-6.webp",
+        "sizeKB": 19,
+        "entropy": 5.89,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-100cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-7.webp",
+        "index": 7,
+        "path": "/images/products/mesada-100cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-7.webp",
+        "sizeKB": 38.7,
+        "entropy": 6.572,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-100cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-8.webp",
+        "index": 8,
+        "path": "/images/products/mesada-100cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-8.webp",
+        "sizeKB": 42.1,
+        "entropy": 6.972,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-100cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-9.webp",
+        "index": 9,
+        "path": "/images/products/mesada-100cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-9.webp",
+        "sizeKB": 17.7,
+        "entropy": 6.29,
+        "width": 800,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "product": "mesada-110-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero.json",
+    "name": "Mesada 110 Cm Ciega Cocina (sin Bacha) -acero de alta calidad Grueso 100% Calidad Con O Sin Zócalo Trasero",
+    "category": "mesada-ciega",
+    "currentBlueprint": null,
+    "currentGallery": [
+      "/images/products/mesada-110-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-2.webp",
+      "/images/products/mesada-110-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-3.webp"
+    ],
+    "currentImage": "/images/products/mesada-110-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "mesada-110-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-1.webp",
+        "index": 1,
+        "path": "/images/products/mesada-110-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-1.webp",
+        "sizeKB": 5.4,
+        "entropy": 3.174,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-110-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-2.webp",
+        "index": 2,
+        "path": "/images/products/mesada-110-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-2.webp",
+        "sizeKB": 11.7,
+        "entropy": 5.566,
+        "width": 800,
+        "height": 728
+      },
+      {
+        "filename": "mesada-110-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-3.webp",
+        "index": 3,
+        "path": "/images/products/mesada-110-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-3.webp",
+        "sizeKB": 30.3,
+        "entropy": 5.316,
+        "width": 800,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "product": "mesada-110cm-bacha-simple-de-acero-inoxidable-grueso-110-calidad-asadera-de-acero-profesional-de-regalo.json",
+    "name": "Mesada 110cm Bacha Simple De Acero de alta calidad Grueso - 110% Calidad + Asadera De Acero Profesional De Regalo",
+    "category": "mesada-integrada",
+    "currentBlueprint": null,
+    "currentGallery": [
+      "/images/products/mesada-110cm-bacha-simple-de-acero-inoxidable-grueso-110-calidad-asadera-de-acero-profesional-de-regalo-2.webp",
+      "/images/products/mesada-110cm-bacha-simple-de-acero-inoxidable-grueso-110-calidad-asadera-de-acero-profesional-de-regalo-3.webp",
+      "/images/products/mesada-110cm-bacha-simple-de-acero-inoxidable-grueso-110-calidad-asadera-de-acero-profesional-de-regalo-4.webp",
+      "/images/products/mesada-110cm-bacha-simple-de-acero-inoxidable-grueso-110-calidad-asadera-de-acero-profesional-de-regalo-5.webp",
+      "/images/products/mesada-110cm-bacha-simple-de-acero-inoxidable-grueso-110-calidad-asadera-de-acero-profesional-de-regalo-6.webp",
+      "/images/products/mesada-110cm-bacha-simple-de-acero-inoxidable-grueso-110-calidad-asadera-de-acero-profesional-de-regalo-7.webp",
+      "/images/products/mesada-110cm-bacha-simple-de-acero-inoxidable-grueso-110-calidad-asadera-de-acero-profesional-de-regalo-8.webp",
+      "/images/products/mesada-110cm-bacha-simple-de-acero-inoxidable-grueso-110-calidad-asadera-de-acero-profesional-de-regalo-9.webp"
+    ],
+    "currentImage": "/images/products/mesada-110cm-bacha-simple-de-acero-inoxidable-grueso-110-calidad-asadera-de-acero-profesional-de-regalo-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "mesada-110cm-bacha-simple-de-acero-inoxidable-grueso-110-calidad-asadera-de-acero-profesional-de-regalo-1.webp",
+        "index": 1,
+        "path": "/images/products/mesada-110cm-bacha-simple-de-acero-inoxidable-grueso-110-calidad-asadera-de-acero-profesional-de-regalo-1.webp",
+        "sizeKB": 16.3,
+        "entropy": 3.67,
+        "width": 800,
+        "height": 834
+      },
+      {
+        "filename": "mesada-110cm-bacha-simple-de-acero-inoxidable-grueso-110-calidad-asadera-de-acero-profesional-de-regalo-2.webp",
+        "index": 2,
+        "path": "/images/products/mesada-110cm-bacha-simple-de-acero-inoxidable-grueso-110-calidad-asadera-de-acero-profesional-de-regalo-2.webp",
+        "sizeKB": 6.9,
+        "entropy": 3.85,
+        "width": 383,
+        "height": 500
+      },
+      {
+        "filename": "mesada-110cm-bacha-simple-de-acero-inoxidable-grueso-110-calidad-asadera-de-acero-profesional-de-regalo-3.webp",
+        "index": 3,
+        "path": "/images/products/mesada-110cm-bacha-simple-de-acero-inoxidable-grueso-110-calidad-asadera-de-acero-profesional-de-regalo-3.webp",
+        "sizeKB": 18.8,
+        "entropy": 5.41,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-110cm-bacha-simple-de-acero-inoxidable-grueso-110-calidad-asadera-de-acero-profesional-de-regalo-4.webp",
+        "index": 4,
+        "path": "/images/products/mesada-110cm-bacha-simple-de-acero-inoxidable-grueso-110-calidad-asadera-de-acero-profesional-de-regalo-4.webp",
+        "sizeKB": 23.8,
+        "entropy": 6.984,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-110cm-bacha-simple-de-acero-inoxidable-grueso-110-calidad-asadera-de-acero-profesional-de-regalo-5.webp",
+        "index": 5,
+        "path": "/images/products/mesada-110cm-bacha-simple-de-acero-inoxidable-grueso-110-calidad-asadera-de-acero-profesional-de-regalo-5.webp",
+        "sizeKB": 19.8,
+        "entropy": 6.086,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-110cm-bacha-simple-de-acero-inoxidable-grueso-110-calidad-asadera-de-acero-profesional-de-regalo-6.webp",
+        "index": 6,
+        "path": "/images/products/mesada-110cm-bacha-simple-de-acero-inoxidable-grueso-110-calidad-asadera-de-acero-profesional-de-regalo-6.webp",
+        "sizeKB": 19,
+        "entropy": 5.89,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-110cm-bacha-simple-de-acero-inoxidable-grueso-110-calidad-asadera-de-acero-profesional-de-regalo-7.webp",
+        "index": 7,
+        "path": "/images/products/mesada-110cm-bacha-simple-de-acero-inoxidable-grueso-110-calidad-asadera-de-acero-profesional-de-regalo-7.webp",
+        "sizeKB": 38.7,
+        "entropy": 6.572,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-110cm-bacha-simple-de-acero-inoxidable-grueso-110-calidad-asadera-de-acero-profesional-de-regalo-8.webp",
+        "index": 8,
+        "path": "/images/products/mesada-110cm-bacha-simple-de-acero-inoxidable-grueso-110-calidad-asadera-de-acero-profesional-de-regalo-8.webp",
+        "sizeKB": 42.1,
+        "entropy": 6.972,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-110cm-bacha-simple-de-acero-inoxidable-grueso-110-calidad-asadera-de-acero-profesional-de-regalo-9.webp",
+        "index": 9,
+        "path": "/images/products/mesada-110cm-bacha-simple-de-acero-inoxidable-grueso-110-calidad-asadera-de-acero-profesional-de-regalo-9.webp",
+        "sizeKB": 17.7,
+        "entropy": 6.29,
+        "width": 800,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "product": "mesada-120-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-copia.json",
+    "name": "Mesada 120 Cm Ciega Cocina (sin Bacha) -acero de alta calidad Grueso 100% Calidad Con O Sin Zócalo Trasero - (copia)",
+    "category": "mesada-ciega",
+    "currentBlueprint": null,
+    "currentGallery": [
+      "/images/products/mesada-120-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-copia-2.webp",
+      "/images/products/mesada-120-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-copia-3.webp",
+      "/images/products/mesada-120-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-copia-4.webp",
+      "/images/products/mesada-120-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-copia-5.webp"
+    ],
+    "currentImage": "/images/products/mesada-120-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-copia-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "mesada-120-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-copia-1.webp",
+        "index": 1,
+        "path": "/images/products/mesada-120-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-copia-1.webp",
+        "sizeKB": 6,
+        "entropy": 3.853,
+        "width": 800,
+        "height": 626
+      },
+      {
+        "filename": "mesada-120-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-copia-2.webp",
+        "index": 2,
+        "path": "/images/products/mesada-120-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-copia-2.webp",
+        "sizeKB": 7.2,
+        "entropy": 2.324,
+        "width": 740,
+        "height": 916
+      },
+      {
+        "filename": "mesada-120-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-copia-3.webp",
+        "index": 3,
+        "path": "/images/products/mesada-120-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-copia-3.webp",
+        "sizeKB": 11.7,
+        "entropy": 5.566,
+        "width": 800,
+        "height": 728
+      },
+      {
+        "filename": "mesada-120-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-copia-4.webp",
+        "index": 4,
+        "path": "/images/products/mesada-120-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-copia-4.webp",
+        "sizeKB": 30.3,
+        "entropy": 5.316,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-120-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-copia-5.webp",
+        "index": 5,
+        "path": "/images/products/mesada-120-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-copia-5.webp",
+        "sizeKB": 32.1,
+        "entropy": 3.52,
+        "width": 800,
+        "height": 787
+      }
+    ]
+  },
+  {
+    "product": "mesada-120cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo.json",
+    "name": "Mesada 120cm Bacha Simple De Acero de alta calidad Grueso - 100% Calidad + Asadera De Acero Profesional De Regalo",
+    "category": "mesada-integrada",
+    "currentBlueprint": null,
+    "currentGallery": [
+      "/images/products/mesada-120cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-2.webp",
+      "/images/products/mesada-120cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-3.webp",
+      "/images/products/mesada-120cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-4.webp",
+      "/images/products/mesada-120cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-5.webp",
+      "/images/products/mesada-120cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-6.webp",
+      "/images/products/mesada-120cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-7.webp",
+      "/images/products/mesada-120cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-8.webp",
+      "/images/products/mesada-120cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-9.webp",
+      "/images/products/mesada-120cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-10.webp",
+      "/images/products/mesada-120cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-11.webp"
+    ],
+    "currentImage": "/images/products/mesada-120cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "mesada-120cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp",
+        "index": 1,
+        "path": "/images/products/mesada-120cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp",
+        "sizeKB": 12.6,
+        "entropy": 3.919,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-120cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-2.webp",
+        "index": 2,
+        "path": "/images/products/mesada-120cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-2.webp",
+        "sizeKB": 6.9,
+        "entropy": 3.85,
+        "width": 383,
+        "height": 500
+      },
+      {
+        "filename": "mesada-120cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-3.webp",
+        "index": 3,
+        "path": "/images/products/mesada-120cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-3.webp",
+        "sizeKB": 18.8,
+        "entropy": 5.41,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-120cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-4.webp",
+        "index": 4,
+        "path": "/images/products/mesada-120cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-4.webp",
+        "sizeKB": 27.7,
+        "entropy": 6.229,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-120cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-5.webp",
+        "index": 5,
+        "path": "/images/products/mesada-120cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-5.webp",
+        "sizeKB": 21.1,
+        "entropy": 3.51,
+        "width": 692,
+        "height": 1200
+      },
+      {
+        "filename": "mesada-120cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-6.webp",
+        "index": 6,
+        "path": "/images/products/mesada-120cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-6.webp",
+        "sizeKB": 23.8,
+        "entropy": 6.984,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-120cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-7.webp",
+        "index": 7,
+        "path": "/images/products/mesada-120cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-7.webp",
+        "sizeKB": 19.8,
+        "entropy": 6.086,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-120cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-8.webp",
+        "index": 8,
+        "path": "/images/products/mesada-120cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-8.webp",
+        "sizeKB": 19,
+        "entropy": 5.89,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-120cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-9.webp",
+        "index": 9,
+        "path": "/images/products/mesada-120cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-9.webp",
+        "sizeKB": 38.7,
+        "entropy": 6.572,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-120cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-10.webp",
+        "index": 10,
+        "path": "/images/products/mesada-120cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-10.webp",
+        "sizeKB": 42.1,
+        "entropy": 6.972,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-120cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-11.webp",
+        "index": 11,
+        "path": "/images/products/mesada-120cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-11.webp",
+        "sizeKB": 17.7,
+        "entropy": 6.29,
+        "width": 800,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "product": "mesada-130cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo.json",
+    "name": "Mesada 130cm Bacha Simple De Acero de alta calidad Grueso - 100% Calidad + Asadera De Acero Profesional De Regalo",
+    "category": "mesada-integrada",
+    "currentBlueprint": null,
+    "currentGallery": [
+      "/images/products/mesada-130cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-2.webp",
+      "/images/products/mesada-130cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-3.webp",
+      "/images/products/mesada-130cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-4.webp",
+      "/images/products/mesada-130cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-5.webp",
+      "/images/products/mesada-130cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-6.webp",
+      "/images/products/mesada-130cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-7.webp",
+      "/images/products/mesada-130cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-8.webp"
+    ],
+    "currentImage": "/images/products/mesada-130cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "mesada-130cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp",
+        "index": 1,
+        "path": "/images/products/mesada-130cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp",
+        "sizeKB": 16.3,
+        "entropy": 3.83,
+        "width": 800,
+        "height": 812
+      },
+      {
+        "filename": "mesada-130cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-2.webp",
+        "index": 2,
+        "path": "/images/products/mesada-130cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-2.webp",
+        "sizeKB": 18.8,
+        "entropy": 5.41,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-130cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-3.webp",
+        "index": 3,
+        "path": "/images/products/mesada-130cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-3.webp",
+        "sizeKB": 23.8,
+        "entropy": 6.984,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-130cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-4.webp",
+        "index": 4,
+        "path": "/images/products/mesada-130cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-4.webp",
+        "sizeKB": 19.8,
+        "entropy": 6.086,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-130cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-5.webp",
+        "index": 5,
+        "path": "/images/products/mesada-130cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-5.webp",
+        "sizeKB": 19,
+        "entropy": 5.89,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-130cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-6.webp",
+        "index": 6,
+        "path": "/images/products/mesada-130cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-6.webp",
+        "sizeKB": 38.7,
+        "entropy": 6.572,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-130cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-7.webp",
+        "index": 7,
+        "path": "/images/products/mesada-130cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-7.webp",
+        "sizeKB": 42.1,
+        "entropy": 6.972,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-130cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-8.webp",
+        "index": 8,
+        "path": "/images/products/mesada-130cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-8.webp",
+        "sizeKB": 17.7,
+        "entropy": 6.29,
+        "width": 800,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "product": "mesada-140-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero.json",
+    "name": "Mesada 140 Cm Ciega Cocina (sin Bacha) -acero de alta calidad Grueso 100% Calidad Con O Sin Zócalo Trasero",
+    "category": "mesada-ciega",
+    "currentBlueprint": null,
+    "currentGallery": [
+      "/images/products/mesada-140-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-2.webp"
+    ],
+    "currentImage": "/images/products/mesada-140-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "mesada-140-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-1.webp",
+        "index": 1,
+        "path": "/images/products/mesada-140-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-1.webp",
+        "sizeKB": 4.3,
+        "entropy": 2.602,
+        "width": 800,
+        "height": 1000
+      },
+      {
+        "filename": "mesada-140-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-2.webp",
+        "index": 2,
+        "path": "/images/products/mesada-140-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-2.webp",
+        "sizeKB": 4.1,
+        "entropy": 1.635,
+        "width": 800,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "product": "mesada-140cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo.json",
+    "name": "Mesada 140cm Bacha Simple De Acero de alta calidad Grueso - 100% Calidad + Asadera De Acero Profesional De Regalo",
+    "category": "mesada-integrada",
+    "currentBlueprint": null,
+    "currentGallery": [
+      "/images/products/mesada-140cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-2.webp",
+      "/images/products/mesada-140cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-3.webp",
+      "/images/products/mesada-140cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-4.webp",
+      "/images/products/mesada-140cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-5.webp",
+      "/images/products/mesada-140cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-6.webp",
+      "/images/products/mesada-140cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-7.webp",
+      "/images/products/mesada-140cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-8.webp"
+    ],
+    "currentImage": "/images/products/mesada-140cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "mesada-140cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp",
+        "index": 1,
+        "path": "/images/products/mesada-140cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp",
+        "sizeKB": 16.3,
+        "entropy": 3.83,
+        "width": 800,
+        "height": 812
+      },
+      {
+        "filename": "mesada-140cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-2.webp",
+        "index": 2,
+        "path": "/images/products/mesada-140cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-2.webp",
+        "sizeKB": 18.8,
+        "entropy": 5.41,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-140cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-3.webp",
+        "index": 3,
+        "path": "/images/products/mesada-140cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-3.webp",
+        "sizeKB": 23.8,
+        "entropy": 6.984,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-140cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-4.webp",
+        "index": 4,
+        "path": "/images/products/mesada-140cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-4.webp",
+        "sizeKB": 19.8,
+        "entropy": 6.086,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-140cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-5.webp",
+        "index": 5,
+        "path": "/images/products/mesada-140cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-5.webp",
+        "sizeKB": 19,
+        "entropy": 5.89,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-140cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-6.webp",
+        "index": 6,
+        "path": "/images/products/mesada-140cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-6.webp",
+        "sizeKB": 38.7,
+        "entropy": 6.572,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-140cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-7.webp",
+        "index": 7,
+        "path": "/images/products/mesada-140cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-7.webp",
+        "sizeKB": 42.1,
+        "entropy": 6.972,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-140cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-8.webp",
+        "index": 8,
+        "path": "/images/products/mesada-140cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-8.webp",
+        "sizeKB": 17.7,
+        "entropy": 6.29,
+        "width": 800,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "product": "mesada-150cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo.json",
+    "name": "Mesada 150cm Bacha Simple De Acero de alta calidad Grueso - 100% Calidad + Asadera De Acero Profesional De Regalo",
+    "category": "mesada-integrada",
+    "currentBlueprint": null,
+    "currentGallery": [
+      "/images/products/mesada-150cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-2.webp",
+      "/images/products/mesada-150cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-3.webp",
+      "/images/products/mesada-150cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-4.webp",
+      "/images/products/mesada-150cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-5.webp",
+      "/images/products/mesada-150cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-6.webp",
+      "/images/products/mesada-150cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-7.webp",
+      "/images/products/mesada-150cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-8.webp",
+      "/images/products/mesada-150cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-9.webp"
+    ],
+    "currentImage": "/images/products/mesada-150cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "mesada-150cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp",
+        "index": 1,
+        "path": "/images/products/mesada-150cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp",
+        "sizeKB": 17.1,
+        "entropy": 4.158,
+        "width": 800,
+        "height": 840
+      },
+      {
+        "filename": "mesada-150cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-2.webp",
+        "index": 2,
+        "path": "/images/products/mesada-150cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-2.webp",
+        "sizeKB": 6.9,
+        "entropy": 3.85,
+        "width": 383,
+        "height": 500
+      },
+      {
+        "filename": "mesada-150cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-3.webp",
+        "index": 3,
+        "path": "/images/products/mesada-150cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-3.webp",
+        "sizeKB": 18.8,
+        "entropy": 5.41,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-150cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-4.webp",
+        "index": 4,
+        "path": "/images/products/mesada-150cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-4.webp",
+        "sizeKB": 23.8,
+        "entropy": 6.984,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-150cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-5.webp",
+        "index": 5,
+        "path": "/images/products/mesada-150cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-5.webp",
+        "sizeKB": 19.8,
+        "entropy": 6.086,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-150cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-6.webp",
+        "index": 6,
+        "path": "/images/products/mesada-150cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-6.webp",
+        "sizeKB": 19,
+        "entropy": 5.89,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-150cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-7.webp",
+        "index": 7,
+        "path": "/images/products/mesada-150cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-7.webp",
+        "sizeKB": 38.7,
+        "entropy": 6.572,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-150cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-8.webp",
+        "index": 8,
+        "path": "/images/products/mesada-150cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-8.webp",
+        "sizeKB": 42.1,
+        "entropy": 6.972,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-150cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-9.webp",
+        "index": 9,
+        "path": "/images/products/mesada-150cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-9.webp",
+        "sizeKB": 17.7,
+        "entropy": 6.29,
+        "width": 800,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "product": "mesada-160-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero.json",
+    "name": "Mesada 160 Cm Ciega Cocina (sin Bacha) -acero de alta calidad Grueso 100% Calidad Con O Sin Zócalo Trasero",
+    "category": "mesada-ciega",
+    "currentBlueprint": null,
+    "currentGallery": [
+      "/images/products/mesada-160-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-2.webp",
+      "/images/products/mesada-160-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-3.webp",
+      "/images/products/mesada-160-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-4.webp",
+      "/images/products/mesada-160-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-5.webp",
+      "/images/products/mesada-160-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-6.webp"
+    ],
+    "currentImage": "/images/products/mesada-160-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "mesada-160-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-1.webp",
+        "index": 1,
+        "path": "/images/products/mesada-160-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-1.webp",
+        "sizeKB": 6,
+        "entropy": 3.853,
+        "width": 800,
+        "height": 626
+      },
+      {
+        "filename": "mesada-160-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-2.webp",
+        "index": 2,
+        "path": "/images/products/mesada-160-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-2.webp",
+        "sizeKB": 19,
+        "entropy": 6.034,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-160-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-3.webp",
+        "index": 3,
+        "path": "/images/products/mesada-160-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-3.webp",
+        "sizeKB": 5.3,
+        "entropy": 2.213,
+        "width": 800,
+        "height": 830
+      },
+      {
+        "filename": "mesada-160-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-4.webp",
+        "index": 4,
+        "path": "/images/products/mesada-160-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-4.webp",
+        "sizeKB": 11.7,
+        "entropy": 5.566,
+        "width": 800,
+        "height": 728
+      },
+      {
+        "filename": "mesada-160-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-5.webp",
+        "index": 5,
+        "path": "/images/products/mesada-160-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-5.webp",
+        "sizeKB": 30.3,
+        "entropy": 5.316,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-160-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-6.webp",
+        "index": 6,
+        "path": "/images/products/mesada-160-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-6.webp",
+        "sizeKB": 32.1,
+        "entropy": 3.52,
+        "width": 800,
+        "height": 787
+      }
+    ]
+  },
+  {
+    "product": "mesada-160cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo.json",
+    "name": "Mesada 160cm Bacha Simple De Acero de alta calidad Grueso - 100% Calidad + Asadera De Acero Profesional De Regalo",
+    "category": "mesada-integrada",
+    "currentBlueprint": null,
+    "currentGallery": [
+      "/images/products/mesada-160cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-2.webp",
+      "/images/products/mesada-160cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-3.webp",
+      "/images/products/mesada-160cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-4.webp",
+      "/images/products/mesada-160cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-5.webp",
+      "/images/products/mesada-160cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-6.webp",
+      "/images/products/mesada-160cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-7.webp",
+      "/images/products/mesada-160cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-8.webp",
+      "/images/products/mesada-160cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-9.webp"
+    ],
+    "currentImage": "/images/products/mesada-160cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "mesada-160cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp",
+        "index": 1,
+        "path": "/images/products/mesada-160cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp",
+        "sizeKB": 17.1,
+        "entropy": 4.158,
+        "width": 800,
+        "height": 840
+      },
+      {
+        "filename": "mesada-160cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-2.webp",
+        "index": 2,
+        "path": "/images/products/mesada-160cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-2.webp",
+        "sizeKB": 6.9,
+        "entropy": 3.85,
+        "width": 383,
+        "height": 500
+      },
+      {
+        "filename": "mesada-160cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-3.webp",
+        "index": 3,
+        "path": "/images/products/mesada-160cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-3.webp",
+        "sizeKB": 18.8,
+        "entropy": 5.41,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-160cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-4.webp",
+        "index": 4,
+        "path": "/images/products/mesada-160cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-4.webp",
+        "sizeKB": 23.8,
+        "entropy": 6.984,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-160cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-5.webp",
+        "index": 5,
+        "path": "/images/products/mesada-160cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-5.webp",
+        "sizeKB": 19.8,
+        "entropy": 6.086,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-160cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-6.webp",
+        "index": 6,
+        "path": "/images/products/mesada-160cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-6.webp",
+        "sizeKB": 19,
+        "entropy": 5.89,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-160cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-7.webp",
+        "index": 7,
+        "path": "/images/products/mesada-160cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-7.webp",
+        "sizeKB": 38.7,
+        "entropy": 6.572,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-160cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-8.webp",
+        "index": 8,
+        "path": "/images/products/mesada-160cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-8.webp",
+        "sizeKB": 42.1,
+        "entropy": 6.972,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-160cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-9.webp",
+        "index": 9,
+        "path": "/images/products/mesada-160cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-9.webp",
+        "sizeKB": 17.7,
+        "entropy": 6.29,
+        "width": 800,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "product": "mesada-180-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero.json",
+    "name": "Mesada 180 Cm Ciega Cocina (sin Bacha) -acero de alta calidad Grueso 100% Calidad Con O Sin Zócalo Trasero",
+    "category": "mesada-ciega",
+    "currentBlueprint": null,
+    "currentGallery": [
+      "/images/products/mesada-180-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-2.webp",
+      "/images/products/mesada-180-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-3.webp"
+    ],
+    "currentImage": "/images/products/mesada-180-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "mesada-180-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-1.webp",
+        "index": 1,
+        "path": "/images/products/mesada-180-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-1.webp",
+        "sizeKB": 6,
+        "entropy": 3.853,
+        "width": 800,
+        "height": 626
+      },
+      {
+        "filename": "mesada-180-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-2.webp",
+        "index": 2,
+        "path": "/images/products/mesada-180-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-2.webp",
+        "sizeKB": 11.7,
+        "entropy": 5.566,
+        "width": 800,
+        "height": 728
+      },
+      {
+        "filename": "mesada-180-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-3.webp",
+        "index": 3,
+        "path": "/images/products/mesada-180-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-3.webp",
+        "sizeKB": 30.3,
+        "entropy": 5.316,
+        "width": 800,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "product": "mesada-180cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo.json",
+    "name": "Mesada 180cm Bacha Simple De Acero de alta calidad Grueso - 100% Calidad + Asadera De Acero Profesional De Regalo",
+    "category": "mesada-integrada",
+    "currentBlueprint": null,
+    "currentGallery": [
+      "/images/products/mesada-180cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-2.webp",
+      "/images/products/mesada-180cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-3.webp",
+      "/images/products/mesada-180cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-4.webp",
+      "/images/products/mesada-180cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-5.webp",
+      "/images/products/mesada-180cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-6.webp",
+      "/images/products/mesada-180cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-7.webp",
+      "/images/products/mesada-180cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-8.webp",
+      "/images/products/mesada-180cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-9.webp"
+    ],
+    "currentImage": "/images/products/mesada-180cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "mesada-180cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp",
+        "index": 1,
+        "path": "/images/products/mesada-180cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp",
+        "sizeKB": 12.6,
+        "entropy": 4.751,
+        "width": 500,
+        "height": 480
+      },
+      {
+        "filename": "mesada-180cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-2.webp",
+        "index": 2,
+        "path": "/images/products/mesada-180cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-2.webp",
+        "sizeKB": 6.9,
+        "entropy": 3.85,
+        "width": 383,
+        "height": 500
+      },
+      {
+        "filename": "mesada-180cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-3.webp",
+        "index": 3,
+        "path": "/images/products/mesada-180cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-3.webp",
+        "sizeKB": 18.8,
+        "entropy": 5.41,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-180cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-4.webp",
+        "index": 4,
+        "path": "/images/products/mesada-180cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-4.webp",
+        "sizeKB": 23.8,
+        "entropy": 6.984,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-180cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-5.webp",
+        "index": 5,
+        "path": "/images/products/mesada-180cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-5.webp",
+        "sizeKB": 19.8,
+        "entropy": 6.086,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-180cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-6.webp",
+        "index": 6,
+        "path": "/images/products/mesada-180cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-6.webp",
+        "sizeKB": 19,
+        "entropy": 5.89,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-180cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-7.webp",
+        "index": 7,
+        "path": "/images/products/mesada-180cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-7.webp",
+        "sizeKB": 38.7,
+        "entropy": 6.572,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-180cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-8.webp",
+        "index": 8,
+        "path": "/images/products/mesada-180cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-8.webp",
+        "sizeKB": 42.1,
+        "entropy": 6.972,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-180cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-9.webp",
+        "index": 9,
+        "path": "/images/products/mesada-180cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-9.webp",
+        "sizeKB": 17.7,
+        "entropy": 6.29,
+        "width": 800,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "product": "mesada-200-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero.json",
+    "name": "Mesada 200 Cm Ciega Cocina (sin Bacha) -acero de alta calidad Grueso 100% Calidad Con O Sin Zócalo Trasero",
+    "category": "mesada-ciega",
+    "currentBlueprint": null,
+    "currentGallery": [
+      "/images/products/mesada-200-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-2.webp",
+      "/images/products/mesada-200-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-3.webp",
+      "/images/products/mesada-200-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-4.webp",
+      "/images/products/mesada-200-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-5.webp"
+    ],
+    "currentImage": "/images/products/mesada-200-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "mesada-200-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-1.webp",
+        "index": 1,
+        "path": "/images/products/mesada-200-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-1.webp",
+        "sizeKB": 6,
+        "entropy": 3.853,
+        "width": 800,
+        "height": 626
+      },
+      {
+        "filename": "mesada-200-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-2.webp",
+        "index": 2,
+        "path": "/images/products/mesada-200-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-2.webp",
+        "sizeKB": 4.4,
+        "entropy": 2.673,
+        "width": 800,
+        "height": 677
+      },
+      {
+        "filename": "mesada-200-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-3.webp",
+        "index": 3,
+        "path": "/images/products/mesada-200-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-3.webp",
+        "sizeKB": 11.7,
+        "entropy": 5.566,
+        "width": 800,
+        "height": 728
+      },
+      {
+        "filename": "mesada-200-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-4.webp",
+        "index": 4,
+        "path": "/images/products/mesada-200-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-4.webp",
+        "sizeKB": 30.3,
+        "entropy": 5.316,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-200-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-5.webp",
+        "index": 5,
+        "path": "/images/products/mesada-200-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-5.webp",
+        "sizeKB": 32.1,
+        "entropy": 3.52,
+        "width": 800,
+        "height": 787
+      }
+    ]
+  },
+  {
+    "product": "mesada-200cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo.json",
+    "name": "Mesada 200cm Bacha Simple De Acero de alta calidad Grueso - 100% Calidad + Asadera De Acero Profesional De Regalo",
+    "category": "mesada-integrada",
+    "currentBlueprint": null,
+    "currentGallery": [
+      "/images/products/mesada-200cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-2.webp",
+      "/images/products/mesada-200cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-3.webp",
+      "/images/products/mesada-200cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-4.webp",
+      "/images/products/mesada-200cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-5.webp",
+      "/images/products/mesada-200cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-6.webp",
+      "/images/products/mesada-200cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-7.webp",
+      "/images/products/mesada-200cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-8.webp",
+      "/images/products/mesada-200cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-9.webp"
+    ],
+    "currentImage": "/images/products/mesada-200cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "mesada-200cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp",
+        "index": 1,
+        "path": "/images/products/mesada-200cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp",
+        "sizeKB": 12.6,
+        "entropy": 4.751,
+        "width": 500,
+        "height": 480
+      },
+      {
+        "filename": "mesada-200cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-2.webp",
+        "index": 2,
+        "path": "/images/products/mesada-200cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-2.webp",
+        "sizeKB": 6.9,
+        "entropy": 3.85,
+        "width": 383,
+        "height": 500
+      },
+      {
+        "filename": "mesada-200cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-3.webp",
+        "index": 3,
+        "path": "/images/products/mesada-200cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-3.webp",
+        "sizeKB": 18.8,
+        "entropy": 5.41,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-200cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-4.webp",
+        "index": 4,
+        "path": "/images/products/mesada-200cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-4.webp",
+        "sizeKB": 23.8,
+        "entropy": 6.984,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-200cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-5.webp",
+        "index": 5,
+        "path": "/images/products/mesada-200cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-5.webp",
+        "sizeKB": 19.8,
+        "entropy": 6.086,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-200cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-6.webp",
+        "index": 6,
+        "path": "/images/products/mesada-200cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-6.webp",
+        "sizeKB": 19,
+        "entropy": 5.89,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-200cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-7.webp",
+        "index": 7,
+        "path": "/images/products/mesada-200cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-7.webp",
+        "sizeKB": 38.7,
+        "entropy": 6.572,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-200cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-8.webp",
+        "index": 8,
+        "path": "/images/products/mesada-200cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-8.webp",
+        "sizeKB": 42.1,
+        "entropy": 6.972,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-200cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-9.webp",
+        "index": 9,
+        "path": "/images/products/mesada-200cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-9.webp",
+        "sizeKB": 17.7,
+        "entropy": 6.29,
+        "width": 800,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "product": "mesada-220cm-bacha-doble-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo.json",
+    "name": "Mesada 220cm Bacha Doble De Acero de alta calidad Grueso - 100% Calidad + Asadera De Acero Profesional De Regalo",
+    "category": "mesada-integrada",
+    "currentBlueprint": null,
+    "currentGallery": [],
+    "currentImage": "/images/products/mesada-220cm-bacha-doble-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "mesada-220cm-bacha-doble-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp",
+        "index": 1,
+        "path": "/images/products/mesada-220cm-bacha-doble-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp",
+        "sizeKB": 20.1,
+        "entropy": 4.348,
+        "width": 800,
+        "height": 825
+      }
+    ]
+  },
+  {
+    "product": "mesada-220cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo.json",
+    "name": "Mesada 220cm Bacha Simple De Acero de alta calidad Grueso - 100% Calidad + Asadera De Acero Profesional De Regalo",
+    "category": "mesada-integrada",
+    "currentBlueprint": null,
+    "currentGallery": [
+      "/images/products/mesada-220cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-2.webp",
+      "/images/products/mesada-220cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-3.webp",
+      "/images/products/mesada-220cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-4.webp",
+      "/images/products/mesada-220cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-5.webp",
+      "/images/products/mesada-220cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-6.webp",
+      "/images/products/mesada-220cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-7.webp",
+      "/images/products/mesada-220cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-8.webp",
+      "/images/products/mesada-220cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-9.webp"
+    ],
+    "currentImage": "/images/products/mesada-220cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "mesada-220cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp",
+        "index": 1,
+        "path": "/images/products/mesada-220cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp",
+        "sizeKB": 12.6,
+        "entropy": 4.751,
+        "width": 500,
+        "height": 480
+      },
+      {
+        "filename": "mesada-220cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-2.webp",
+        "index": 2,
+        "path": "/images/products/mesada-220cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-2.webp",
+        "sizeKB": 6.9,
+        "entropy": 3.85,
+        "width": 383,
+        "height": 500
+      },
+      {
+        "filename": "mesada-220cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-3.webp",
+        "index": 3,
+        "path": "/images/products/mesada-220cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-3.webp",
+        "sizeKB": 18.8,
+        "entropy": 5.41,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-220cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-4.webp",
+        "index": 4,
+        "path": "/images/products/mesada-220cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-4.webp",
+        "sizeKB": 23.8,
+        "entropy": 6.984,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-220cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-5.webp",
+        "index": 5,
+        "path": "/images/products/mesada-220cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-5.webp",
+        "sizeKB": 19.8,
+        "entropy": 6.086,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-220cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-6.webp",
+        "index": 6,
+        "path": "/images/products/mesada-220cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-6.webp",
+        "sizeKB": 19,
+        "entropy": 5.89,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-220cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-7.webp",
+        "index": 7,
+        "path": "/images/products/mesada-220cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-7.webp",
+        "sizeKB": 38.7,
+        "entropy": 6.572,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-220cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-8.webp",
+        "index": 8,
+        "path": "/images/products/mesada-220cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-8.webp",
+        "sizeKB": 42.1,
+        "entropy": 6.972,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-220cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-9.webp",
+        "index": 9,
+        "path": "/images/products/mesada-220cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-9.webp",
+        "sizeKB": 17.7,
+        "entropy": 6.29,
+        "width": 800,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "product": "mesada-80-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero.json",
+    "name": "Mesada 80 Cm Ciega Cocina (sin Bacha) -acero de alta calidad Grueso 100% Calidad Con O Sin Zócalo Trasero -",
+    "category": "mesada-ciega",
+    "currentBlueprint": null,
+    "currentGallery": [
+      "/images/products/mesada-80-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-2.webp"
+    ],
+    "currentImage": "/images/products/mesada-80-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "mesada-80-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-1.webp",
+        "index": 1,
+        "path": "/images/products/mesada-80-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-1.webp",
+        "sizeKB": 6,
+        "entropy": 3.853,
+        "width": 800,
+        "height": 626
+      },
+      {
+        "filename": "mesada-80-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-2.webp",
+        "index": 2,
+        "path": "/images/products/mesada-80-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-2.webp",
+        "sizeKB": 30.3,
+        "entropy": 5.316,
+        "width": 800,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "product": "mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo.json",
+    "name": "Mesada 80cm Bacha Simple De Acero de alta calidad Grueso - 100% Calidad + Asadera De Acero Profesional De Regalo",
+    "category": "mesada-integrada",
+    "currentBlueprint": null,
+    "currentGallery": [
+      "/images/products/mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-2.webp",
+      "/images/products/mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-3.webp",
+      "/images/products/mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-4.webp",
+      "/images/products/mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-5.webp",
+      "/images/products/mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-6.webp",
+      "/images/products/mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-7.webp",
+      "/images/products/mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-8.webp",
+      "/images/products/mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-9.webp"
+    ],
+    "currentImage": "/images/products/mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp",
+        "index": 1,
+        "path": "/images/products/mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp",
+        "sizeKB": 16.3,
+        "entropy": 3.67,
+        "width": 800,
+        "height": 834
+      },
+      {
+        "filename": "mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-2.webp",
+        "index": 2,
+        "path": "/images/products/mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-2.webp",
+        "sizeKB": 6.9,
+        "entropy": 3.85,
+        "width": 383,
+        "height": 500
+      },
+      {
+        "filename": "mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-3.webp",
+        "index": 3,
+        "path": "/images/products/mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-3.webp",
+        "sizeKB": 18.8,
+        "entropy": 5.41,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-4.webp",
+        "index": 4,
+        "path": "/images/products/mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-4.webp",
+        "sizeKB": 23.8,
+        "entropy": 6.984,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-5.webp",
+        "index": 5,
+        "path": "/images/products/mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-5.webp",
+        "sizeKB": 19.8,
+        "entropy": 6.086,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-6.webp",
+        "index": 6,
+        "path": "/images/products/mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-6.webp",
+        "sizeKB": 19,
+        "entropy": 5.89,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-7.webp",
+        "index": 7,
+        "path": "/images/products/mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-7.webp",
+        "sizeKB": 38.7,
+        "entropy": 6.572,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-8.webp",
+        "index": 8,
+        "path": "/images/products/mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-8.webp",
+        "sizeKB": 42.1,
+        "entropy": 6.972,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-9.webp",
+        "index": 9,
+        "path": "/images/products/mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-9.webp",
+        "sizeKB": 17.7,
+        "entropy": 6.29,
+        "width": 800,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "product": "mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia.json",
+    "name": "Mesada De 120 Cm Con Bacha Lava Ollas / Lavadero De 61x38x25 Cm Super Profunda- de alta calidad Grueso 100% Calidad + Envío - (copia)",
+    "category": "mesada-integrada",
+    "currentBlueprint": null,
+    "currentGallery": [
+      "/images/products/mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-2.webp",
+      "/images/products/mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-3.webp",
+      "/images/products/mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-4.webp",
+      "/images/products/mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-5.webp",
+      "/images/products/mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-6.webp",
+      "/images/products/mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-7.webp",
+      "/images/products/mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-8.webp",
+      "/images/products/mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-9.webp"
+    ],
+    "currentImage": "/images/products/mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-1.webp",
+        "index": 1,
+        "path": "/images/products/mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-1.webp",
+        "sizeKB": 15.8,
+        "entropy": 3.923,
+        "width": 800,
+        "height": 870
+      },
+      {
+        "filename": "mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-2.webp",
+        "index": 2,
+        "path": "/images/products/mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-2.webp",
+        "sizeKB": 24.1,
+        "entropy": 5.861,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-3.webp",
+        "index": 3,
+        "path": "/images/products/mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-3.webp",
+        "sizeKB": 17.1,
+        "entropy": 3.333,
+        "width": 800,
+        "height": 1081
+      },
+      {
+        "filename": "mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-4.webp",
+        "index": 4,
+        "path": "/images/products/mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-4.webp",
+        "sizeKB": 22.7,
+        "entropy": 6.656,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-5.webp",
+        "index": 5,
+        "path": "/images/products/mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-5.webp",
+        "sizeKB": 25.1,
+        "entropy": 6.078,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-6.webp",
+        "index": 6,
+        "path": "/images/products/mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-6.webp",
+        "sizeKB": 39.8,
+        "entropy": 6.095,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-7.webp",
+        "index": 7,
+        "path": "/images/products/mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-7.webp",
+        "sizeKB": 39.1,
+        "entropy": 6.481,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-8.webp",
+        "index": 8,
+        "path": "/images/products/mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-8.webp",
+        "sizeKB": 20.5,
+        "entropy": 6.614,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-9.webp",
+        "index": 9,
+        "path": "/images/products/mesada-de-120-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-copia-9.webp",
+        "sizeKB": 5.9,
+        "entropy": 5.653,
+        "width": 800,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "product": "mesada-de-160-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio.json",
+    "name": "Mesada De 160 Cm Con Bacha Lava Ollas / Lavadero De 61x38x25 Cm Super Profunda- de alta calidad Grueso 100% Calidad + Envío",
+    "category": "mesada-integrada",
+    "currentBlueprint": null,
+    "currentGallery": [
+      "/images/products/mesada-de-160-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-2.webp",
+      "/images/products/mesada-de-160-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-3.webp",
+      "/images/products/mesada-de-160-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-4.webp",
+      "/images/products/mesada-de-160-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-5.webp",
+      "/images/products/mesada-de-160-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-6.webp",
+      "/images/products/mesada-de-160-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-7.webp",
+      "/images/products/mesada-de-160-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-8.webp",
+      "/images/products/mesada-de-160-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-9.webp"
+    ],
+    "currentImage": "/images/products/mesada-de-160-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "mesada-de-160-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-1.webp",
+        "index": 1,
+        "path": "/images/products/mesada-de-160-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-1.webp",
+        "sizeKB": 15.8,
+        "entropy": 3.923,
+        "width": 800,
+        "height": 870
+      },
+      {
+        "filename": "mesada-de-160-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-2.webp",
+        "index": 2,
+        "path": "/images/products/mesada-de-160-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-2.webp",
+        "sizeKB": 24.1,
+        "entropy": 5.861,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-de-160-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-3.webp",
+        "index": 3,
+        "path": "/images/products/mesada-de-160-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-3.webp",
+        "sizeKB": 17.1,
+        "entropy": 3.333,
+        "width": 800,
+        "height": 1081
+      },
+      {
+        "filename": "mesada-de-160-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-4.webp",
+        "index": 4,
+        "path": "/images/products/mesada-de-160-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-4.webp",
+        "sizeKB": 22.7,
+        "entropy": 6.656,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-de-160-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-5.webp",
+        "index": 5,
+        "path": "/images/products/mesada-de-160-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-5.webp",
+        "sizeKB": 25.1,
+        "entropy": 6.078,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-de-160-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-6.webp",
+        "index": 6,
+        "path": "/images/products/mesada-de-160-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-6.webp",
+        "sizeKB": 39.8,
+        "entropy": 6.095,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-de-160-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-7.webp",
+        "index": 7,
+        "path": "/images/products/mesada-de-160-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-7.webp",
+        "sizeKB": 39.1,
+        "entropy": 6.481,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-de-160-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-8.webp",
+        "index": 8,
+        "path": "/images/products/mesada-de-160-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-8.webp",
+        "sizeKB": 20.5,
+        "entropy": 6.614,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "mesada-de-160-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-9.webp",
+        "index": 9,
+        "path": "/images/products/mesada-de-160-cm-con-bacha-lava-ollas-lavadero-de-61x38x25-cm-super-profunda-inoxidable-grueso-100-calidad-envio-9.webp",
+        "sizeKB": 5.9,
+        "entropy": 5.653,
+        "width": 800,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "product": "pileton-gastronomico-industrial-acero-304-1-25mm.json",
+    "name": "PILETON gastronómico INDUSTRIAL Acero 304 1.25mm",
+    "category": "bacha-simple",
+    "currentBlueprint": null,
+    "currentGallery": [
+      "/images/products/pileton-gastronomico-industrial-acero-304-1-25mm-2.webp",
+      "/images/products/pileton-gastronomico-industrial-acero-304-1-25mm-3.webp"
+    ],
+    "currentImage": "/images/products/pileton-gastronomico-industrial-acero-304-1-25mm-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "pileton-gastronomico-industrial-acero-304-1-25mm-1.webp",
+        "index": 1,
+        "path": "/images/products/pileton-gastronomico-industrial-acero-304-1-25mm-1.webp",
+        "sizeKB": 12.7,
+        "entropy": 3.65,
+        "width": 800,
+        "height": 1000
+      },
+      {
+        "filename": "pileton-gastronomico-industrial-acero-304-1-25mm-2.webp",
+        "index": 2,
+        "path": "/images/products/pileton-gastronomico-industrial-acero-304-1-25mm-2.webp",
+        "sizeKB": 36.1,
+        "entropy": 7.591,
+        "width": 800,
+        "height": 834
+      },
+      {
+        "filename": "pileton-gastronomico-industrial-acero-304-1-25mm-3.webp",
+        "index": 3,
+        "path": "/images/products/pileton-gastronomico-industrial-acero-304-1-25mm-3.webp",
+        "sizeKB": 7.5,
+        "entropy": 2.215,
+        "width": 800,
+        "height": 816
+      }
+    ]
+  },
+  {
+    "product": "prisma-duo-acero-304-82-45-22cm.json",
+    "name": "PRISMA DUO Acero 304 82*45*22CM",
+    "category": "bacha-doble",
+    "currentBlueprint": "/images/products/prisma-duo-acero-304-82-45-22cm-3.webp",
+    "currentGallery": [
+      "/images/products/prisma-duo-acero-304-82-45-22cm-2.webp"
+    ],
+    "currentImage": "/images/products/prisma-duo-acero-304-82-45-22cm-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "prisma-duo-acero-304-82-45-22cm-1.webp",
+        "index": 1,
+        "path": "/images/products/prisma-duo-acero-304-82-45-22cm-1.webp",
+        "sizeKB": 18,
+        "entropy": 4.089,
+        "width": 800,
+        "height": 1000
+      },
+      {
+        "filename": "prisma-duo-acero-304-82-45-22cm-2.webp",
+        "index": 2,
+        "path": "/images/products/prisma-duo-acero-304-82-45-22cm-2.webp",
+        "sizeKB": 36.1,
+        "entropy": 7.591,
+        "width": 800,
+        "height": 834
+      },
+      {
+        "filename": "prisma-duo-acero-304-82-45-22cm-3.webp",
+        "index": 3,
+        "path": "/images/products/prisma-duo-acero-304-82-45-22cm-3.webp",
+        "sizeKB": 46.4,
+        "entropy": 3.246,
+        "width": 596,
+        "height": 815
+      },
+      {
+        "filename": "prisma-duo-acero-304-82-45-22cm-4.webp",
+        "index": 4,
+        "path": "/images/products/prisma-duo-acero-304-82-45-22cm-4.webp",
+        "sizeKB": 9.2,
+        "entropy": 1.662,
+        "width": 800,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "product": "prisma-grafito-acero-304-78x48x22.json",
+    "name": "PRISMA GRAFITO Acero 304 78x48x22",
+    "category": "bacha-simple",
+    "currentBlueprint": "/images/products/prisma-grafito-acero-304-78x48x22-3.webp",
+    "currentGallery": [
+      "/images/products/prisma-grafito-acero-304-78x48x22-2.webp"
+    ],
+    "currentImage": "/images/products/prisma-grafito-acero-304-78x48x22-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "prisma-grafito-acero-304-78x48x22-1.webp",
+        "index": 1,
+        "path": "/images/products/prisma-grafito-acero-304-78x48x22-1.webp",
+        "sizeKB": 15.1,
+        "entropy": 3.834,
+        "width": 800,
+        "height": 1000
+      },
+      {
+        "filename": "prisma-grafito-acero-304-78x48x22-2.webp",
+        "index": 2,
+        "path": "/images/products/prisma-grafito-acero-304-78x48x22-2.webp",
+        "sizeKB": 8.2,
+        "entropy": 1.509,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "prisma-grafito-acero-304-78x48x22-3.webp",
+        "index": 3,
+        "path": "/images/products/prisma-grafito-acero-304-78x48x22-3.webp",
+        "sizeKB": 46.4,
+        "entropy": 3.246,
+        "width": 596,
+        "height": 815
+      }
+    ]
+  },
+  {
+    "product": "prisma-l-acero-304-76x45x25cm.json",
+    "name": "PRISMA L Acero 304 76x45x25cm",
+    "category": "bacha-simple",
+    "currentBlueprint": "/images/products/prisma-l-acero-304-76x45x25cm-2.webp",
+    "currentGallery": [],
+    "currentImage": "/images/products/prisma-l-acero-304-76x45x25cm-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "prisma-l-acero-304-76x45x25cm-1.webp",
+        "index": 1,
+        "path": "/images/products/prisma-l-acero-304-76x45x25cm-1.webp",
+        "sizeKB": 9.2,
+        "entropy": 2.333,
+        "width": 800,
+        "height": 1000
+      },
+      {
+        "filename": "prisma-l-acero-304-76x45x25cm-2.webp",
+        "index": 2,
+        "path": "/images/products/prisma-l-acero-304-76x45x25cm-2.webp",
+        "sizeKB": 46.4,
+        "entropy": 3.246,
+        "width": 596,
+        "height": 815
+      }
+    ]
+  },
+  {
+    "product": "prisma-l-duo-acero-304-83x45x22cm.json",
+    "name": "PRISMA L DUO Acero 304 83x45x22cm",
+    "category": "bacha-doble",
+    "currentBlueprint": "/images/products/prisma-l-duo-acero-304-83x45x22cm-2.webp",
+    "currentGallery": [],
+    "currentImage": "/images/products/prisma-l-duo-acero-304-83x45x22cm-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "prisma-l-duo-acero-304-83x45x22cm-1.webp",
+        "index": 1,
+        "path": "/images/products/prisma-l-duo-acero-304-83x45x22cm-1.webp",
+        "sizeKB": 14.7,
+        "entropy": 3.803,
+        "width": 800,
+        "height": 1000
+      },
+      {
+        "filename": "prisma-l-duo-acero-304-83x45x22cm-2.webp",
+        "index": 2,
+        "path": "/images/products/prisma-l-duo-acero-304-83x45x22cm-2.webp",
+        "sizeKB": 46.4,
+        "entropy": 3.246,
+        "width": 596,
+        "height": 815
+      }
+    ]
+  },
+  {
+    "product": "prisma-mediana-acero-304-68x46x22cm.json",
+    "name": "PRISMA MEDIANA Acero 304 68x46x22cm",
+    "category": "bacha-simple",
+    "currentBlueprint": "/images/products/prisma-mediana-acero-304-68x46x22cm-3.webp",
+    "currentGallery": [
+      "/images/products/prisma-mediana-acero-304-68x46x22cm-2.webp"
+    ],
+    "currentImage": "/images/products/prisma-mediana-acero-304-68x46x22cm-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "prisma-mediana-acero-304-68x46x22cm-1.webp",
+        "index": 1,
+        "path": "/images/products/prisma-mediana-acero-304-68x46x22cm-1.webp",
+        "sizeKB": 14.5,
+        "entropy": 3.957,
+        "width": 800,
+        "height": 1000
+      },
+      {
+        "filename": "prisma-mediana-acero-304-68x46x22cm-2.webp",
+        "index": 2,
+        "path": "/images/products/prisma-mediana-acero-304-68x46x22cm-2.webp",
+        "sizeKB": 8.4,
+        "entropy": 1.499,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "prisma-mediana-acero-304-68x46x22cm-3.webp",
+        "index": 3,
+        "path": "/images/products/prisma-mediana-acero-304-68x46x22cm-3.webp",
+        "sizeKB": 46.4,
+        "entropy": 3.246,
+        "width": 596,
+        "height": 815
+      }
+    ]
+  },
+  {
+    "product": "prisma-mini-acero-304-60x46x22cm.json",
+    "name": "PRISMA MINI Acero 304 60x46x22cm",
+    "category": "bacha-simple",
+    "currentBlueprint": "/images/products/prisma-mini-acero-304-60x46x22cm-3.webp",
+    "currentGallery": [
+      "/images/products/prisma-mini-acero-304-60x46x22cm-2.webp"
+    ],
+    "currentImage": "/images/products/prisma-mini-acero-304-60x46x22cm-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "prisma-mini-acero-304-60x46x22cm-1.webp",
+        "index": 1,
+        "path": "/images/products/prisma-mini-acero-304-60x46x22cm-1.webp",
+        "sizeKB": 14.5,
+        "entropy": 3.862,
+        "width": 800,
+        "height": 1000
+      },
+      {
+        "filename": "prisma-mini-acero-304-60x46x22cm-2.webp",
+        "index": 2,
+        "path": "/images/products/prisma-mini-acero-304-60x46x22cm-2.webp",
+        "sizeKB": 8.7,
+        "entropy": 1.444,
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "prisma-mini-acero-304-60x46x22cm-3.webp",
+        "index": 3,
+        "path": "/images/products/prisma-mini-acero-304-60x46x22cm-3.webp",
+        "sizeKB": 46.4,
+        "entropy": 3.246,
+        "width": 596,
+        "height": 815
+      }
+    ]
+  },
+  {
+    "product": "prisma-xl-acero-304-78x45x22cm.json",
+    "name": "PRISMA XL Acero 304 78x45x22cm",
+    "category": "bacha-simple",
+    "currentBlueprint": "/images/products/prisma-xl-acero-304-78x45x22cm-2.webp",
+    "currentGallery": [],
+    "currentImage": "/images/products/prisma-xl-acero-304-78x45x22cm-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "prisma-xl-acero-304-78x45x22cm-1.webp",
+        "index": 1,
+        "path": "/images/products/prisma-xl-acero-304-78x45x22cm-1.webp",
+        "sizeKB": 14.8,
+        "entropy": 3.941,
+        "width": 800,
+        "height": 1000
+      },
+      {
+        "filename": "prisma-xl-acero-304-78x45x22cm-2.webp",
+        "index": 2,
+        "path": "/images/products/prisma-xl-acero-304-78x45x22cm-2.webp",
+        "sizeKB": 20.5,
+        "entropy": 7.522,
+        "width": 800,
+        "height": 570
+      },
+      {
+        "filename": "prisma-xl-acero-304-78x45x22cm-3.webp",
+        "index": 3,
+        "path": "/images/products/prisma-xl-acero-304-78x45x22cm-3.webp",
+        "sizeKB": 7.9,
+        "entropy": 1.468,
+        "width": 800,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "product": "roller.json",
+    "name": "ROLLER",
+    "category": "accesorio",
+    "currentBlueprint": null,
+    "currentGallery": [],
+    "currentImage": "/images/products/roller-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "roller-1.webp",
+        "index": 1,
+        "path": "/images/products/roller-1.webp",
+        "sizeKB": 21.9,
+        "entropy": 2.856,
+        "width": 800,
+        "height": 1000
+      }
+    ]
+  },
+  {
+    "product": "sifon-doble.json",
+    "name": "SIFON DOBLE",
+    "category": "accesorio",
+    "currentBlueprint": null,
+    "currentGallery": [],
+    "currentImage": "/images/products/sifon-doble-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "sifon-doble-1.webp",
+        "index": 1,
+        "path": "/images/products/sifon-doble-1.webp",
+        "sizeKB": 5,
+        "entropy": 0.903,
+        "width": 800,
+        "height": 1000
+      }
+    ]
+  },
+  {
+    "product": "sifon-simple.json",
+    "name": "SIFON SIMPLE",
+    "category": "accesorio",
+    "currentBlueprint": null,
+    "currentGallery": [],
+    "currentImage": "/images/products/sifon-simple-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "sifon-simple-1.webp",
+        "index": 1,
+        "path": "/images/products/sifon-simple-1.webp",
+        "sizeKB": 4.9,
+        "entropy": 0.737,
+        "width": 800,
+        "height": 1000
+      }
+    ]
+  },
+  {
+    "product": "sop-cestillo-110mm-estandar.json",
+    "name": "SOP CESTILLO 110MM ESTANDAR",
+    "category": "bacha-simple",
+    "currentBlueprint": null,
+    "currentGallery": [],
+    "currentImage": "/images/products/sop-cestillo-110mm-estandar-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "sop-cestillo-110mm-estandar-1.webp",
+        "index": 1,
+        "path": "/images/products/sop-cestillo-110mm-estandar-1.webp",
+        "sizeKB": 25.2,
+        "entropy": 5.447,
+        "width": 800,
+        "height": 677
+      }
+    ]
+  },
+  {
+    "product": "sop-comun-70mm.json",
+    "name": "SOP COMUN 70MM",
+    "category": "bacha-simple",
+    "currentBlueprint": null,
+    "currentGallery": [],
+    "currentImage": "/images/products/sop-comun-70mm-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "sop-comun-70mm-1.webp",
+        "index": 1,
+        "path": "/images/products/sop-comun-70mm-1.webp",
+        "sizeKB": 4.9,
+        "entropy": 0.859,
+        "width": 800,
+        "height": 1000
+      }
+    ]
+  },
+  {
+    "product": "sop-comun-cuadrada-con-antidesborde.json",
+    "name": "SOP COMUN CUADRADA CON ANTIDESBORDE",
+    "category": "bacha-simple",
+    "currentBlueprint": null,
+    "currentGallery": [
+      "/images/products/sop-comun-cuadrada-con-antidesborde-2.webp"
+    ],
+    "currentImage": "/images/products/sop-comun-cuadrada-con-antidesborde-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "sop-comun-cuadrada-con-antidesborde-1.webp",
+        "index": 1,
+        "path": "/images/products/sop-comun-cuadrada-con-antidesborde-1.webp",
+        "sizeKB": 4.4,
+        "entropy": 0.76,
+        "width": 800,
+        "height": 1000
+      },
+      {
+        "filename": "sop-comun-cuadrada-con-antidesborde-2.webp",
+        "index": 2,
+        "path": "/images/products/sop-comun-cuadrada-con-antidesborde-2.webp",
+        "sizeKB": 8.3,
+        "entropy": 2.432,
+        "width": 800,
+        "height": 1000
+      }
+    ]
+  },
+  {
+    "product": "sop-comun-cuadrada-sin-antidesborde.json",
+    "name": "SOP COMUN CUADRADA SIN ANTIDESBORDE",
+    "category": "bacha-simple",
+    "currentBlueprint": null,
+    "currentGallery": [],
+    "currentImage": "/images/products/sop-comun-cuadrada-sin-antidesborde-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "sop-comun-cuadrada-sin-antidesborde-1.webp",
+        "index": 1,
+        "path": "/images/products/sop-comun-cuadrada-sin-antidesborde-1.webp",
+        "sizeKB": 4.4,
+        "entropy": 0.76,
+        "width": 800,
+        "height": 1000
+      }
+    ]
+  },
+  {
+    "product": "sop-premium-110mm-con-antidesborde.json",
+    "name": "SOP PREMIUM 110MM CON ANTIDESBORDE",
+    "category": "bacha-simple",
+    "currentBlueprint": null,
+    "currentGallery": [],
+    "currentImage": "/images/products/sop-premium-110mm-con-antidesborde-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "sop-premium-110mm-con-antidesborde-1.webp",
+        "index": 1,
+        "path": "/images/products/sop-premium-110mm-con-antidesborde-1.webp",
+        "sizeKB": 22.9,
+        "entropy": 5.542,
+        "width": 800,
+        "height": 697
+      }
+    ]
+  },
+  {
+    "product": "sopapa-premium-sin-antidesborde.json",
+    "name": "SOPAPA PREMIUM SIN ANTIDESBORDE",
+    "category": "accesorio",
+    "currentBlueprint": null,
+    "currentGallery": [],
+    "currentImage": "/images/products/sopapa-premium-sin-antidesborde-1.webp",
+    "imagesOnDisk": [
+      {
+        "filename": "sopapa-premium-sin-antidesborde-1.webp",
+        "index": 1,
+        "path": "/images/products/sopapa-premium-sin-antidesborde-1.webp",
+        "sizeKB": 20.5,
+        "entropy": 5.092,
+        "width": 800,
+        "height": 697
+      }
+    ]
+  }
+]

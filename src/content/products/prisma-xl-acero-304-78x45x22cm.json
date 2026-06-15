@@ -1,0 +1,28 @@
+{
+  "name": "PRISMA XL Acero 304 78x45x22cm",
+  "line": "prisma",
+  "category": "bacha-simple",
+  "shortDescription": "Diseño elegante y gran durabilidad. Ideal para cocinas modernas que buscan funcionalidad sin sacrificar el estilo. Su acabado premium facilita la limpieza diaria.",
+  "description": "Renová tu espacio con este producto de Masecor. Diseño elegante y gran durabilidad. Ideal para cocinas modernas que buscan funcionalidad sin sacrificar el estilo. Su acabado premium facilita la limpieza diaria. Especialmente diseñado para adaptarse a cualquier mesada y ofrecerte la mejor experiencia de uso.",
+  "dimensions": {
+    "width": 780,
+    "depth": 450,
+    "height": 220,
+    "unit": "mm"
+  },
+  "material": "Acero de alta calidad AISI 304",
+  "thickness": "0.6mm",
+  "features": [
+    "Acero de alta calidad AISI 304",
+    "Alta durabilidad y resistencia"
+  ],
+  "installationType": "bajo-mesada",
+  "image": "/images/products/prisma-xl-acero-304-78x45x22cm-1.webp",
+  "gallery": [
+    "/images/products/prisma-xl-acero-304-78x45x22cm-2.webp"
+  ],
+  "sortOrder": 100,
+  "featured": true,
+  "available": true,
+  "blueprint": "/images/products/prisma-xl-acero-304-78x45x22cm-3.webp"
+}

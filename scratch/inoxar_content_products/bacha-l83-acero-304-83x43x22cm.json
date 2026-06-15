@@ -1,0 +1,27 @@
+{
+  "name": "BACHA L83 acero 304 83x43x22CM",
+  "line": "standard",
+  "category": "bacha-simple",
+  "shortDescription": "BACHA DE COCINA L83 CUBIC DUO MASECOR",
+  "description": "BACHA DE COCINA L83 CUBIC DUO MASECOR",
+  "dimensions": {
+    "width": 830,
+    "depth": 430,
+    "height": 220,
+    "unit": "mm"
+  },
+  "material": "Acero Inoxidable AISI 304",
+  "thickness": "0.6mm",
+  "features": [
+    "Acero Inoxidable AISI 304",
+    "Alta durabilidad y resistencia"
+  ],
+  "installationType": "bajo-mesada",
+  "image": "/images/products/bacha-l83-acero-304-83x43x22cm-1.webp",
+  "gallery": [
+    "/images/products/bacha-l83-acero-304-83x43x22cm-3.webp"
+  ],
+  "sortOrder": 100,
+  "featured": false,
+  "available": true
+}

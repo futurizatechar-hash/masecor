@@ -1,0 +1,27 @@
+{
+  "name": "BANDEJA PRISMA XL O PRISMA DUO 20*38*6CM",
+  "line": "prisma",
+  "category": "bacha-doble",
+  "shortDescription": "Producto de acero inoxidable de alta calidad y precisión.",
+  "description": "",
+  "dimensions": {
+    "width": 200,
+    "depth": 380,
+    "height": 60,
+    "unit": "mm"
+  },
+  "material": "Acero Inoxidable AISI 304",
+  "thickness": "0.6mm",
+  "features": [
+    "Acero Inoxidable AISI 304",
+    "Alta durabilidad y resistencia"
+  ],
+  "installationType": "bajo-mesada",
+  "image": "/images/products/bandeja-prisma-xl-o-prisma-duo-20-38-6cm-1.webp",
+  "gallery": [
+    "/images/products/bandeja-prisma-xl-o-prisma-duo-20-38-6cm-2.webp"
+  ],
+  "sortOrder": 100,
+  "featured": false,
+  "available": true
+}

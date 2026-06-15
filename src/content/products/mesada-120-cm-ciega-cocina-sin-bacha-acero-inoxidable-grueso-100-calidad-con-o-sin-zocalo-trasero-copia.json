@@ -1,0 +1,83 @@
+{
+  "name": "Mesada 120 Cm Ciega Cocina (sin Bacha) -acero de alta calidad Grueso 100% Calidad Con O Sin Zócalo Trasero - (copia)",
+  "line": "standard",
+  "category": "mesada-ciega",
+  "shortDescription": "Optimiza tu espacio con esta solución de alta gama. Su estructura robusta asegura un rendimiento impecable y una apariencia sofisticada en todo momento.",
+  "description": "Renová tu espacio con este producto de Masecor. Optimiza tu espacio con esta solución de alta gama. Su estructura robusta asegura un rendimiento impecable y una apariencia sofisticada en todo momento. Especialmente diseñado para adaptarse a cualquier mesada y ofrecerte la mejor experiencia de uso.",
+  "dimensions": {
+    "width": 1200,
+    "unit": "mm"
+  },
+  "material": "Acero de alta calidad AISI 304",
+  "thickness": "0.7mm",
+  "features": [
+    "Diseño sin bacha (ciega) que ofrece una superficie amplia y uniforme, ideal para múltiples usos.",
+    "Borde antiderrame para proteger tu cocina de accidentes y mantenerla siempre limpia.",
+    "Zócalo trasero opcional de 45 mm, que podés elegir incluir o no según tus necesidades."
+  ],
+  "installationType": "sobre-mueble",
+  "image": "/images/products/mesada-120-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-copia-1.webp",
+  "gallery": [
+    "/images/products/mesada-120-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-copia-2.webp",
+    "/images/products/mesada-120-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-copia-3.webp",
+    "/images/products/mesada-120-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-copia-4.webp",
+    "/images/products/mesada-120-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-copia-5.webp"
+  ],
+  "sortOrder": 100,
+  "featured": false,
+  "available": true,
+  "options": [
+    {
+      "name": "Medida",
+      "values": [
+        "CON ZÓCALO",
+        "SIN ZOCALO"
+      ]
+    },
+    {
+      "name": "Zócalo",
+      "values": [
+        "120*55",
+        "120*61"
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": 1270331537,
+      "options": {
+        "Medida": "CON ZÓCALO",
+        "Zócalo": "120*55"
+      },
+      "available": true,
+      "image": "/images/products/mesada-120-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-copia-1.webp"
+    },
+    {
+      "id": 1270331546,
+      "options": {
+        "Medida": "CON ZÓCALO",
+        "Zócalo": "120*61"
+      },
+      "available": true,
+      "image": "/images/products/mesada-120-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-copia-1.webp"
+    },
+    {
+      "id": 1270331553,
+      "options": {
+        "Medida": "SIN ZOCALO",
+        "Zócalo": "120*55"
+      },
+      "available": true,
+      "image": "/images/products/mesada-120-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-copia-1.webp"
+    },
+    {
+      "id": 1270331557,
+      "options": {
+        "Medida": "SIN ZOCALO",
+        "Zócalo": "120*61"
+      },
+      "available": true,
+      "image": "/images/products/mesada-120-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-copia-1.webp"
+    }
+  ]
+}

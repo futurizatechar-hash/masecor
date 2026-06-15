@@ -1,0 +1,29 @@
+{
+  "name": "PRISMA MEDIANA Acero 304 68x46x22cm",
+  "line": "prisma",
+  "category": "bacha-simple",
+  "shortDescription": "BACHA DE COCINA PRISMA MEDIANA MASECOR",
+  "description": "BACHA DE COCINA PRISMA MEDIANA MASECOR",
+  "dimensions": {
+    "width": 680,
+    "depth": 460,
+    "height": 220,
+    "unit": "mm"
+  },
+  "material": "Acero Inoxidable AISI 304",
+  "thickness": "0.6mm",
+  "features": [
+    "Acero Inoxidable AISI 304",
+    "Alta durabilidad y resistencia"
+  ],
+  "installationType": "bajo-mesada",
+  "image": "/images/products/prisma-mediana-acero-304-68x46x22cm-1.webp",
+  "gallery": [
+    "/images/products/prisma-mediana-acero-304-68x46x22cm-2.webp",
+    "/images/products/prisma-mediana-acero-304-68x46x22cm-3.webp",
+    "/images/products/prisma-mediana-acero-304-68x46x22cm-4.webp"
+  ],
+  "sortOrder": 100,
+  "featured": false,
+  "available": true
+}

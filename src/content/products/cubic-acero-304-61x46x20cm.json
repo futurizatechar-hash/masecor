@@ -1,0 +1,27 @@
+{
+  "name": "CUBIC Acero 304 61X46X20CM",
+  "line": "standard",
+  "category": "bacha-simple",
+  "shortDescription": "Calidad superior y resistencia excepcional. Esta pieza destaca por su formato ergonómico, aportando una estética minimalista y profesional a tu espacio.",
+  "description": "Renová tu espacio con este producto de Masecor. Calidad superior y resistencia excepcional. Esta pieza destaca por su formato ergonómico, aportando una estética minimalista y profesional a tu espacio. Especialmente diseñado para adaptarse a cualquier mesada y ofrecerte la mejor experiencia de uso.",
+  "dimensions": {
+    "width": 610,
+    "depth": 460,
+    "height": 200,
+    "unit": "mm"
+  },
+  "material": "Acero de alta calidad AISI 304",
+  "thickness": "0.6mm",
+  "features": [
+    "Acero de alta calidad AISI 304",
+    "Alta durabilidad y resistencia"
+  ],
+  "installationType": "bajo-mesada",
+  "image": "/images/products/cubic-acero-304-61x46x20cm-1.webp",
+  "gallery": [
+    "/images/products/cubic-acero-304-61x46x20cm-2.webp"
+  ],
+  "sortOrder": 100,
+  "featured": true,
+  "available": true
+}

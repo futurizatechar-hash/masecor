@@ -1,0 +1,26 @@
+{
+  "name": "Bacha De Cocina O Lavadero M10 Acero de alta calidad Sopapa De 110mm Medidas 30*38*15.5 Cm Bajo Mesada Acero de alta calidad",
+  "line": "lavadero",
+  "category": "pileta-lavadero",
+  "dimensions": {
+    "width": 300,
+    "depth": 380,
+    "height": 150,
+    "unit": "mm"
+  },
+  "material": "Acero de alta calidad AISI 304",
+  "thickness": "0.6mm",
+  "features": [
+    "Acero de alta calidad AISI 304",
+    "Alta durabilidad y resistencia"
+  ],
+  "installationType": "bajo-mesada",
+  "image": "/images/products/bacha-de-cocina-o-lavadero-m10-acero-inoxidable-sopapa-de-110mm-medidas-30-38-15-5-cm-bajo-mesada-acero-inoxidable-1.webp",
+  "gallery": [],
+  "sortOrder": 100,
+  "featured": false,
+  "available": true,
+  "description": "Renová tu espacio con este producto de Masecor. Optimiza tu espacio con esta solución de alta gama. Su estructura robusta asegura un rendimiento impecable y una apariencia sofisticada en todo momento. Especialmente diseñado para adaptarse a cualquier mesada y ofrecerte la mejor experiencia de uso.",
+  "shortDescription": "Optimiza tu espacio con esta solución de alta gama. Su estructura robusta asegura un rendimiento impecable y una apariencia sofisticada en todo momento.",
+  "blueprint": "/images/products/bacha-de-cocina-o-lavadero-m10-acero-inoxidable-sopapa-de-110mm-medidas-30-38-15-5-cm-bajo-mesada-acero-inoxidable-2.webp"
+}

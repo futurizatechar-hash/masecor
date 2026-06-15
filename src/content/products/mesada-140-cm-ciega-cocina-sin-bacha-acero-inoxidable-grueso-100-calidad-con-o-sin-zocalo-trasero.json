@@ -1,0 +1,79 @@
+{
+  "name": "Mesada 140 Cm Ciega Cocina (sin Bacha) -acero de alta calidad Grueso 100% Calidad Con O Sin Zócalo Trasero",
+  "line": "standard",
+  "category": "mesada-ciega",
+  "shortDescription": "La combinación perfecta entre estética y practicidad. Pensada para el uso intensivo, garantiza un mantenimiento sencillo y una vida útil prolongada.",
+  "description": "Renová tu espacio con este producto de Masecor. La combinación perfecta entre estética y practicidad. Pensada para el uso intensivo, garantiza un mantenimiento sencillo y una vida útil prolongada. Especialmente diseñado para adaptarse a cualquier mesada y ofrecerte la mejor experiencia de uso.",
+  "dimensions": {
+    "width": 1400,
+    "unit": "mm"
+  },
+  "material": "Acero de alta calidad AISI 304",
+  "thickness": "0.7mm",
+  "features": [
+    "Acero de alta calidad AISI 304",
+    "Alta durabilidad y resistencia"
+  ],
+  "installationType": "sobre-mueble",
+  "image": "/images/products/mesada-140-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-1.webp",
+  "gallery": [
+    "/images/products/mesada-140-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-2.webp"
+  ],
+  "sortOrder": 100,
+  "featured": false,
+  "available": true,
+  "options": [
+    {
+      "name": "Zócalo",
+      "values": [
+        "140*55",
+        "140*61"
+      ]
+    },
+    {
+      "name": "Medida",
+      "values": [
+        "CON ZÓCALO",
+        "SIN ZOCALO"
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": 1425507887,
+      "options": {
+        "Zócalo": "140*55",
+        "Medida": "CON ZÓCALO"
+      },
+      "available": true,
+      "image": "/images/products/mesada-140-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-1.webp"
+    },
+    {
+      "id": 1425507889,
+      "options": {
+        "Zócalo": "140*55",
+        "Medida": "SIN ZOCALO"
+      },
+      "available": true,
+      "image": "/images/products/mesada-140-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-1.webp"
+    },
+    {
+      "id": 1425507891,
+      "options": {
+        "Zócalo": "140*61",
+        "Medida": "CON ZÓCALO"
+      },
+      "available": true,
+      "image": "/images/products/mesada-140-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-1.webp"
+    },
+    {
+      "id": 1425507892,
+      "options": {
+        "Zócalo": "140*61",
+        "Medida": "SIN ZOCALO"
+      },
+      "available": true,
+      "image": "/images/products/mesada-140-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-1.webp"
+    }
+  ]
+}

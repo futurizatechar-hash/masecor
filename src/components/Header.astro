@@ -36,9 +36,22 @@ const navItems: NavItem[] = [
 ];
 
 const currentPath = Astro.url.pathname;
+const cleanPath = currentPath.replace(/\/$/, '');
+const isLightHeaderDefault = 
+  (cleanPath.startsWith('/productos/') && cleanPath !== '/productos') || 
+  cleanPath === '/terminos-condiciones' || 
+  cleanPath === '/politicas-privacidad' ||
+  cleanPath === '/404';
 ---
 
-<header class="header" id="main-header">
+<header 
+  class:list={[
+    "header", 
+    { "header--scrolled-default": isLightHeaderDefault },
+    { "header--scrolled": isLightHeaderDefault }
+  ]} 
+  id="main-header"
+>
   <div class="header__inner container">
     <!-- Logo -->
     <a href="/" class="header__logo" aria-label="Ir al inicio de Masecor">
@@ -336,11 +349,13 @@ const currentPath = Astro.url.pathname;
 
   // Scroll: add solid bg + auto-hide
   let lastScroll = 0;
+  const isLightDefault = header?.classList.contains('header--scrolled-default');
+
   window.addEventListener(
     'scroll',
     () => {
       const scrollY = window.scrollY;
-      header?.classList.toggle('header--scrolled', scrollY > 80);
+      header?.classList.toggle('header--scrolled', isLightDefault || scrollY > 80);
       header?.classList.toggle(
         'header--hidden',
         scrollY > lastScroll && scrollY > 300,

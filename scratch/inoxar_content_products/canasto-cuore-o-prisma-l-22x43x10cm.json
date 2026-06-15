@@ -1,0 +1,27 @@
+{
+  "name": "CANASTO CUORE O PRISMA L 22X43X10CM",
+  "line": "prisma",
+  "category": "bacha-simple",
+  "shortDescription": "Producto de acero inoxidable de alta calidad y precisión.",
+  "description": "",
+  "dimensions": {
+    "width": 220,
+    "depth": 430,
+    "height": 100,
+    "unit": "mm"
+  },
+  "material": "Acero Inoxidable AISI 304",
+  "thickness": "0.6mm",
+  "features": [
+    "Acero Inoxidable AISI 304",
+    "Alta durabilidad y resistencia"
+  ],
+  "installationType": "bajo-mesada",
+  "image": "/images/products/canasto-cuore-o-prisma-l-22x43x10cm-1.webp",
+  "gallery": [
+    "/images/products/canasto-cuore-o-prisma-l-22x43x10cm-2.webp"
+  ],
+  "sortOrder": 100,
+  "featured": false,
+  "available": true
+}

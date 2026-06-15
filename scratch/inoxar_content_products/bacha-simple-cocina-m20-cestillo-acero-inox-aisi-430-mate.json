@@ -1,0 +1,23 @@
+{
+  "name": "Bacha Simple Cocina M20 Cestillo Acero Inox Aisi 430 Mate",
+  "line": "standard",
+  "category": "bacha-simple",
+  "shortDescription": "BACHA DE COCINA MASECOR",
+  "description": "BACHA DE COCINA MASECOR",
+  "material": "Acero Inoxidable AISI 304",
+  "thickness": "0.6mm",
+  "features": [
+    "Acero Inoxidable AISI 304",
+    "Alta durabilidad y resistencia"
+  ],
+  "installationType": "bajo-mesada",
+  "image": "/images/products/bacha-simple-cocina-m20-cestillo-acero-inox-aisi-430-mate-1.webp",
+  "gallery": [
+    "/images/products/bacha-simple-cocina-m20-cestillo-acero-inox-aisi-430-mate-2.webp",
+    "/images/products/bacha-simple-cocina-m20-cestillo-acero-inox-aisi-430-mate-3.webp",
+    "/images/products/bacha-simple-cocina-m20-cestillo-acero-inox-aisi-430-mate-4.webp"
+  ],
+  "sortOrder": 100,
+  "featured": false,
+  "available": true
+}

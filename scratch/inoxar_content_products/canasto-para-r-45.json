@@ -1,0 +1,27 @@
+{
+  "name": "CANASTO PARA R 45",
+  "line": "accesorios",
+  "category": "accesorio",
+  "shortDescription": "Producto de acero inoxidable de alta calidad y precisión.",
+  "description": "",
+  "dimensions": {
+    "width": 260,
+    "depth": 380,
+    "height": 130,
+    "unit": "mm"
+  },
+  "material": "Acero Inoxidable AISI 304",
+  "thickness": "0.6mm",
+  "features": [
+    "Acero Inoxidable AISI 304",
+    "Alta durabilidad y resistencia"
+  ],
+  "installationType": "bajo-mesada",
+  "image": "/images/products/canasto-para-r-45-1.webp",
+  "gallery": [
+    "/images/products/canasto-para-r-45-2.webp"
+  ],
+  "sortOrder": 100,
+  "featured": false,
+  "available": true
+}

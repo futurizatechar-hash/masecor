@@ -1,0 +1,31 @@
+{
+  "name": "BACHA L65 Acero 304 65x43x22cm",
+  "line": "standard",
+  "category": "bacha-simple",
+  "shortDescription": "BACHA DE COCINA L65 MASECOR",
+  "description": "BACHA DE COCINA L65 MASECOR",
+  "dimensions": {
+    "width": 650,
+    "depth": 430,
+    "height": 220,
+    "unit": "mm"
+  },
+  "material": "Acero Inoxidable AISI 304",
+  "thickness": "0.6mm",
+  "features": [
+    "Acero Inoxidable AISI 304",
+    "Alta durabilidad y resistencia"
+  ],
+  "installationType": "bajo-mesada",
+  "image": "/images/products/bacha-l65-acero-304-65x43x22cm-1.webp",
+  "gallery": [
+    "/images/products/bacha-l65-acero-304-65x43x22cm-2.webp",
+    "/images/products/bacha-l65-acero-304-65x43x22cm-3.webp",
+    "/images/products/bacha-l65-acero-304-65x43x22cm-4.webp",
+    "/images/products/bacha-l65-acero-304-65x43x22cm-5.webp",
+    "/images/products/bacha-l65-acero-304-65x43x22cm-6.webp"
+  ],
+  "sortOrder": 100,
+  "featured": false,
+  "available": true
+}

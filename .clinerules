@@ -3,4 +3,5 @@
 - Tras presentar el plan de implementación, debes DETENERTE inmediatamente y esperar la aprobación explícita del usuario en el chat.
 - Esta regla aplica para cualquier tipo de tarea, sin importar lo simple que parezca. No omitas el paso de planificación.
 - NUNCA realices un deploy ni subas cambios al repositorio remoto (ej. git push, GitHub API, etc.) sin que el usuario te lo pida específicamente y de forma explícita en ese momento en el chat.
-- NUNCA realices pruebas o acciones en el navegador utilizando herramientas automáticas de navegación hasta tanto el usuario lo indique explícitamente.
+- NUNCA, bajo ninguna circunstancia, intentes realizar pruebas, acciones o navegación en el navegador (no usar herramientas como browser_subagent, open_browser_url, etc.). Está terminantemente prohibido.
+

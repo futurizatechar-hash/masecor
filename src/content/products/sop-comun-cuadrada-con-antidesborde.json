@@ -1,0 +1,21 @@
+{
+  "name": "SOP COMUN CUADRADA CON ANTIDESBORDE",
+  "line": "standard",
+  "category": "bacha-simple",
+  "shortDescription": "La combinación perfecta entre estética y practicidad. Pensada para el uso intensivo, garantiza un mantenimiento sencillo y una vida útil prolongada.",
+  "description": "Renová tu espacio con este producto de Masecor. La combinación perfecta entre estética y practicidad. Pensada para el uso intensivo, garantiza un mantenimiento sencillo y una vida útil prolongada. Especialmente diseñado para adaptarse a cualquier mesada y ofrecerte la mejor experiencia de uso.",
+  "material": "Acero de alta calidad AISI 304",
+  "thickness": "0.6mm",
+  "features": [
+    "Acero de alta calidad AISI 304",
+    "Alta durabilidad y resistencia"
+  ],
+  "installationType": "bajo-mesada",
+  "image": "/images/products/sop-comun-cuadrada-con-antidesborde-1.webp",
+  "gallery": [
+    "/images/products/sop-comun-cuadrada-con-antidesborde-2.webp"
+  ],
+  "sortOrder": 100,
+  "featured": false,
+  "available": true
+}

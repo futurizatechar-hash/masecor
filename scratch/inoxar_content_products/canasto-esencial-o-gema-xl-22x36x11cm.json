@@ -1,0 +1,28 @@
+{
+  "name": "CANASTO ESENCIAL O GEMA XL 22X36X11CM",
+  "line": "premium",
+  "category": "bacha-simple",
+  "shortDescription": "Producto de acero inoxidable de alta calidad y precisión.",
+  "description": "",
+  "dimensions": {
+    "width": 220,
+    "depth": 360,
+    "height": 110,
+    "unit": "mm"
+  },
+  "material": "Acero Inoxidable AISI 304",
+  "thickness": "0.6mm",
+  "features": [
+    "Acero Inoxidable AISI 304",
+    "Alta durabilidad y resistencia",
+    "Terminación satinada premium"
+  ],
+  "installationType": "bajo-mesada",
+  "image": "/images/products/canasto-esencial-o-gema-xl-22x36x11cm-1.webp",
+  "gallery": [
+    "/images/products/canasto-esencial-o-gema-xl-22x36x11cm-2.webp"
+  ],
+  "sortOrder": 100,
+  "featured": false,
+  "available": true
+}

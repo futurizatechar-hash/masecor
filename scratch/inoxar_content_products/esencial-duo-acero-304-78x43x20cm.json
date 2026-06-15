@@ -1,0 +1,29 @@
+{
+  "name": "ESENCIAL DUO Acero 304 78X43X20CM",
+  "line": "standard",
+  "category": "bacha-doble",
+  "shortDescription": "BACHA DE COCINA ESENCIAL DUO MASECOR",
+  "description": "BACHA DE COCINA ESENCIAL DUO MASECOR",
+  "dimensions": {
+    "width": 780,
+    "depth": 430,
+    "height": 200,
+    "unit": "mm"
+  },
+  "material": "Acero Inoxidable AISI 304",
+  "thickness": "0.6mm",
+  "features": [
+    "Acero Inoxidable AISI 304",
+    "Alta durabilidad y resistencia"
+  ],
+  "installationType": "bajo-mesada",
+  "image": "/images/products/esencial-duo-acero-304-78x43x20cm-1.webp",
+  "gallery": [
+    "/images/products/esencial-duo-acero-304-78x43x20cm-2.webp",
+    "/images/products/esencial-duo-acero-304-78x43x20cm-3.webp",
+    "/images/products/esencial-duo-acero-304-78x43x20cm-4.webp"
+  ],
+  "sortOrder": 100,
+  "featured": false,
+  "available": true
+}

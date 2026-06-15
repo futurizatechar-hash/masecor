@@ -1,0 +1,29 @@
+{
+  "name": "PRISMA DUO Acero 304 82*45*22CM",
+  "line": "prisma",
+  "category": "bacha-doble",
+  "shortDescription": "La combinación perfecta entre estética y practicidad. Pensada para el uso intensivo, garantiza un mantenimiento sencillo y una vida útil prolongada.",
+  "description": "Renová tu espacio con este producto de Masecor. La combinación perfecta entre estética y practicidad. Pensada para el uso intensivo, garantiza un mantenimiento sencillo y una vida útil prolongada. Especialmente diseñado para adaptarse a cualquier mesada y ofrecerte la mejor experiencia de uso.",
+  "dimensions": {
+    "width": 820,
+    "depth": 450,
+    "height": 220,
+    "unit": "mm"
+  },
+  "material": "Acero de alta calidad AISI 304",
+  "thickness": "0.6mm",
+  "features": [
+    "Acero de alta calidad AISI 304",
+    "Alta durabilidad y resistencia"
+  ],
+  "installationType": "bajo-mesada",
+  "image": "/images/products/prisma-duo-acero-304-82-45-22cm-1.webp",
+  "gallery": [
+    "/images/products/prisma-duo-acero-304-82-45-22cm-2.webp",
+    "/images/products/prisma-duo-acero-304-82-45-22cm-3.webp",
+    "/images/products/prisma-duo-acero-304-82-45-22cm-4.webp"
+  ],
+  "sortOrder": 100,
+  "featured": false,
+  "available": true
+}

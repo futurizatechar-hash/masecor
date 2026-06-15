@@ -1,0 +1,223 @@
+{
+  "name": "Mesada 80cm Bacha Simple De Acero de alta calidad Grueso - 100% Calidad + Asadera De Acero Profesional De Regalo",
+  "line": "standard",
+  "category": "mesada-integrada",
+  "shortDescription": "La combinación perfecta entre estética y practicidad. Pensada para el uso intensivo, garantiza un mantenimiento sencillo y una vida útil prolongada.",
+  "description": "Renová tu espacio con este producto de Masecor. La combinación perfecta entre estética y practicidad. Pensada para el uso intensivo, garantiza un mantenimiento sencillo y una vida útil prolongada. Especialmente diseñado para adaptarse a cualquier mesada y ofrecerte la mejor experiencia de uso.",
+  "dimensions": {
+    "width": 500,
+    "depth": 320,
+    "height": 140,
+    "unit": "mm"
+  },
+  "material": "Acero de alta calidad AISI 304",
+  "thickness": "0.7mm",
+  "features": [
+    "Mesada reforzada con MDF simil madera resistente a la humedad, asegurando durabilidad y firmeza.",
+    "Zócalo trasero de 45 mm incluido, que protege la pared y aporta un acabado impecable.",
+    "Bandeja para horno profesional de regalo, un plus para tus preparaciones diarias.",
+    "Realizamos perforación para grifería sin cargo, adaptándonos a canillas monocomando o mezcladoras."
+  ],
+  "installationType": "sobre-mueble",
+  "image": "/images/products/mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp",
+  "gallery": [
+    "/images/products/mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-2.webp",
+    "/images/products/mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-3.webp",
+    "/images/products/mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-4.webp",
+    "/images/products/mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-5.webp",
+    "/images/products/mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-6.webp",
+    "/images/products/mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-7.webp",
+    "/images/products/mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-8.webp",
+    "/images/products/mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-9.webp"
+  ],
+  "sortOrder": 100,
+  "featured": false,
+  "available": true,
+  "options": [
+    {
+      "name": "Medida",
+      "values": [
+        "80*61",
+        "80*55"
+      ]
+    },
+    {
+      "name": "Ubicación",
+      "values": [
+        "IZQUIERDA MONOCOMANDO",
+        "IZQUIERDA MEZCLADORA",
+        "IZQUIERDA SIN PEFORO",
+        "DERECHA MONOCOMANDO",
+        "DERECHA MEZCLADORA",
+        "DERECHA SIN PERFORO",
+        "CENTRO MONOCOMANDO",
+        "CENTRO MEZCLADORA",
+        "CENTRO SIN PERFORO"
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": 1258679470,
+      "options": {
+        "Medida": "80*61",
+        "Ubicación": "IZQUIERDA MONOCOMANDO"
+      },
+      "available": true,
+      "image": "/images/products/mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp"
+    },
+    {
+      "id": 1258679475,
+      "options": {
+        "Medida": "80*61",
+        "Ubicación": "IZQUIERDA MEZCLADORA"
+      },
+      "available": true,
+      "image": "/images/products/mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp"
+    },
+    {
+      "id": 1258679476,
+      "options": {
+        "Medida": "80*61",
+        "Ubicación": "IZQUIERDA SIN PEFORO"
+      },
+      "available": true,
+      "image": "/images/products/mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp"
+    },
+    {
+      "id": 1258679479,
+      "options": {
+        "Medida": "80*61",
+        "Ubicación": "DERECHA MONOCOMANDO"
+      },
+      "available": true,
+      "image": "/images/products/mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp"
+    },
+    {
+      "id": 1258679482,
+      "options": {
+        "Medida": "80*61",
+        "Ubicación": "DERECHA MEZCLADORA"
+      },
+      "available": true,
+      "image": "/images/products/mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp"
+    },
+    {
+      "id": 1258679486,
+      "options": {
+        "Medida": "80*61",
+        "Ubicación": "DERECHA SIN PERFORO"
+      },
+      "available": true,
+      "image": "/images/products/mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp"
+    },
+    {
+      "id": 1258679488,
+      "options": {
+        "Medida": "80*61",
+        "Ubicación": "CENTRO MONOCOMANDO"
+      },
+      "available": true,
+      "image": "/images/products/mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp"
+    },
+    {
+      "id": 1258679491,
+      "options": {
+        "Medida": "80*61",
+        "Ubicación": "CENTRO MEZCLADORA"
+      },
+      "available": true,
+      "image": "/images/products/mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp"
+    },
+    {
+      "id": 1258679492,
+      "options": {
+        "Medida": "80*61",
+        "Ubicación": "CENTRO SIN PERFORO"
+      },
+      "available": true,
+      "image": "/images/products/mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp"
+    },
+    {
+      "id": 1258679496,
+      "options": {
+        "Medida": "80*55",
+        "Ubicación": "IZQUIERDA MONOCOMANDO"
+      },
+      "available": true,
+      "image": "/images/products/mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp"
+    },
+    {
+      "id": 1258679500,
+      "options": {
+        "Medida": "80*55",
+        "Ubicación": "IZQUIERDA MEZCLADORA"
+      },
+      "available": true,
+      "image": "/images/products/mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp"
+    },
+    {
+      "id": 1258679504,
+      "options": {
+        "Medida": "80*55",
+        "Ubicación": "IZQUIERDA SIN PEFORO"
+      },
+      "available": true,
+      "image": "/images/products/mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp"
+    },
+    {
+      "id": 1258679507,
+      "options": {
+        "Medida": "80*55",
+        "Ubicación": "DERECHA MONOCOMANDO"
+      },
+      "available": true,
+      "image": "/images/products/mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp"
+    },
+    {
+      "id": 1258679510,
+      "options": {
+        "Medida": "80*55",
+        "Ubicación": "DERECHA MEZCLADORA"
+      },
+      "available": true,
+      "image": "/images/products/mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp"
+    },
+    {
+      "id": 1258679511,
+      "options": {
+        "Medida": "80*55",
+        "Ubicación": "DERECHA SIN PERFORO"
+      },
+      "available": true,
+      "image": "/images/products/mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp"
+    },
+    {
+      "id": 1258679513,
+      "options": {
+        "Medida": "80*55",
+        "Ubicación": "CENTRO MONOCOMANDO"
+      },
+      "available": true,
+      "image": "/images/products/mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp"
+    },
+    {
+      "id": 1258679515,
+      "options": {
+        "Medida": "80*55",
+        "Ubicación": "CENTRO MEZCLADORA"
+      },
+      "available": true,
+      "image": "/images/products/mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp"
+    },
+    {
+      "id": 1258679516,
+      "options": {
+        "Medida": "80*55",
+        "Ubicación": "CENTRO SIN PERFORO"
+      },
+      "available": true,
+      "image": "/images/products/mesada-80cm-bacha-simple-de-acero-inoxidable-grueso-100-calidad-asadera-de-acero-profesional-de-regalo-1.webp"
+    }
+  ]
+}

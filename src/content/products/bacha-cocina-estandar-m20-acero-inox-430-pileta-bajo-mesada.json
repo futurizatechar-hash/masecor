@@ -1,0 +1,22 @@
+{
+  "name": "Bacha Cocina Estandar M20 Acero premium 430 Pileta Bajo Mesada",
+  "line": "lavadero",
+  "category": "pileta-lavadero",
+  "material": "Acero de alta calidad AISI 304",
+  "thickness": "0.6mm",
+  "features": [
+    "Acero de alta calidad AISI 304",
+    "Alta durabilidad y resistencia"
+  ],
+  "installationType": "bajo-mesada",
+  "image": "/images/products/bacha-cocina-estandar-m20-acero-inox-430-pileta-bajo-mesada-1.webp",
+  "gallery": [
+    "/images/products/bacha-cocina-estandar-m20-acero-inox-430-pileta-bajo-mesada-3.webp"
+  ],
+  "sortOrder": 100,
+  "featured": false,
+  "available": true,
+  "description": "Renová tu espacio con este producto de Masecor. Optimiza tu espacio con esta solución de alta gama. Su estructura robusta asegura un rendimiento impecable y una apariencia sofisticada en todo momento. Especialmente diseñado para adaptarse a cualquier mesada y ofrecerte la mejor experiencia de uso.",
+  "shortDescription": "Optimiza tu espacio con esta solución de alta gama. Su estructura robusta asegura un rendimiento impecable y una apariencia sofisticada en todo momento.",
+  "blueprint": "/images/products/bacha-cocina-estandar-m20-acero-inox-430-pileta-bajo-mesada-2.webp"
+}

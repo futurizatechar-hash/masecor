@@ -1,0 +1,80 @@
+{
+  "name": "Mesada 80 Cm Ciega Cocina (sin Bacha) -acero de alta calidad Grueso 100% Calidad Con O Sin Zócalo Trasero -",
+  "line": "standard",
+  "category": "mesada-ciega",
+  "shortDescription": "Calidad superior y resistencia excepcional. Esta pieza destaca por su formato ergonómico, aportando una estética minimalista y profesional a tu espacio.",
+  "description": "Renová tu espacio con este producto de Masecor. Calidad superior y resistencia excepcional. Esta pieza destaca por su formato ergonómico, aportando una estética minimalista y profesional a tu espacio. Especialmente diseñado para adaptarse a cualquier mesada y ofrecerte la mejor experiencia de uso.",
+  "dimensions": {
+    "width": 800,
+    "unit": "mm"
+  },
+  "material": "Acero de alta calidad AISI 304",
+  "thickness": "0.7mm",
+  "features": [
+    "Diseño sin bacha (ciega) que ofrece una superficie amplia y uniforme, ideal para múltiples usos.",
+    "Borde antiderrame para proteger tu cocina de accidentes y mantenerla siempre limpia.",
+    "Zócalo trasero opcional de 45 mm, que podés elegir incluir o no según tus necesidades."
+  ],
+  "installationType": "sobre-mueble",
+  "image": "/images/products/mesada-80-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-1.webp",
+  "gallery": [
+    "/images/products/mesada-80-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-2.webp"
+  ],
+  "sortOrder": 100,
+  "featured": false,
+  "available": true,
+  "options": [
+    {
+      "name": "Zócalo",
+      "values": [
+        "CON ZÓCALO",
+        "SIN ZOCALO"
+      ]
+    },
+    {
+      "name": "Medida",
+      "values": [
+        "80*55",
+        "80*61"
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": 1292902404,
+      "options": {
+        "Zócalo": "CON ZÓCALO",
+        "Medida": "80*55"
+      },
+      "available": true,
+      "image": "/images/products/mesada-80-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-1.webp"
+    },
+    {
+      "id": 1292902406,
+      "options": {
+        "Zócalo": "CON ZÓCALO",
+        "Medida": "80*61"
+      },
+      "available": true,
+      "image": "/images/products/mesada-80-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-1.webp"
+    },
+    {
+      "id": 1292902407,
+      "options": {
+        "Zócalo": "SIN ZOCALO",
+        "Medida": "80*55"
+      },
+      "available": true,
+      "image": "/images/products/mesada-80-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-1.webp"
+    },
+    {
+      "id": 1292902409,
+      "options": {
+        "Zócalo": "SIN ZOCALO",
+        "Medida": "80*61"
+      },
+      "available": true,
+      "image": "/images/products/mesada-80-cm-ciega-cocina-sin-bacha-acero-inoxidable-grueso-100-calidad-con-o-sin-zocalo-trasero-1.webp"
+    }
+  ]
+}

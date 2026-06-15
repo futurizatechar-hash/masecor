@@ -1,0 +1,27 @@
+{
+  "name": "CANASTO ESENCIAL DUO 33X38X12CM",
+  "line": "accesorios",
+  "category": "accesorio",
+  "shortDescription": "Producto de acero inoxidable de alta calidad y precisión.",
+  "description": "",
+  "dimensions": {
+    "width": 330,
+    "depth": 380,
+    "height": 120,
+    "unit": "mm"
+  },
+  "material": "Acero Inoxidable AISI 304",
+  "thickness": "0.6mm",
+  "features": [
+    "Acero Inoxidable AISI 304",
+    "Alta durabilidad y resistencia"
+  ],
+  "installationType": "bajo-mesada",
+  "image": "/images/products/canasto-esencial-duo-33x38x12cm-1.webp",
+  "gallery": [
+    "/images/products/canasto-esencial-duo-33x38x12cm-2.webp"
+  ],
+  "sortOrder": 100,
+  "featured": false,
+  "available": true
+}
