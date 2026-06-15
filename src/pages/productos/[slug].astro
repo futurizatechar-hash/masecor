@@ -97,26 +97,29 @@ const productSchema = {
         <!-- Gallery + Image -->
         <div class="product__gallery-wrapper" data-reveal="scale">
           <!-- Thumbnails column -->
-          {data.image && (
-            <div class="product__thumbs">
-              <button 
-                class="product__thumb-btn is-active" 
-                data-img-src={data.image}
-                aria-label="Ver imagen 1"
-              >
-                <img src={data.image} alt="" class="product__thumb-img" />
-              </button>
-              {data.gallery && data.gallery.map((imgUrl: string, idx: number) => (
-                <button 
-                  class="product__thumb-btn" 
-                  data-img-src={imgUrl}
-                  aria-label={`Ver imagen ${idx + 2}`}
+          {
+            data.image && (
+              <div class="product__thumbs">
+                <button
+                  class="product__thumb-btn is-active"
+                  data-img-src={data.image}
+                  aria-label="Ver imagen 1"
                 >
-                  <img src={imgUrl} alt="" class="product__thumb-img" />
+                  <img src={data.image} alt="" class="product__thumb-img" />
                 </button>
-              ))}
-            </div>
-          )}
+                {data.gallery &&
+                  data.gallery.map((imgUrl: string, idx: number) => (
+                    <button
+                      class="product__thumb-btn"
+                      data-img-src={imgUrl}
+                      aria-label={`Ver imagen ${idx + 2}`}
+                    >
+                      <img src={imgUrl} alt="" class="product__thumb-img" />
+                    </button>
+                  ))}
+              </div>
+            )
+          }
 
           <!-- Active Main Image -->
           <div class="product__image-main">
@@ -152,7 +155,7 @@ const productSchema = {
         </div>
 
         <!-- Info -->
-        <div 
+        <div
           class="product__info"
           id="product-details-root"
           data-variants={JSON.stringify(data.variants || [])}
@@ -174,15 +177,18 @@ const productSchema = {
             data.options && data.options.length > 0 && (
               <div class="product__options" data-reveal data-delay="1">
                 {data.options.map((opt: any, optIdx: number) => (
-                  <div class="product__option-group" data-option-name={opt.name}>
+                  <div
+                    class="product__option-group"
+                    data-option-name={opt.name}
+                  >
                     <span class="product__option-label">{opt.name}</span>
                     <div class="product__option-values">
                       {opt.values.map((val: string, valIdx: number) => (
                         <button
                           type="button"
                           class:list={[
-                            "product__option-btn",
-                            { "is-active": valIdx === 0 }
+                            'product__option-btn',
+                            { 'is-active': valIdx === 0 },
                           ]}
                           data-option-name={opt.name}
                           data-option-value={val}
@@ -218,12 +224,13 @@ const productSchema = {
                 stroke-linecap="round"
                 stroke-linejoin="round"
               >
-                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                <path
+                  d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"
+                ></path>
               </svg>
               Consultar por WhatsApp
             </a>
           </div>
-
         </div>
       </div>
 
@@ -232,28 +239,30 @@ const productSchema = {
         <div class="product__details-grid">
           <!-- Description & Features (Left Column) -->
           <div class="product__details-left">
-            {data.description && (
-              <div class="product__details-block" data-reveal>
-                <h2 class="product__section-title">Descripción</h2>
-                <p class="product__description-text">
-                  {data.description}
-                </p>
-              </div>
-            )}
+            {
+              data.description && (
+                <div class="product__details-block" data-reveal>
+                  <h2 class="product__section-title">Descripción</h2>
+                  <p class="product__description-text">{data.description}</p>
+                </div>
+              )
+            }
 
-            {data.features && data.features.length > 0 && (
-              <div class="product__details-block" data-reveal data-delay="1">
-                <h2 class="product__section-title">Características</h2>
-                <ul class="product__features-list">
-                  {data.features.map((feature: string) => (
-                    <li class="product__feature">
-                      <span class="product__feature-dash">—</span>
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
+            {
+              data.features && data.features.length > 0 && (
+                <div class="product__details-block" data-reveal data-delay="1">
+                  <h2 class="product__section-title">Características</h2>
+                  <ul class="product__features-list">
+                    {data.features.map((feature: string) => (
+                      <li class="product__feature">
+                        <span class="product__feature-dash">—</span>
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )
+            }
           </div>
 
           <!-- Specifications (Right Column) -->
@@ -315,54 +324,93 @@ const productSchema = {
     </section>
 
     <!-- Blueprint -->
-    {data.blueprint && (
-      <section
-        class="blueprint section section--elevated"
-        aria-label="Plano Técnico"
-      >
-        <div class="container">
-          <div class="blueprint__header" data-reveal>
-            <span class="eyebrow">Dimensiones</span>
-            <h2>Plano Técnico</h2>
-            <p class="blueprint__text">
-              Esquema referencial de medidas e instalación. Las dimensiones
-              exactas pueden variar según el modelo.
-            </p>
+    {
+      data.blueprint && (
+        <section
+          class="blueprint section section--elevated"
+          aria-label="Plano Técnico"
+        >
+          <div class="container">
+            <div class="blueprint__header" data-reveal>
+              <span class="eyebrow">Dimensiones</span>
+              <h2>Plano Técnico</h2>
+              <p class="blueprint__text">
+                Esquema referencial de medidas e instalación. Las dimensiones
+                exactas pueden variar según el modelo.
+              </p>
+            </div>
+            <div
+              class="blueprint__image-wrapper"
+              data-reveal="fade-up"
+              data-delay="1"
+            >
+              <img
+                src={data.blueprint}
+                alt={`Plano técnico de ${data.name}`}
+                class="blueprint__img"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
           </div>
-          <div
-            class="blueprint__image-wrapper"
-            data-reveal="fade-up"
-            data-delay="1"
-          >
-            <img
-              src={data.blueprint}
-              alt={`Plano técnico de ${data.name}`}
-              class="blueprint__img"
-              loading="lazy"
-              decoding="async"
-            />
-          </div>
-        </div>
-      </section>
-    )}
+        </section>
+      )
+    }
 
     <!-- Lightbox Modal -->
-    <div id="product-lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="Galería a pantalla completa">
-      <button class="lightbox__close" aria-label="Cerrar galería">&times;</button>
-      
-      <button class="lightbox__arrow lightbox__arrow--prev" aria-label="Imagen anterior">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <div
+      id="product-lightbox"
+      class="lightbox"
+      aria-hidden="true"
+      role="dialog"
+      aria-label="Galería a pantalla completa"
+    >
+      <button class="lightbox__close" aria-label="Cerrar galería"
+        >&times;</button
+      >
+
+      <button
+        class="lightbox__arrow lightbox__arrow--prev"
+        aria-label="Imagen anterior"
+      >
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
           <polyline points="15 18 9 12 15 6"></polyline>
         </svg>
       </button>
 
       <div class="lightbox__content">
-        <img id="lightbox-img" src="" alt="Vista ampliada del producto" class="lightbox__img" />
+        <img
+          id="lightbox-img"
+          src=""
+          alt="Vista ampliada del producto"
+          class="lightbox__img"
+        />
         <span class="lightbox__caption" id="lightbox-caption"></span>
       </div>
 
-      <button class="lightbox__arrow lightbox__arrow--next" aria-label="Imagen siguiente">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <button
+        class="lightbox__arrow lightbox__arrow--next"
+        aria-label="Imagen siguiente"
+      >
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
           <polyline points="9 18 15 12 9 6"></polyline>
         </svg>
       </button>
@@ -370,7 +418,6 @@ const productSchema = {
 
     <!-- Back Link (Always at the very end) -->
     <BackToCatalog />
-
   </main>
 </Layout>
 
@@ -390,9 +437,13 @@ const productSchema = {
   // Thumbnail hover/click swapping Setup & Lightbox Gallery
   function setupGallery() {
     const thumbs = document.querySelectorAll('.product__thumb-btn');
-    const mainImg = document.getElementById('main-product-img') as HTMLImageElement;
+    const mainImg = document.getElementById(
+      'main-product-img',
+    ) as HTMLImageElement;
     const lightbox = document.getElementById('product-lightbox');
-    const lightboxImg = document.getElementById('lightbox-img') as HTMLImageElement;
+    const lightboxImg = document.getElementById(
+      'lightbox-img',
+    ) as HTMLImageElement;
     const lightboxClose = document.querySelector('.lightbox__close');
     const lightboxPrev = document.querySelector('.lightbox__arrow--prev');
     const lightboxNext = document.querySelector('.lightbox__arrow--next');
@@ -401,7 +452,7 @@ const productSchema = {
     if (!mainImg || !lightbox || !lightboxImg) return;
 
     let images: string[] = [];
-    
+
     function updateImagesList() {
       images = [];
       thumbs.forEach((thumb) => {
@@ -438,9 +489,8 @@ const productSchema = {
     // Lightbox Controls
     function openLightbox() {
       updateImagesList();
-      const currentSrc = mainImg.getAttribute('src') || mainImg.src;
       const mainPath = new URL(mainImg.src, window.location.href).pathname;
-      currentIdx = images.findIndex(img => {
+      currentIdx = images.findIndex((img) => {
         const imgPath = new URL(img, window.location.href).pathname;
         return imgPath === mainPath;
       });
@@ -523,8 +573,12 @@ const productSchema = {
     const variants = JSON.parse(root.getAttribute('data-variants') || '[]');
     const options = JSON.parse(root.getAttribute('data-options') || '[]');
     const productName = root.getAttribute('data-product-name') || '';
-    const mainImg = document.getElementById('main-product-img') as HTMLImageElement;
-    const wCta = document.getElementById('product-whatsapp-cta') as HTMLAnchorElement;
+    const mainImg = document.getElementById(
+      'main-product-img',
+    ) as HTMLImageElement;
+    const wCta = document.getElementById(
+      'product-whatsapp-cta',
+    ) as HTMLAnchorElement;
 
     if (variants.length === 0 || options.length === 0) return;
 
@@ -542,9 +596,10 @@ const productSchema = {
 
     function updateSelection() {
       // Find matching variant
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const matchingVariant = variants.find((v: any) => {
         return Object.keys(currentSelections).every(
-          (key) => v.options[key] === currentSelections[key]
+          (key) => v.options[key] === currentSelections[key],
         );
       });
 
@@ -573,17 +628,21 @@ const productSchema = {
       }
 
       // Update availability visual indicators of other buttons
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       options.forEach((opt: any) => {
-        const btns = root.querySelectorAll(`.product__option-btn[data-option-name="${opt.name}"]`);
+        const btns = root.querySelectorAll(
+          `.product__option-btn[data-option-name="${opt.name}"]`,
+        );
         btns.forEach((btn) => {
           const val = btn.getAttribute('data-option-value');
           if (!val) return;
 
           // Test if this value is available with current other selections
           const tempSelections = { ...currentSelections, [opt.name]: val };
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
           const isPossible = variants.some((v: any) => {
             return Object.keys(tempSelections).every(
-              (key) => v.options[key] === tempSelections[key] && v.available
+              (key) => v.options[key] === tempSelections[key] && v.available,
             );
           });
 
@@ -606,7 +665,9 @@ const productSchema = {
         if (!optName || !optVal) return;
 
         // Update active class
-        const siblingBtns = root.querySelectorAll(`.product__option-btn[data-option-name="${optName}"]`);
+        const siblingBtns = root.querySelectorAll(
+          `.product__option-btn[data-option-name="${optName}"]`,
+        );
         siblingBtns.forEach((b) => b.classList.remove('is-active'));
         btn.classList.add('is-active');
 
@@ -713,7 +774,9 @@ const productSchema = {
     background: var(--white);
     border: 1px solid var(--gray-200);
     border-radius: var(--radius-sm);
-    padding: var(--space-2); /* Extra padding to prevent thumbnail images from touching borders */
+    padding: var(
+      --space-2
+    ); /* Extra padding to prevent thumbnail images from touching borders */
     cursor: pointer;
     width: 64px;
     height: 64px;
@@ -748,28 +811,20 @@ const productSchema = {
 
   .product__image-main {
     width: 100%;
-    min-height: 280px;
-    max-height: 500px;
     background: var(--white);
     border-radius: var(--radius-md);
     border: 1px solid var(--gray-200);
-    overflow: hidden;
+    overflow: visible;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: var(--space-6);
+    padding: var(--space-8);
+    aspect-ratio: 4 / 3;
   }
 
   @media (min-width: 768px) {
     .product__image-main {
       width: calc(100% - 92px); /* 76px thumbs + 16px (space-4) gap */
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .product__image-main {
-      min-height: 350px;
-      max-height: 550px;
     }
   }
 
@@ -784,18 +839,12 @@ const productSchema = {
 
   .product__image-img {
     display: block;
-    max-width: 85%;
-    max-height: 420px;
+    max-width: 100%;
+    max-height: 100%;
     width: auto;
     height: auto;
     object-fit: contain;
     transition: transform 0.6s var(--ease-out-expo);
-  }
-
-  @media (min-width: 1024px) {
-    .product__image-img {
-      max-height: 480px;
-    }
   }
 
   .product__image-main:hover .product__image-img {
